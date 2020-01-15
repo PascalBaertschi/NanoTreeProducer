@@ -1,59 +1,81 @@
 from ROOT import TFile
-from ScaleFactorTool import ScaleFactor, ScaleFactorHTT
+import numpy as np
+from ScaleFactorTool import ScaleFactor, ScaleFactorCalc
+# https://twiki.cern.ch/twiki/bin/view/CMS/Egamma2017DataRecommendations#Efficiency_Scale_Factors
+#https://twiki.cern.ch/twiki/bin/viewauth/CMS/EgHLTScaleFactorMeasurements
+#https://jskim.web.cern.ch/jskim/Public/HNWR_13TeV/EGammaTnP/
 
-#/shome/ineuteli/analysis/LQ_2017/NanoTreeProducer/leptonSF
-#/shome/ytakahas/work/Leptoquark/CMSSW_9_4_4/src/PhysicsTools/NanoAODTools/NanoTreeProducer/leptonSF
-path    = 'CorrectionTools/leptonEfficiencies/'
-pathHTT = 'CorrectionTools/leptonEfficiencies/HTT/Electron/Run2017/'
+path    = 'CorrectionTools/leptonEfficiencies/ElectronPOG/'
 
 
 class ElectronSFs:
     
-    def __init__( self ):
+    def __init__(self, year=2017):
         """Load histograms from files."""
         
-        # TRIGGER (HTT)
-        self.sftool_trig = ScaleFactorHTT(pathHTT+"Electron_Ele32orEle35.root","ZMass",'ele_trig')
+        assert year in [2016,2017,2018], "ElectronSFs: You must choose a year from: 2016, 2017 or 2018."
+        self.year = year
+        if year==2016:
+            self.sftool_trig_barrel    = ScaleFactor(path+"Run2016/Ele115orEleIso27orPho175_SF_2016.root",'SF_TH2F_Barrel','ele_trig_barrel')
+            self.sftool_trig_endcap    = ScaleFactor(path+"Run2016/Ele115orEleIso27orPho175_SF_2016.root",'SF_TH2F_EndCap','ele_trig_endcap')
+            self.sftool_reco  = ScaleFactor(path+"Run2016/EGM2D_BtoH_GT20GeV_RecoSF_Legacy2016.root","EGamma_SF2D",'ele_reco')
+            self.sftool_idiso = ScaleFactor(path+"Run2016/2016LegacyReReco_ElectronLoose_Fall17V2.root","EGamma_SF2D",'ele_idiso') 
+        elif year==2017:
+            self.sftool_trig_barrel    = ScaleFactor(path+"Run2017/Ele115orEleIso35orPho200_SF_2017.root",'SF_TH2F_Barrel','ele_trig_barrel')
+            self.sftool_trig_endcap    = ScaleFactor(path+"Run2017/Ele115orEleIso35orPho200_SF_2017.root",'SF_TH2F_EndCap','ele_trig_endcap')
+            self.sftool_reco  = ScaleFactor(path+"Run2017/egammaEffi.txt_EGM2D_runBCDEF_passingRECO.root","EGamma_SF2D",'ele_reco')
+            self.sftool_idiso = ScaleFactor(path+"Run2017/2017_ElectronLoose.root","EGamma_SF2D",'ele_idiso')
+        elif year==2018: 
+            self.sftool_trig_barrel    = ScaleFactor(path+"Run2018/Ele115orEleIso32orPho200_SF_2018.root",'SF_TH2F_Barrel','ele_trig_barrel')
+            self.sftool_trig_endcap    = ScaleFactor(path+"Run2018/Ele115orEleIso32orPho200_SF_2018.root",'SF_TH2F_EndCap','ele_trig_endcap')
+            self.sftool_reco  = ScaleFactor(path+"Run2018/egammaEffi.txt_EGM2D_updatedAll.root","EGamma_SF2D",'ele_reco')
+            self.sftool_idiso = ScaleFactor(path+"Run2018/2018_ElectronLoose.root","EGamma_SF2D",'ele_idiso')
         
-        # RECO, IDISO (EGamme POG)
-        self.sftool_reco  = ScaleFactor(path+"egammaEffi.txt_EGM2D_runBCDEF_passingRECO.root","EGamma_SF2D",'ele_reco',ptvseta=True)
-        self.sftool_idiso = ScaleFactor(path+"gammaEffi.txt_EGM2D_runBCDEF_passingMVA94Xwp80iso.root","EGamma_SF2D",'ele_idiso',ptvseta=True)
-        #self.sftool_idiso = ScaleFactorHTT(pathHTT+"Electron_IdIso_IsoLt0.15_IsoID_eff.root","ZMass",'ele_idiso')
-        
-    def getTriggerSF( self, pt, eta ):
-        """Get SF for single electron trigger."""
-        return self.sftool_trig.getSF(pt,eta)
-        
-    def getIdIsoSF( self, pt, eta ):
-        """Get SF for electron identification + isolation."""
-        sf_reco  = self.sftool_reco.getSF(pt,eta)
-        sf_idiso = self.sftool_idiso.getSF(pt,eta)
-        return sf_reco*sf_idiso
     
-    def getLeptonTauFakeSF(genmatch,eta):
-        """Get SF for lepton to tau fake."""
-        # https://indico.cern.ch/event/715039/timetable/#2-lepton-tau-fake-rates-update
-        # https://indico.cern.ch/event/719250/contributions/2971854/attachments/1635435/2609013/tauid_recommendations2017.pdf
-        # https://twiki.cern.ch/twiki/bin/view/CMS/TauIDRecommendation13TeV#Muon%20to%20tau%20fake%20rate
-        eta = abs(eta)
-        
-        # electron -> tau (Tight for mutau)
-        if genmatch==1:
-          if   eta<1.460: return 1.80
-          elif eta>1.558: return 1.53
-        
-        # muon -> tau (Loose for mutau)
-        elif genmatch==2:
-          if   eta<0.4: return 1.061
-          elif eta<0.8: return 1.022
-          elif eta<1.2: return 1.097
-          elif eta<1.7: return 1.030
-          else:         return 1.941
-        
-        # real tau (Tight)
-        #elif genmatch_2==5
-        #  return 0.88; // Tight
-        
-        return 1.0
-        
+    def getTriggerSF(self, pt, eta):
+        """Get SF for single electron trigger."""
+        if eta > 1.4 and eta < 1.5:
+            eta = 1.4
+        elif eta > 1.5 and eta < 1.6:
+            eta = 1.6
+        elif eta < -1.4 and eta > -1.5:
+            eta = -1.4
+        elif eta < -1.5 and eta > -1.6:
+            eta = -1.6
+        if abs(eta) > 1.5:
+            sf_trigger = self.sftool_trig_endcap.getSF(pt,eta)
+        else:
+            sf_trigger = self.sftool_trig_barrel.getSF(pt,eta)
+        return sf_trigger
 
+    def getTriggerSFerror(self, pt, eta):
+        """Get SF error for single electron trigger."""
+        if eta > 1.4 and eta < 1.5:
+            eta = 1.4
+        elif eta > 1.5 and eta < 1.6:
+            eta = 1.6
+        elif eta < -1.4 and eta > -1.5:
+            eta = -1.4
+        elif eta < -1.5 and eta > -1.6:
+            eta = -1.6
+        if abs(eta)>1.5:
+            sf_trigger_error = self.sftool_trig_endcap.getSFerror(pt,eta)
+        else:
+            sf_trigger_error = self.sftool_trig_barrel.getSFerror(pt,eta)
+        return sf_trigger_error       
+
+
+    def getIdIsoSF(self, pt, eta):
+        """Get SF for electron identification + isolation."""
+        sf_reco  = self.sftool_reco.getSF(pt,eta) if self.sftool_reco else 1.
+        sf_idiso = self.sftool_idiso.getSF(pt,eta)
+        return sf_reco * sf_idiso
+
+    def getIdIsoSFerror(self, pt, eta):
+        """Get SF error for electron identification + isolation."""
+        sf_reco  = self.sftool_reco.getSF(pt,eta) if self.sftool_reco else 1.
+        sf_idiso = self.sftool_idiso.getSF(pt,eta)
+        sf_reco_error = self.sftool_reco.getSFerror(pt,eta)
+        sf_idiso_error = self.sftool_idiso.getSFerror(pt,eta)
+        sf_reco_idiso_error = np.sqrt((sf_reco_error*sf_idiso)**2+(sf_idiso_error*sf_reco)**2)
+        return sf_reco_idiso_error

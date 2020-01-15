@@ -7,7 +7,7 @@
 #python submit_qsub.py -c tautau -s M-10to50
 #python submit_qsub.py -c tautau -f 
 #python submit_qsub.py -c mutau -s LQ3 -n 20
-python submit_qsub.py -f -c tautau  -s LQ3 -n 10
+python submit_qsub.py -f -c tautau  -s LQ3 -n 10 -l h=!t3wn6*.psi.ch
 
 #python submit_qsub.py -c tautau -s VBFHToTauTau
 #python submit_qsub.py -c mutau -s VBFHToTauTau

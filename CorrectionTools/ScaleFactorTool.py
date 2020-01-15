@@ -1,113 +1,168 @@
 #! /bin/usr/env bash
 # Author: Izaak Neutelings (November 2018)
 import os, re
-from ROOT import TFile #, TH2F, TGraphAsymmErrors, Double()
-
+from ROOT import TFile, TH2F #, TH2F, TGraphAsymmErrors, Double()
+import numpy as np
 
 def ensureTFile(filename,option='READ'):
   """Open TFile, checking if the file in the given path exists."""
   if not os.path.isfile(filename):
-    print '>>> ERROR! ScaleFactorTool::ensureTFile: File in path "%s" does not exist!!'%(filename)
+    print '>>> ERROR! ScaleFactorTool.ensureTFile: File in path "%s" does not exist!!'%(filename)
     exit(1)
   file = TFile(filename,option)
   if not file or file.IsZombie():
-    print '>>> ERROR! ScaleFactorTool::ensureTFile Could not open file by name "%s"'%(filename)
+    print '>>> ERROR! ScaleFactorTool.ensureTFile Could not open file by name "%s"'%(filename)
     exit(1)
   return file
   
-#def getSF_ptvseta(sftool, pt, eta):
-#    """Get SF for a given pT vs. eta."""
-#    #abseta = abs(eta)
-#    xbin   = sftool.hist.GetXaxis().FindBin(eta)
-#    ybin   = sftool.hist.GetYaxis().FindBin(pt)
-#    sf     = sftool.hist.GetBinContent(xbin, ybin)
-#    #print "ScaleFactor::getSF: %s, pt = %6.2f, eta = %6.3f, data = %6.3f, mc = %6.3f, sf = %6.3f"%(self.name,pt,eta,data,mc,sf)
-#    #print "ScaleFactor::getSF_ptvseta: %s, pt = %6.2f, eta = %6.3f, sf = %6.3f"%(sftool.name,pt,eta,sf)
-#    return sf
-#    
-#def getSF_etavspt(sftool, pt, eta):
-#    """Get SF for a given pT vs. eta."""
-#    #abseta = abs(eta)
-#    xbin   = sftool.hist.GetXaxis().FindBin(pt)
-#    ybin   = sftool.hist.GetYaxis().FindBin(eta)
-#    sf     = sftool.hist.GetBinContent(xbin, ybin)
-#    #print "ScaleFactor::getSF: %s, pt = %6.2f, eta = %6.3f, data = %6.3f, mc = %6.3f, sf = %6.3f"%(self.name,pt,eta,data,mc,sf)
-#    #print "ScaleFactor::getSF_ptvseta: %s, pt = %6.2f, eta = %6.3f, sf = %6.3f"%(sftool.name,pt,eta,sf)
-#    return sf
-    
 
 
 class ScaleFactor:
     
     def __init__(self, filename, histname, name="<noname>", ptvseta=True):
-        #print '>>> ScaleFactor::init("%s","%s",name="%s",ptvseta=%r)'%(filename,histname,name,ptvseta)
+        #print '>>> ScaleFactor.init("%s","%s",name="%s",ptvseta=%r)'%(filename,histname,name,ptvseta)
         self.name     = name
+        self.ptvseta  = ptvseta
         self.filename = filename
         self.file     = ensureTFile(filename)
         self.hist     = self.file.Get(histname)
+        if not self.hist:
+          print '>>> ScaleFactor(%s).__init__: histogram "%s" does not exist in "%s"'%(self.name,histname,filename)
+          exit(1)
         self.hist.SetDirectory(0)
         self.file.Close()
         
-        #xtitle = self.hist.GetXaxis().GetTitle().lower().replace('_','').replace('{','').replace('}','')
-        #ytitle = self.hist.GetYaxis().GetTitle().lower().replace('_','').replace('{','').replace('}','')
-        #if not ptvseta and 'pt' in ytitle and 'eta' in xtitle:
-        #  print '>>> Warning! ScaleFactor::init: ptvseta=False, but xtitle="%s" and ytitle="%s" for "%s" in "%s"'%(
-        #  self.hist.GetXaxis().GetTitle(),self.hist.GetYaxis().GetTitle(),self.hist.GetName(),self.filename)
-        #elif   ptvseta and 'pt' in xtitle and 'eta' in ytitle:
-        #  print '>>> Warning! ScaleFactor::init: ptvseta=True, but xtitle="%s" and ytitle="%s" for "%s" in "%s"'%(
-        #  self.hist.GetXaxis().GetTitle(),self.hist.GetYaxis().GetTitle(),self.hist.GetName(),self.filename)
-        #if ptvseta:
-        #  self.getSFMethod = getSF_ptvseta
-        #else:
-        #  self.getSFMethod = getSF_etavspt
+        if ptvseta: 
+          self.getSF = self.getSF_ptvseta
+          self.getSFerror = self.getSFerror_ptvseta
+        else:       
+          self.getSF = self.getSF_etavspt
+          self.getSFerror = self.getSFerror_etavspt
         
-    #def getSF(self, pt, eta):
-    #    """Get SF for a given pT, eta."""
-    #    return self.getSFMethod(self,pt,eta)
-        
-    def getSF(self, pt, eta):
+    def getSF_ptvseta(self, pt, eta):
         """Get SF for a given pT, eta."""
-        #abseta = abs(eta)
-        xbin   = self.hist.GetXaxis().FindBin(eta)
-        ybin   = self.hist.GetYaxis().FindBin(pt)
-        sf     = self.hist.GetBinContent(xbin,ybin)
-        #print "ScaleFactor::getSF: %s, pt = %6.2f, eta = %6.3f, data = %6.3f, mc = %6.3f, sf = %6.3f"%(self.name,pt,eta,data,mc,sf)
-        #print "ScaleFactor::getSF: %s, pt = %6.2f, eta = %6.3f, sf = %6.3f"%(self.name,pt,eta,sf)
+        xbin = self.hist.GetXaxis().FindBin(eta)
+        ybin = self.hist.GetYaxis().FindBin(pt)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        sf   = self.hist.GetBinContent(xbin,ybin)
+        if sf==0: sf=1
         return sf
     
-
-
-class ScaleFactorHTT:
-    
-    def __init__(self, filename, graphname="ZMass", name="<noname>"):
-        #print '>>> ScaleFactor::init("%s","%s",name="%s")'%(filename,graphname,name)
-        self.name      = name
-        self.filename  = filename
-        self.file      = ensureTFile(filename)
-        self.hist_eta  = self.file.Get('etaBinsH')
-        self.hist_eta.SetDirectory(0)
-        self.effs_data = { }
-        self.effs_mc   = { }
-        for ieta in range(1,self.hist_eta.GetXaxis().GetNbins()+1):
-          etalabel = self.hist_eta.GetXaxis().GetBinLabel(ieta)
-          self.effs_data[etalabel] = self.file.Get(graphname+etalabel+"_Data")
-          self.effs_mc[etalabel]   = self.file.Get(graphname+etalabel+"_MC")
-        self.file.Close()
-        
-    def getSF(self, pt, eta):
+    def getSFerror_ptvseta(self, pt, eta):
         """Get SF for a given pT, eta."""
-        abseta = abs(eta)
-        etabin = self.hist_eta.GetXaxis().GetBinLabel(min(self.hist_eta.GetXaxis().GetNbins(),self.hist_eta.GetXaxis().FindBin(abseta)))
-        data   = self.effs_data[etabin].Eval(pt)
-        mc     = self.effs_mc[etabin].Eval(pt)
-        if mc==0:
-          sf   = 1.0
-        else:
-          sf   = data/mc
-        #print "ScaleFactorHTT::getSF: %s, pt = %6.2f, eta = %6.3f, data = %6.3f, mc = %6.3f, sf = %6.3f"%(self.name,pt,eta,data,mc,sf)
+        xbin = self.hist.GetXaxis().FindBin(eta)
+        ybin = self.hist.GetYaxis().FindBin(pt)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        error = self.hist.GetBinError(xbin,ybin)
+        return error
+
+    
+    def getSF_etavspt(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(pt)
+        ybin = self.hist.GetYaxis().FindBin(eta)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        sf   = self.hist.GetBinContent(xbin,ybin)
+        if sf==0: sf=1
+        return sf
+
+    def getSFerror_etavspt(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(pt)
+        ybin = self.hist.GetYaxis().FindBin(eta)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        error = self.hist.GetBinError(xbin,ybin)
+        return error
+
+class ScaleFactorCalc:
+    
+    def __init__(self, filename1, histname1, name1, filename2, histname2, name2, ptvseta=True):
+        self.ptvseta  = ptvseta
+        self.name1     = name1
+        self.filename1 = filename1
+        self.file1     = ensureTFile(filename1)
+        self.hist1     = self.file1.Get(histname1)
+        self.name2     = name2
+        self.filename2 = filename2
+        self.file2     = ensureTFile(filename2)
+        self.hist2     = self.file2.Get(histname2)
+        if not self.hist1:
+          print '>>> ScaleFactor(%s).__init__: histogram "%s" does not exist in "%s"'%(self.name1,histname1,filename1)
+          exit(1)
+        if not self.hist2:
+          print '>>> ScaleFactor(%s).__init__: histogram "%s" does not exist in "%s"'%(self.name2,histname2,filename2)
+          exit(1)
+        self.hist1.Divide(self.hist2)
+        self.hist = self.hist1
+        self.hist.SetDirectory(0)
+        self.file1.Close()
+        self.file2.Close()
+        
+        if ptvseta: 
+          self.getSF = self.getSF_ptvseta
+          self.getSFerror = self.getSFerror_ptvseta
+        else:       
+          self.getSF = self.getSF_etavspt
+          self.getSFerror = self.getSFerror_etavspt
+        
+    def getSF_ptvseta(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(eta)
+        ybin = self.hist.GetYaxis().FindBin(pt)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        sf   = self.hist.GetBinContent(xbin,ybin)
+        if sf==0: sf=1
         return sf
     
+    def getSFerror_ptvseta(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(eta)
+        ybin = self.hist.GetYaxis().FindBin(pt)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        error = self.hist.GetBinError(xbin,ybin)
+        return error
 
+    
+    def getSF_etavspt(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(pt)
+        ybin = self.hist.GetYaxis().FindBin(eta)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        sf   = self.hist.GetBinContent(xbin,ybin)
+        if sf==0: sf=1
+        return sf
+
+    def getSFerror_etavspt(self, pt, eta):
+        """Get SF for a given pT, eta."""
+        xbin = self.hist.GetXaxis().FindBin(pt)
+        ybin = self.hist.GetYaxis().FindBin(eta)
+        if xbin==0: xbin = 1
+        elif xbin>self.hist.GetXaxis().GetNbins(): xbin -= 1
+        if ybin==0: ybin = 1
+        elif ybin>self.hist.GetYaxis().GetNbins(): ybin -= 1
+        error = self.hist.GetBinError(xbin,ybin)
+        return error
 
 ##etaLt = re.compile(r"EtaLt(\dp\d+)")
 ##etaTo = re.compile(r"Eta(\dp\d+to\dp\d+)")

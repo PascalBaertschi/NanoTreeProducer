@@ -1,0 +1,1 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZprimeToZHToZinvHall_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/130000/4E4E1CFA-3C15-B541-A7E0-9E30A23E7093.root

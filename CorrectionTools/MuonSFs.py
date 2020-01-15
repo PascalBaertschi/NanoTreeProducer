@@ -1,62 +1,55 @@
-from ROOT import TFile
-from ScaleFactorTool import ScaleFactor, ScaleFactorHTT
+from ScaleFactorTool import ScaleFactor
 
 # /shome/ytakahas/work/Leptoquark/CMSSW_9_4_4/src/PhysicsTools/NanoAODTools/NanoTreeProducer/leptonSF
 # HTT: https://github.com/CMS-HTT/LeptonEfficiencies
 # https://twiki.cern.ch/twiki/bin/view/CMS/MuonReferenceEffs2017
 # https://twiki.cern.ch/twiki/bin/view/CMS/Egamma2017DataRecommendations#Efficiency_Scale_Factors
-path    = 'CorrectionTools/leptonEfficiencies/'
-pathHTT = 'CorrectionTools/leptonEfficiencies/HTT/Muon/Run2017/'
+path    = 'CorrectionTools/leptonEfficiencies/MuonPOG/'
 
 class MuonSFs:
     
-    def __init__( self ):
-        # Load the TH1s containing the bin by bin values
+    def __init__(self, year=2017):
+        """Load histograms from files."""
+        assert year in [2016,2017,2018], "MuonSFs: You must choose a year from: 2016, 2017 or 2018."
+        self.year = year
+        if year==2016:
+            self.sftool_trig  = ScaleFactor(path+"Run2016/SingleMuonTrigger_2016.root","Mu50_OR_TkMu50_PtEtaBins/abseta_pt_ratio","mu_trig")
+            self.sftool_id    = ScaleFactor(path+"Run2016/RunBCDEF_SF_ID.root","NUM_HighPtID_DEN_genTracks_eta_pair_newTuneP_probe_pt","mu_id")
+            self.sftool_trkid = ScaleFactor(path+"Run2016/trackHighPtID_effSF_80X.root","sf_trackHighPt_80X_pteta","mu_trkid")
+        elif year==2017:
+            self.sftool_trig  = ScaleFactor(path+"Run2017/EfficienciesAndSF_RunBtoF_Nov17Nov2017.root","Mu50_PtEtaBins/abseta_pt_ratio",'mu_trig')
+            self.sftool_id    = ScaleFactor(path+"Run2017/RunBCDEF_SF_ID.root","NUM_HighPtID_DEN_genTracks_pair_newTuneP_probe_pt_abseta",'mu_id',ptvseta=False)
+            self.sftool_trkid = ScaleFactor(path+"Run2017/RunBCDEF_SF_ID.root","NUM_TrkHighPtID_DEN_genTracks_pair_newTuneP_probe_pt_abseta",'mu_trkid',ptvseta=False)
+        elif year==2018:
+            self.sftool_trig  = ScaleFactor(path+"Run2018/EfficienciesAndSF_2018Data_AfterMuonHLTUpdate.root","Mu50_OR_OldMu100_OR_TkMu100_PtEtaBins/abseta_pt_ratio",'mu_trig')
+            self.sftool_id    = ScaleFactor(path+"Run2018/RunABCD_SF_ID.root","NUM_HighPtID_DEN_TrackerMuons_pair_newTuneP_probe_pt_abseta",'mu_id',ptvseta=False)
+            self.sftool_trkid = ScaleFactor(path+"Run2018/RunABCD_SF_ID.root","NUM_TrkHighPtID_DEN_TrackerMuons_pair_newTuneP_probe_pt_abseta",'mu_trkid',ptvseta=False)
+
+
         
-        # TRIGGER (Muon POG)
-        self.sftool_trig = ScaleFactor(path+"EfficienciesAndSF_RunBtoF_Nov17Nov2017.root","IsoMu27_PtEtaBins/abseta_pt_ratio",'mu_trig',ptvseta=True)
-        
-        ## TRIGGER (HTT)
-        #self.sftool_trig = ScaleFactorHTT(pathHTT+"Muon_IsoMu24orIsoMu27.root","ZMass",'mu_idiso')
-        
-        # ID ISO (HTT)
-        self.sftool_idiso = ScaleFactorHTT(pathHTT+"Muon_IdIso_IsoLt0p15_eff_RerecoFall17.root","ZMass",'mu_idiso')
-        
-        ## ID (Muon POG)
-        #self.sftool_trig = ScaleFactor(path+"EfficienciesAndSF_RunBtoF_Nov17Nov2017.root","IsoMu27_PtEtaBins/pt_abseta_ratio",'mu_trig')
-        
-    def getTriggerSF( self, pt, eta ):
+    def getTriggerSF(self, pt, eta):
         """Get SF for single muon trigger."""
         return self.sftool_trig.getSF(pt,abs(eta))
-        
-    def getIdIsoSF( self, pt, eta ):
+    
+    def getTriggerSFerror(self, pt, eta):
+        """Get SF for single muon trigger."""
+        return self.sftool_trig.getSFerror(pt,abs(eta))
+
+    
+    def getIdSF(self, pt, eta, highptid):
         """Get SF for muon identification + isolation."""
-        return self.sftool_idiso.getSF(pt,eta)
-        
-    def getLeptonTauFakeSF(genmatch,eta):
-        """Get SF for lepton to tau fake."""
-        # https://indico.cern.ch/event/715039/timetable/#2-lepton-tau-fake-rates-update
-        # https://indico.cern.ch/event/719250/contributions/2971854/attachments/1635435/2609013/tauid_recommendations2017.pdf
-        # https://twiki.cern.ch/twiki/bin/view/CMS/TauIDRecommendation13TeV#Muon%20to%20tau%20fake%20rate
-        eta = abs(eta)
-        
-        # electron -> tau (VLoose for mutau)
-        if genmatch==1:
-          if   eta<1.460: return 1.09
-          elif eta>1.558: return 1.19
-        
-        # muon -> tau (Tight for mutau)
-        elif genmatch==2:
-          if   eta<0.4: return 1.165
-          elif eta<0.8: return 1.290
-          elif eta<1.2: return 1.137
-          elif eta<1.7: return 0.927
-          else:         return 1.607
-        
-        # real tau (Tight)
-        #elif genmatch_2==5
-        #  return 0.88; // Tight
-        
-        return 1.0
+        if highptid==1:
+            return self.sftool_trkid.getSF(pt,abs(eta))
+        elif highptid==2:
+            return self.sftool_id.getSF(pt,abs(eta))
+        else:
+            return 1.
 
-
+    def getIdSFerror(self, pt, eta, highptid):
+        """Get SF for muon identification + isolation."""
+        if highptid==1:
+            return self.sftool_trkid.getSFerror(pt,abs(eta))
+        elif highptid==2:
+            return self.sftool_id.getSFerror(pt,abs(eta))
+        else:
+            return 0.

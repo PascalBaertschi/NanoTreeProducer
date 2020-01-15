@@ -1,0 +1,9 @@
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/76F6D25C-A551-4B44-AA72-3F2099F00E43.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/CBF2C61A-4316-0142-A733-1810FE89F3FA.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/23C22F83-2E9E-7146-BBCB-D2AE571B9BD4.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/841D896B-6525-CA4B-BE1F-2AEB80D98CB6.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/3570F4AF-5C3D-A642-9853-E082E8BD5AF7.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/32EDD4A3-25D9-C943-8309-98FBA2437FB1.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/4A5CC57E-B9CE-CE42-9728-986C7F75DEFC.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/B1A90048-50E1-D44F-B938-936423DD8422.root
+root://cms-xrd-global.cern.ch//store/data/Run2016F/MET/NANOAOD/Nano1June2019-v1/30000/19298F17-03BE-A34E-801A-5691B790F3FC.root

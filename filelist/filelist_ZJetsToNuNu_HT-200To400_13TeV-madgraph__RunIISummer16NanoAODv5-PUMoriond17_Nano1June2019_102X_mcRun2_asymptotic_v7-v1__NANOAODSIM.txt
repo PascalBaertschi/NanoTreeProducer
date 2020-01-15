@@ -1,0 +1,7 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/2FD429E5-52EE-D447-A236-9054F2158519.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/4259F840-FBB7-3A48-86F0-C8103838752C.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/8A89F24D-3473-FE4D-8576-3729A9F9ECD3.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/64EB84BD-3DDE-6C40-93CC-77E055F5BC1E.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/B3726E20-ECFD-C749-80AB-61B2B901695F.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/47B7A977-04F7-6246-9767-264909BCFD3F.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv5/ZJetsToNuNu_HT-200To400_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/100000/24F784F6-D34F-9149-9E6D-CD93B5B079DA.root

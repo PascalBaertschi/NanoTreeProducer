@@ -1,0 +1,15 @@
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/6489DF2C-5030-3A41-9051-428A2D9CDE72.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/A468CCC2-ADF5-6E42-9A93-E93E0C1183E1.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/D7A33AFE-3ECB-6347-A78B-E72EE1EA541B.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/74EAE14E-7453-534D-8A9A-4C70F75C3E5D.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/ED4B78A0-7D61-EE46-9D9C-41FDAA3FB2A8.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/230000/6927B99E-C416-634A-AD1A-2FCF00F3B32D.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/D992172B-5B3F-774C-84D7-475600E93F11.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/AD2F9207-F773-BB48-A4E7-F308E8F24AD4.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/2B5AC4A8-9C92-B343-848C-50ACC9E4E54F.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/C8623586-10B5-254B-92EA-7B4DC2EBD529.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/54187F49-544F-BD46-A973-43992C7DD018.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/D7E4D7B3-BEBB-0344-8172-AB8DC8043199.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/9A86CCE7-110C-4F48-ACE8-46DADB0606BE.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/70000/7E3FE4BB-EA9A-FD4E-A230-27573B172BA5.root
+root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/SinglePhoton/NANOAOD/Nano1June2019_ver1-v1/60000/9CC13FCD-6298-924B-B806-178EF46C1BE1.root
