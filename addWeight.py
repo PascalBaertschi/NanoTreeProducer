@@ -122,13 +122,13 @@ def processFile(sample_name, verbose=False):
                 if isMC:
                     eventWeightLumi_nobtag[0] = obj.EventWeight * Leq * obj.TopWeight
                     eventWeightLumi[0] = obj.EventWeight * Leq
-                    eventWeightLumi[0] *= (obj.BTagAK4Weight_deep if obj.BTagAK4Weight_deep>0. and obj.BTagAK4Weight_deep<2. else 1.) * obj.TopWeight
+                    eventWeightLumi[0] *= (obj.BTagAK8Weight_deep if obj.BTagAK8Weight_deep>0. else 1.) * obj.TopWeight
                 # Fill the branches
                 VH_massBranch.Fill()
                 eventWeightLumiBranch.Fill()
                 eventWeightLumiBranch_nobtag.Fill()
             new_file.cd()
-            new_tree.Write("", TObject.kOverwrite)
+            new_tree.Write("", obj.kOverwrite)
             if verbose: print ' '
         
         # Directories

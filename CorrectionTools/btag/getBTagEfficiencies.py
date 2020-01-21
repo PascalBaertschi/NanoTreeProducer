@@ -33,15 +33,9 @@ def getBTagEfficiencies(tagger,wp,outfilename,indir,samples,jettype,plot=False):
     nhists  = { }
     hists   = { }
     if jettype == 'AK8':
-        if tagger == 'CSVv2':
-            histdir = 'AK8btag'
-        elif tagger == 'DeepCSV':
-            histdir = 'AK8btag_deep'
+        histdir = 'AK8btag_deep'
     elif jettype == 'AK4':
-        if tagger == 'CSVv2':
-            histdir = 'AK4btag'
-        elif tagger == 'DeepCSV':
-            histdir = 'AK4btag_deep'
+        histdir = 'AK4btag_deep'
     for flavor in ['b','c','udsg']:
       histname = '%s_%s_%s'%(tagger,flavor,wp)
       hists[histname] = None
@@ -552,13 +546,13 @@ def main():
                 for jettype in ['AK8','AK4']:
                     for wp in args.wps:
                         filename = "%s_%s_%d_eff.root"%(tagger,jettype,year)
-                        indir    = "/work/pbaertsc/heavy_resonance/%d"%(year)
+                        indir    = "/work/pbaertsc/heavy_resonance/Ntuples%d"%(year)
                         getBTagEfficiencies(tagger,wp,filename,indir,samples,jettype,plot=args.plot)
             else:
                 jettype = 'AK8'
                 for wp in args.wps:
                     filename = "%s_%s_%d_eff.root"%(tagger,jettype,year)
-                    indir    = "/work/pbaertsc/heavy_resonance/%d"%(year)
+                    indir    = "/work/pbaertsc/heavy_resonance/Ntuples%d"%(year)
                     getBTagEfficiencies(tagger,wp,filename,indir,samples,jettype,plot=args.plot)
     
 
