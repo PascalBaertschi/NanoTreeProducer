@@ -10,7 +10,7 @@ from array import array
 from ScaleFactorTool import ensureTFile
 import ROOT
 #ROOT.gROOT.ProcessLine('.L ./BTagCalibrationStandalone.cpp+')
-from ROOT import TH2F, BTagCalibration, BTagCalibrationReader
+from ROOT import TH2F, BTagCalibration, BTagCalibrationReader, TLorentzVector
 from ROOT.BTagEntry import OP_LOOSE, OP_MEDIUM, OP_TIGHT, OP_RESHAPING
 from ROOT.BTagEntry import FLAV_B, FLAV_C, FLAV_UDSG
 
@@ -59,68 +59,21 @@ class BTagWeightTool:
         assert(tagger in ['CSVv2','DeepCSV']), "BTagWeightTool: You must choose a tagger from: CSVv2, DeepCSV!"
         assert(wp in ['loose','medium','tight']), "BTagWeightTool: You must choose a WP from: loose, medium, tight!"
         assert(sigma in ['central','up','down']), "BTagWeightTool: You must choose a WP from: central, up, down!"
-    
+        self.jettype = jettype
         
         # FILE
         if year==2016:
-          if jettype=='AK8':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_Moriond17_B_H.csv'
-              effname = path+'CSVv2_AK8_2016_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_2016LegacySF_V1.csv'
-              effname = path+'DeepCSV_AK8_2016_eff.root'
-          elif jettype=='AK4':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_Moriond17_B_H.csv'
-              effname = path+'CSVv2_AK4_2016_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_2016LegacySF_V1.csv'
-              effname = path+'DeepCSV_AK4_2016_eff.root'
+          csvname = path+'DeepCSV_2016LegacySF_V1.csv'
+          effname = path+'DeepCSV_%s_2016_eff.root'%jettype
         elif year==2017:
-          if jettype=='AK8':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_94XSF_V2_B_F.csv'
-              effname = path+'CSVv2_AK8_2017_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_94XSF_V4_B_F.csv'
-              effname = path+'DeepCSV_AK8_2017_eff.root' 
-          elif jettype=='AK4':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_94XSF_V2_B_F.csv'
-              effname = path+'CSVv2_AK4_2017_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_94XSF_V4_B_F.csv'
-              effname = path+'DeepCSV_AK4_2017_eff.root'
+          csvname = path+'DeepCSV_94XSF_V5_B_F.csv'
+          effname = path+'DeepCSV_%s_2017_eff.root'%jettype
         elif year==2018:
-          if jettype=='AK8':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_94XSF_V2_B_F.csv'
-              effname = path+'CSVv2_AK8_2018_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_102XSF_V1.csv'
-              effname = path+'DeepCSV_AK8_2018_eff.root'
-          elif jettype=='AK4':
-            if tagger == 'CSVv2':
-              csvname = path+'CSVv2_94XSF_V2_B_F.csv'
-              effname = path+'CSVv2_AK4_2018_eff.root'
-            elif tagger == 'DeepCSV':
-              csvname = path+'DeepCSV_102XSF_V1.csv'
-              effname = path+'DeepCSV_AK4_2018_eff.root'
+          csvname = path+'DeepCSV_102XSF_V1.csv'
+          effname = path+'DeepCSV_%s_2018_eff.root'%jettype
         # TAGGING WP
         self.wp     = getattr(BTagWPs(tagger,year),wp)
-        if jettype == 'AK4':
-          if tagger == 'CSVv2':
-            tagged = lambda e,i: e.Jet_btagCSVV2[i]>self.wp
-          elif tagger == 'DeepCSV':
-            tagged = lambda e,i: e.Jet_btagDeepB[i]>self.wp
-        elif jettype == 'AK8':
-          if tagger == 'CSVv2':
-            tagged = lambda e,i: e.FatJet_btagCSVV2[i]>self.wp
-          elif tagger == 'DeepCSV':
-            tagged = lambda e,i: e.FatJet_btagDeepB[i]>self.wp
-          #elif tagger == 'Hbb':
-          #  tagged = lambda e,i: e.FatJet_btagHbb[i]>self.wp
+
         # CSV READER
         op        = OP_LOOSE if wp=='loose' else OP_MEDIUM if wp=='medium' else OP_TIGHT if wp=='tight' else OP_RESHAPING
         type_udsg = 'incl'
@@ -166,17 +119,29 @@ class BTagWeightTool:
             #effs[flavor].SetDirectory(0)
           efffile.Close()
         
-        self.tagged = tagged
         self.calib  = calib
         self.reader = reader
         self.hists  = hists
         self.effs   = effs
 
-    def getWeight(self,event,jetids):
+    def tagged(self,event,jetidx):
+      if self.jettype=='AK4':
+        return event.Jet_btagDeepB[jetidx]>self.wp
+      elif self.jettype=='AK8':
+        subjet1_idx = event.FatJet_subJetIdx1[jetidx]
+        subjet2_idx = event.FatJet_subJetIdx2[jetidx]
+        return (event.SubJet_btagDeepB[subjet1_idx]>self.wp and event.SubJet_btagDeepB[subjet2_idx]>self.wp)
+
+
+    def getWeight(self,event,ak4jetids,ak8jetid):
         """Get event weight for a given set of jets."""
         weight = 1.
-        for id in jetids:
-          weight *= self.getSF(event.Jet_pt[id],event.Jet_eta[id],event.Jet_partonFlavour[id],self.tagged(event,id))
+        if self.jettype=='AK4':
+          for id in ak4jetids:
+            weight *= self.getSF(event.Jet_pt[id],event.Jet_eta[id],event.Jet_partonFlavour[id],self.tagged(event,id))
+        elif self.jettype=='AK8':
+          for id in ak4jetids:
+            weight *= self.getSF(event.Jet_pt[id],event.Jet_eta[id],event.Jet_partonFlavour[id],self.tagged(event,ak8jetid))
         return weight
 
     def getSF(self,pt,eta,flavor,tagged):
@@ -211,14 +176,22 @@ class BTagWeightTool:
         sf     = hist.GetBinContent(xbin,ybin)
         return sf
         
-    def fillEfficiencies(self,event,jetids):
+    def fillEfficiencies(self,event,ak4jetids,ak8jetid):
         """Fill efficiency of MC."""
-        for id in jetids:
-          flavor = flavorToString(event.Jet_partonFlavour[id])
-          if self.tagged(event,id):
-            self.hists[flavor].Fill(event.Jet_pt[id],event.Jet_eta[id])
-          self.hists[flavor+'_all'].Fill(event.Jet_pt[id],event.Jet_eta[id])
-        
+        if self.jettype=='AK4':
+          for id in ak4jetids:
+            flavor = flavorToString(event.Jet_partonFlavour[id])
+            if self.tagged(event,id):
+              self.hists[flavor].Fill(event.Jet_pt[id],event.Jet_eta[id])
+            self.hists[flavor+'_all'].Fill(event.Jet_pt[id],event.Jet_eta[id])
+        elif self.jettype=='AK8':
+          for jetid in ak4jetids:
+            flavor = flavorToString(event.Jet_partonFlavour[jetid])
+            if self.tagged(event,ak8jetid):
+              self.hists[flavor].Fill(event.Jet_pt[jetid],event.Jet_eta[jetid])
+            self.hists[flavor+'_all'].Fill(event.Jet_pt[jetid],event.Jet_eta[jetid])
+          
+
     def setDirectory(self,directory,subdirname=None):
         if subdirname:
           subdir = directory.Get(subdirname)

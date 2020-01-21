@@ -37,8 +37,6 @@ class LLProducer(Module):
             self.muSFs  = MuonSFs(year=year)
             self.elSFs  = ElectronSFs(year=year)
             self.puTool = PileupWeightTool(year =year)
-            self.btagToolAK8 = BTagWeightTool('CSVv2','AK8','loose',sigma='central',channel='ll',year=year)
-            self.btagToolAK4 = BTagWeightTool('CSVv2','AK4','loose',sigma='central',channel='ll',year=year)
             self.btagToolAK8_deep = BTagWeightTool('DeepCSV','AK8','loose',sigma='central',channel='ll',year=year)
             self.btagToolAK8_deep_up = BTagWeightTool('DeepCSV','AK8','loose',sigma='up',channel='ll',year=year)
             self.btagToolAK8_deep_down = BTagWeightTool('DeepCSV','AK8','loose',sigma='down',channel='ll',year=year)
@@ -56,9 +54,7 @@ class LLProducer(Module):
 
     def endJob(self):
         if not self.isData:
-            self.btagToolAK8.setDirectory(self.out.outputfile,'AK8btag')
             self.btagToolAK8_deep.setDirectory(self.out.outputfile,'AK8btag_deep')
-            self.btagToolAK4.setDirectory(self.out.outputfile,'AK4btag')
             self.btagToolAK4_deep.setDirectory(self.out.outputfile,'AK4btag_deep')
         self.out.outputfile.Write()
         self.out.outputfile.Close()
@@ -435,7 +431,8 @@ class LLProducer(Module):
         
         #########     triggers     #########
         if self.year == 2016:
-            trigger_SingleMu      = event.HLT_Mu50
+            trigger_SingleMu      = any([event.HLT_Mu50,
+                                         event.HLT_TkMu50])
             trigger_SingleEle     = event.HLT_Ele115_CaloIdVT_GsfTrkIdT
             trigger_SingleIsoEle  = event.HLT_Ele27_WPTight_Gsf
             trigger_SinglePhoton  = event.HLT_Photon175
@@ -447,7 +444,9 @@ class LLProducer(Module):
             trigger_MET           = any([event.HLT_PFMET170_NotCleaned,
                                          event.HLT_PFMET170_HBHECleaned])
         elif self.year == 2017:
-            trigger_SingleMu          = event.HLT_Mu50
+            trigger_SingleMu          = any([event.HLT_Mu50,
+                                             event.HLT_TkMu100,
+                                             event.HLT_OldMu100])
             try:
                 trigger_SingleEle     = event.HLT_Ele115_CaloIdVT_GsfTrkIdT
             except:
@@ -481,7 +480,9 @@ class LLProducer(Module):
                 trigger_MET           = None
 
         elif self.year == 2018:
-            trigger_SingleMu      = event.HLT_Mu50
+            trigger_SingleMu          = any([event.HLT_Mu50,
+                                             event.HLT_TkMu100,
+                                             event.HLT_OldMu100])
             trigger_SingleEle     = event.HLT_Ele115_CaloIdVT_GsfTrkIdT
             trigger_SingleIsoEle  = event.HLT_Ele32_WPTight_Gsf
             trigger_SinglePhoton  = event.HLT_Photon200
@@ -705,7 +706,10 @@ class LLProducer(Module):
                             #    if event.TrigObj_id[i] ==11:
                             #        trigobj_v = ROOT.TVector3()
                             #        trigobj_v.SetPtEtaPhi(event.TrigObj_pt[i],event.TrigObj_eta[i],event.TrigObj_phi[i])
-                            #        if event.TrigObj_filterBits[i]==CHANGE:
+                            #        print "electron TrigObj_filterBits:",event.TrigObj_filterBits[i]
+                            #        if event.TrigObj_filterBits[i]==14336:
+                            #            #if event.TrigObj_filterBits[i]==1110000000000000:
+                            #            print "found matching electron"
                             #            deltaR1 = trigobj_v.DeltaR(el1_v)
                             #            deltaR2 = trigobj_v.DeltaR(el2_v)
                             #            if deltaR2 < deltaR1 and deltaR2 < 0.2:
@@ -719,6 +723,7 @@ class LLProducer(Module):
                             IdIsoSF2 = self.elSFs.getIdIsoSF(el2_tlv.Pt(),el2_tlv.Eta())
                             IdIsoSF1error = self.elSFs.getIdIsoSFerror(el1_tlv.Pt(), el1_tlv.Eta())
                             IdIsoSF2error = self.elSFs.getIdIsoSFerror(el2_tlv.Pt(),el2_tlv.Eta())
+                            
                             self.LeptonWeight = IdIsoSF1*IdIsoSF2
                             LeptonWeightsigma = np.sqrt((IdIsoSF1error*IdIsoSF2)**2+(IdIsoSF2error*IdIsoSF1)**2)
                             self.LeptonWeightUp = self.LeptonWeight   + LeptonWeightsigma
@@ -803,14 +808,20 @@ class LLProducer(Module):
                         self.out.mmcutflow.Fill(5.,self.EventWeight)
                         mmcutflow_list.append(self.EventWeight)
                         if self.isMC:
-                            mutrig_tlv = mu1_tlv
+                            if mu1_highPtId >=2:
+                                mutrig_tlv = mu1_tlv
+                            else:
+                                mutrig_tlv = mu2_tlv
                             #for i in range(event.nTrigObj):
                             #    if event.TrigObj_id[i] ==13:
                             #        trigobj_v = ROOT.TVector3()
                             #        trigobj_v.SetPtEtaPhi(event.TrigObj_pt[i],event.TrigObj_eta[i],event.TrigObj_phi[i])
                             #        deltaR1 = trigobj_v.DeltaR(mu1_v)
                             #        deltaR2 = trigobj_v.DeltaR(mu2_v)
-                            #        if event.TrigObj_filterBits[i]==CHANGE:
+                            #        print "muon TrigObj_filterBits:",event.TrigObj_filterBits[i]
+                            #        if event.TrigObj_filterBits[i]==2048:
+                            #            #if event.TrigObj_filterBits[i]==10000000000:
+                            #            print "found matching muon"
                             #            if deltaR2 < deltaR1 and deltaR2 < 0.2:
                             #                mutrig_tlv = mu2_tlv
                             #                break
@@ -820,10 +831,14 @@ class LLProducer(Module):
                             self.TriggerWeightDown = self.muSFs.getTriggerSF(mutrig_tlv.Pt(),mutrig_tlv.Eta()) - self.muSFs.getTriggerSFerror(mutrig_tlv.Pt(),mutrig_tlv.Eta())
                             IdSF1 = self.muSFs.getIdSF(mu1_tlv.Pt(),mu1_tlv.Eta(),mu1_highPtId)
                             IdSF2 = self.muSFs.getIdSF(mu2_tlv.Pt(),mu2_tlv.Eta(),mu2_highPtId)
+                            IsoSF1 = self.muSFs.getIsoSF(mu1_tlv.Pt(),mu1_tlv.Eta(),mu1_highPtId)
+                            IsoSF2 = self.muSFs.getIsoSF(mu2_tlv.Pt(),mu2_tlv.Eta(),mu2_highPtId)
                             IdSF1error = self.muSFs.getIdSFerror(mu1_tlv.Pt(),mu1_tlv.Eta(),mu1_highPtId)
                             IdSF2error = self.muSFs.getIdSFerror(mu2_tlv.Pt(),mu2_tlv.Eta(),mu2_highPtId)
-                            self.LeptonWeight = IdSF1*IdSF2
-                            LeptonWeightsigma = np.sqrt((IdSF1error*IdSF2)**2+(IdSF2error*IdSF1)**2)
+                            IsoSF1error = self.muSFs.getIsoSFerror(mu1_tlv.Pt(),mu1_tlv.Eta(),mu1_highPtId)
+                            IsoSF2error = self.muSFs.getIsoSFerror(mu2_tlv.Pt(),mu2_tlv.Eta(),mu2_highPtId)
+                            self.LeptonWeight = IdSF1*IdSF2*IsoSF1*IsoSF2
+                            LeptonWeightsigma = np.sqrt((IdSF1error*IdSF2*IsoSF1*IsoSF2)**2+(IdSF2error*IdSF1*IsoSF1*IsoSF2)**2+(IsoSF1error*IdSF1*IdSF2*IsoSF2)**2+(IsoSF2error*IdSF1*IdSF2*IsoSF1)**2)
                             self.LeptonWeightUp = self.LeptonWeight   + LeptonWeightsigma
                             self.LeptonWeightDown = self.LeptonWeight - LeptonWeightsigma
                             if 'DYJetsToLL' in self.sample[0] or 'ZJetsToNuNu' in self.sample[0] or 'WJetsToLNu' in self.sample[0]:
@@ -1011,7 +1026,7 @@ class LLProducer(Module):
             if abs(jet_eta) < 5.0:
                 if len(fatjet_tlv_list) > 0:
                     if fatjet_tlv_list[fatjet_idx_H].DeltaR(jet_tlv) > 1.2:
-                        if getJetID(self.year,event,ijet) and event.Jet_puId[ijet]>4:
+                        if getJetID(self.year,event,ijet) and event.Jet_puId[ijet]==7:
                             if self.isZtoMM or self.isZtoEE:
                                 if jet_tlv.DeltaR(lep1_tlv)>0.4 and jet_tlv.DeltaR(lep2_tlv)>0.4:
                                     jet_tlv_list_vbf.append(jet_tlv)
@@ -1162,18 +1177,30 @@ class LLProducer(Module):
                 if H.DeltaR(genjetAK8_tlv) < 0.8:
                     self.H_hadronflavour = struct.unpack('B',event.GenJetAK8_hadronFlavour[igenjet])[0]
                     self.H_partonflavour = event.GenJetAK8_partonFlavour[igenjet]
-            self.btagToolAK8.fillEfficiencies(event,idx_fatjet)
-            self.btagToolAK8_deep.fillEfficiencies(event,idx_fatjet)
-            self.btagToolAK4.fillEfficiencies(event,idx_jet)
-            self.btagToolAK4_deep.fillEfficiencies(event,idx_jet)
-            self.BTagAK8Weight  = self.btagToolAK8.getWeight(event,idx_fatjet)
-            self.BTagAK4Weight  = self.btagToolAK4.getWeight(event,idx_jet)
-            self.BTagAK8Weight_deep  = self.btagToolAK8_deep.getWeight(event,idx_fatjet)
-            self.BTagAK8Weight_deep_up  = self.btagToolAK8_deep_up.getWeight(event,idx_fatjet)
-            self.BTagAK8Weight_deep_down  = self.btagToolAK8_deep_down.getWeight(event,idx_fatjet)
-            self.BTagAK4Weight_deep  = self.btagToolAK4_deep.getWeight(event,idx_jet)
-            self.BTagAK4Weight_deep_up  = self.btagToolAK4_deep_up.getWeight(event,idx_jet)
-            self.BTagAK4Weight_deep_down  = self.btagToolAK4_deep_down.getWeight(event,idx_jet)
+            self.btagToolAK4_deep.fillEfficiencies(event,idx_jet,fatjet_idx_H)
+            self.BTagAK4Weight_deep  = self.btagToolAK4_deep.getWeight(event,idx_jet,fatjet_idx_H)
+            self.BTagAK4Weight_deep_up  = self.btagToolAK4_deep_up.getWeight(event,idx_jet,fatjet_idx_H)
+            self.BTagAK4Weight_deep_down  = self.btagToolAK4_deep_down.getWeight(event,idx_jet,fatjet_idx_H)
+            #search for AK4 jets which match with the subjets from the H
+            ak4_subjets = []
+            subjet1 = TLorentzVector()
+            subjet2 = TLorentzVector()
+            subjet1_idx = event.FatJet_subJetIdx1[fatjet_idx_H]
+            subjet2_idx = event.FatJet_subJetIdx2[fatjet_idx_H]
+            if subjet1_idx>=0. and subjet2_idx>=0.:
+                subjet1.SetPtEtaPhiM(event.SubJet_pt[subjet1_idx],event.SubJet_eta[subjet1_idx],event.SubJet_phi[subjet1_idx],event.SubJet_mass[subjet1_idx])
+                subjet2.SetPtEtaPhiM(event.SubJet_pt[subjet2_idx],event.SubJet_eta[subjet2_idx],event.SubJet_phi[subjet2_idx],event.SubJet_mass[subjet2_idx])
+                for jetid in range(event.nJet):
+                    ak4jet = TLorentzVector()
+                    ak4jet.SetPtEtaPhiM(event.Jet_pt[jetid],event.Jet_eta[jetid],event.Jet_phi[jetid],event.Jet_mass[jetid])
+                    if ak4jet.DeltaR(subjet1)<0.4:
+                        ak4_subjets.append(jetid)
+                    if ak4jet.DeltaR(subjet2)<0.4:
+                        ak4_subjets.append(jetid)
+                self.btagToolAK8_deep.fillEfficiencies(event,ak4_subjets,fatjet_idx_H)
+                self.BTagAK8Weight_deep  = self.btagToolAK8_deep.getWeight(event,ak4_subjets,fatjet_idx_H)
+                self.BTagAK8Weight_deep_up  = self.btagToolAK8_deep_up.getWeight(event,ak4_subjets,fatjet_idx_H)
+                self.BTagAK8Weight_deep_down  = self.btagToolAK8_deep_down.getWeight(event,ak4_subjets,fatjet_idx_H)
         ###########     X   and variables   ############
         X = V + H
         if self.isZtoNN:
