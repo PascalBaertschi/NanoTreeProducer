@@ -1,0 +1,3 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/WWTo4Q_13TeV-powheg/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/270000/3608D879-C1AC-A04A-88FB-3598AAA6C7DF.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/WWTo4Q_13TeV-powheg/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/270000/7B3C6990-C606-DC49-9992-738622C244D9.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/WWTo4Q_13TeV-powheg/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/270000/4BB7D93A-77CD-4D43-A0F0-DE46D1B94F44.root

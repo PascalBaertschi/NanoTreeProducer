@@ -1,0 +1,95 @@
+job start at
+Sat Feb  1 14:48:59 CET 2020
+SLURM_JOB_ID: 528399
+HOSTNAME: t3wn47
+JOBLIST:joblist/joblist_ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/E932105D-50E5-A347-AAD2-9A7DC2270C67.root -o /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -N ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -n 0 -c ll -y 2018
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/E932105D-50E5-A347-AAD2-9A7DC2270C67.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+output file  = ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2018
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpdnZ8VA/Autumn18_V19_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp_8r9r1/Autumn18_V7_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp_8r9r1/Autumn18_V7_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpA0pDqX/Autumn18_V19_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpvte7cV/Autumn18_V7_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpvte7cV/Autumn18_V7_MC_SF_AK8PFPuppi.txt'
+Pre-select 96000 entries out of 96000 (100.00%)
+nanoAODv5? True
+TtoEM trigger inconsistency
+Bad event
+Processed    10000/   96000 entries, 10.42% (elapsed time   392.7s, curr speed    0.025 kHz, avg speed    0.025 kHz), accepted     2425/   10001 events (24.25%)
+WARNING: jet m = -0.0 !!
+Bad event
+Processed    20000/   96000 entries, 20.83% (elapsed time   801.8s, curr speed    0.024 kHz, avg speed    0.025 kHz), accepted     4950/   20001 events (24.75%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Processed    30000/   96000 entries, 31.25% (elapsed time  1203.8s, curr speed    0.025 kHz, avg speed    0.025 kHz), accepted     7322/   30001 events (24.41%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Processed    40000/   96000 entries, 41.67% (elapsed time  1607.2s, curr speed    0.025 kHz, avg speed    0.025 kHz), accepted     9791/   40001 events (24.48%)
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    50000/   96000 entries, 52.08% (elapsed time  1972.8s, curr speed    0.027 kHz, avg speed    0.025 kHz), accepted    12256/   50001 events (24.51%)
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Processed    60000/   96000 entries, 62.50% (elapsed time  2252.6s, curr speed    0.036 kHz, avg speed    0.027 kHz), accepted    14658/   60001 events (24.43%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    70000/   96000 entries, 72.92% (elapsed time  2518.9s, curr speed    0.038 kHz, avg speed    0.028 kHz), accepted    17030/   70001 events (24.33%)
+Bad event
+Bad event
+Bad event
+Processed    80000/   96000 entries, 83.33% (elapsed time  2792.4s, curr speed    0.037 kHz, avg speed    0.029 kHz), accepted    19421/   80001 events (24.28%)
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Processed    90000/   96000 entries, 93.75% (elapsed time  3061.0s, curr speed    0.037 kHz, avg speed    0.029 kHz), accepted    21910/   90001 events (24.34%)
+TtoEM trigger inconsistency
+Processed 96000 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/E932105D-50E5-A347-AAD2-9A7DC2270C67.root (96000 entries). Finally selected 23383 entries
+Done /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/E932105D-50E5-A347-AAD2-9A7DC2270C67.root
+29.0226618618 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-600_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/E932105D-50E5-A347-AAD2-9A7DC2270C67.root
+DONE
+Complete at
+Sat Feb  1 16:16:13 CET 2020

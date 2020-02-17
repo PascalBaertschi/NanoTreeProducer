@@ -1,0 +1,74 @@
+job start at
+Thu Jan 30 19:14:05 CET 2020
+SLURM_JOB_ID: 437480
+HOSTNAME: t3wn39
+JOBLIST:joblist/joblist_ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/40000/78C24D4C-3D2A-A84F-9533-34D359873785.root -o /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM -N ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM -n 6 -c ll -y 2018
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/40000/78C24D4C-3D2A-A84F-9533-34D359873785.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM
+output file  = ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM_6_ll.root
+chunck       = 6
+channel      = ll
+dataType     = mc
+year         = 2018
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM_6_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpGrXkeP/Autumn18_V19_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpVZgEt0/Autumn18_V7_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpVZgEt0/Autumn18_V7_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmppYXjGB/Autumn18_V19_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpRklQM5/Autumn18_V7_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpRklQM5/Autumn18_V7_MC_SF_AK8PFPuppi.txt'
+Pre-select 95900 entries out of 95900 (100.00%)
+nanoAODv5? True
+ZtoMM trigger inconsistency
+Bad event
+Processed    10000/   95900 entries, 10.43% (elapsed time   110.4s, curr speed    0.091 kHz, avg speed    0.091 kHz), accepted       32/   10001 events ( 0.32%)
+ZtoMM trigger inconsistency
+Processed    20000/   95900 entries, 20.86% (elapsed time   216.8s, curr speed    0.094 kHz, avg speed    0.092 kHz), accepted       68/   20001 events ( 0.34%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    30000/   95900 entries, 31.28% (elapsed time   322.3s, curr speed    0.095 kHz, avg speed    0.093 kHz), accepted      104/   30001 events ( 0.35%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    40000/   95900 entries, 41.71% (elapsed time   427.2s, curr speed    0.095 kHz, avg speed    0.094 kHz), accepted      138/   40001 events ( 0.34%)
+ZtoMM trigger inconsistency
+Processed    50000/   95900 entries, 52.14% (elapsed time   532.4s, curr speed    0.095 kHz, avg speed    0.094 kHz), accepted      169/   50001 events ( 0.34%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    60000/   95900 entries, 62.57% (elapsed time   638.1s, curr speed    0.095 kHz, avg speed    0.094 kHz), accepted      196/   60001 events ( 0.33%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    70000/   95900 entries, 72.99% (elapsed time   744.6s, curr speed    0.094 kHz, avg speed    0.094 kHz), accepted      221/   70001 events ( 0.32%)
+ZtoEE trigger inconsistency
+Processed    80000/   95900 entries, 83.42% (elapsed time   850.3s, curr speed    0.095 kHz, avg speed    0.094 kHz), accepted      266/   80001 events ( 0.33%)
+ZtoMM trigger inconsistency
+Processed    90000/   95900 entries, 93.85% (elapsed time   956.1s, curr speed    0.095 kHz, avg speed    0.094 kHz), accepted      299/   90001 events ( 0.33%)
+ZtoMM trigger inconsistency
+Processed 95900 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/40000/78C24D4C-3D2A-A84F-9533-34D359873785.root (95900 entries). Finally selected 315 entries
+Done /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM/78C24D4C-3D2A-A84F-9533-34D359873785.root
+93.9873572794 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2018/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1__NANOAODSIM/78C24D4C-3D2A-A84F-9533-34D359873785.root
+DONE
+Complete at
+Thu Jan 30 19:42:29 CET 2020

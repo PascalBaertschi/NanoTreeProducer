@@ -1,0 +1,2689 @@
+job start at
+Thu Jan 30 17:51:03 CET 2020
+SLURM_JOB_ID: 437136
+HOSTNAME: t3wn35
+JOBLIST:joblist/joblist_ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/8ABA30F6-1338-E346-B530-45907573436F.root -o /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -N ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 0 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/8ABA30F6-1338-E346-B530-45907573436F.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmp0ktCpY/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpjdb4Od/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpjdb4Od/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpx098Nn/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpQhHJEE/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpQhHJEE/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 74000 entries out of 74000 (100.00%)
+nanoAODv5? True
+Bad event
+WARNING: jet m = -409.7 !!
+WARNING: jet m = -409.7 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -33.1 !!
+WARNING: jet m = -33.1 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -241.9 !!
+WARNING: jet m = -241.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -213.0 !!
+WARNING: jet m = -213.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -2.3 !!
+WARNING: jet m = -2.3 !!
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -6357.1 !!
+WARNING: jet m = -6357.1 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -476.1 !!
+WARNING: jet m = -476.1 !!
+WARNING: jet m = -6.5 !!
+WARNING: jet m = -6.5 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -437.1 !!
+WARNING: jet m = -437.1 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -4193.6 !!
+WARNING: jet m = -4193.6 !!
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -96.9 !!
+WARNING: jet m = -96.9 !!
+WARNING: jet m = -7880.8 !!
+WARNING: jet m = -7880.8 !!
+WARNING: jet m = -7668.1 !!
+WARNING: jet m = -7668.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3983.9 !!
+WARNING: jet m = -3983.9 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoEE trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3640.6 !!
+WARNING: jet m = -3640.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -404.1 !!
+WARNING: jet m = -404.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -10.3 !!
+WARNING: jet m = -10.3 !!
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -132.8 !!
+WARNING: jet m = -132.8 !!
+Bad event
+Bad event
+WARNING: jet m = -11.8 !!
+WARNING: jet m = -11.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -10557.0 !!
+WARNING: jet m = -10557.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -3695.4 !!
+WARNING: jet m = -3695.4 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -969.7 !!
+WARNING: jet m = -969.7 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1221.6 !!
+WARNING: jet m = -1221.6 !!
+WARNING: jet m = -1.8 !!
+WARNING: jet m = -1.8 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -4069.9 !!
+WARNING: jet m = -4069.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -0.0 !!
+WARNING: jet m = -0.0 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -201.2 !!
+WARNING: jet m = -201.2 !!
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+WARNING: jet m = -386.7 !!
+WARNING: jet m = -386.7 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -4107.2 !!
+WARNING: jet m = -4107.2 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -7.4 !!
+WARNING: jet m = -7.4 !!
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -4698.8 !!
+WARNING: jet m = -4698.8 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1723.6 !!
+WARNING: jet m = -1723.6 !!
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Processed    10000/   74000 entries, 13.51% (elapsed time   177.3s, curr speed    0.056 kHz, avg speed    0.056 kHz), accepted     6503/   10001 events (65.02%)
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -1.9 !!
+WARNING: jet m = -1.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -365.2 !!
+WARNING: jet m = -365.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -122.5 !!
+WARNING: jet m = -122.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -1234.8 !!
+WARNING: jet m = -1234.8 !!
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3152.4 !!
+WARNING: jet m = -3152.4 !!
+WARNING: jet m = -88.3 !!
+WARNING: jet m = -88.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -26.1 !!
+WARNING: jet m = -26.1 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -62.0 !!
+WARNING: jet m = -62.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -306.3 !!
+WARNING: jet m = -306.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -97.7 !!
+WARNING: jet m = -97.7 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -8557.3 !!
+WARNING: jet m = -8557.3 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -6.4 !!
+WARNING: jet m = -6.4 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -2096.1 !!
+WARNING: jet m = -2096.1 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4952.3 !!
+WARNING: jet m = -4952.3 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -3742.5 !!
+WARNING: jet m = -3742.5 !!
+WARNING: jet m = -120.6 !!
+WARNING: jet m = -120.6 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4030.6 !!
+WARNING: jet m = -4030.6 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -2051.4 !!
+WARNING: jet m = -2051.4 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -592.0 !!
+WARNING: jet m = -592.0 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -8615.4 !!
+WARNING: jet m = -8615.4 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -360.2 !!
+WARNING: jet m = -360.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -11.8 !!
+WARNING: jet m = -11.8 !!
+Bad event
+WARNING: jet m = -282.0 !!
+WARNING: jet m = -282.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -15.2 !!
+WARNING: jet m = -15.2 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -104.4 !!
+WARNING: jet m = -104.4 !!
+WARNING: jet m = -474.9 !!
+WARNING: jet m = -474.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -74.8 !!
+WARNING: jet m = -74.8 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -609.7 !!
+WARNING: jet m = -609.7 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -2.2 !!
+WARNING: jet m = -2.2 !!
+WARNING: jet m = -49.0 !!
+WARNING: jet m = -49.0 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1110.7 !!
+WARNING: jet m = -1110.7 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -672.9 !!
+WARNING: jet m = -672.9 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -40.5 !!
+WARNING: jet m = -40.5 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -136.3 !!
+WARNING: jet m = -136.3 !!
+WARNING: jet m = -68.8 !!
+WARNING: jet m = -68.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -190.5 !!
+WARNING: jet m = -190.5 !!
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -792.1 !!
+WARNING: jet m = -792.1 !!
+WARNING: jet m = -1.8 !!
+WARNING: jet m = -1.8 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -36.3 !!
+WARNING: jet m = -36.3 !!
+Processed    20000/   74000 entries, 27.03% (elapsed time   349.5s, curr speed    0.058 kHz, avg speed    0.057 kHz), accepted    12880/   20001 events (64.40%)
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4458.9 !!
+WARNING: jet m = -4458.9 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -2090.1 !!
+WARNING: jet m = -2090.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -1252.7 !!
+WARNING: jet m = -1252.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -9422.2 !!
+WARNING: jet m = -9422.2 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -549.7 !!
+WARNING: jet m = -549.7 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -7614.4 !!
+WARNING: jet m = -7614.4 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -193.0 !!
+WARNING: jet m = -193.0 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -4422.6 !!
+WARNING: jet m = -4422.6 !!
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -11.9 !!
+WARNING: jet m = -11.9 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -115.6 !!
+WARNING: jet m = -115.6 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -16.3 !!
+WARNING: jet m = -16.3 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -0.0 !!
+WARNING: jet m = -0.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -1134.5 !!
+WARNING: jet m = -1134.5 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -7.2 !!
+WARNING: jet m = -7.2 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -8212.9 !!
+WARNING: jet m = -8212.9 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -6.0 !!
+WARNING: jet m = -6.0 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -631.7 !!
+WARNING: jet m = -631.7 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -4221.9 !!
+WARNING: jet m = -4221.9 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -8.5 !!
+WARNING: jet m = -8.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -282.1 !!
+WARNING: jet m = -282.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -7880.9 !!
+WARNING: jet m = -7880.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3802.0 !!
+WARNING: jet m = -3802.0 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -326.6 !!
+WARNING: jet m = -326.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -35.8 !!
+WARNING: jet m = -35.8 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -2135.5 !!
+WARNING: jet m = -2135.5 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    30000/   74000 entries, 40.54% (elapsed time   528.1s, curr speed    0.056 kHz, avg speed    0.057 kHz), accepted    19307/   30001 events (64.35%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -12.9 !!
+WARNING: jet m = -12.9 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -41.8 !!
+WARNING: jet m = -41.8 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -582.3 !!
+WARNING: jet m = -582.3 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -772.2 !!
+WARNING: jet m = -772.2 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -179.2 !!
+WARNING: jet m = -179.2 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -8366.5 !!
+WARNING: jet m = -8366.5 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -1644.6 !!
+WARNING: jet m = -1644.6 !!
+WARNING: jet m = -7979.2 !!
+WARNING: jet m = -7979.2 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -6451.4 !!
+WARNING: jet m = -6451.4 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -2736.9 !!
+WARNING: jet m = -2736.9 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+WARNING: jet m = -5.4 !!
+WARNING: jet m = -5.4 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -730.0 !!
+WARNING: jet m = -730.0 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -41.4 !!
+WARNING: jet m = -41.4 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3628.6 !!
+WARNING: jet m = -3628.6 !!
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -5048.1 !!
+WARNING: jet m = -5048.1 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -325.1 !!
+WARNING: jet m = -325.1 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3298.3 !!
+WARNING: jet m = -3298.3 !!
+Bad event
+Bad event
+Processed    40000/   74000 entries, 54.05% (elapsed time   695.7s, curr speed    0.060 kHz, avg speed    0.057 kHz), accepted    25702/   40001 events (64.25%)
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -6.7 !!
+WARNING: jet m = -6.7 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -5696.4 !!
+WARNING: jet m = -5696.4 !!
+WARNING: jet m = -1140.2 !!
+WARNING: jet m = -1140.2 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -2747.5 !!
+WARNING: jet m = -2747.5 !!
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3192.4 !!
+WARNING: jet m = -3192.4 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -1241.8 !!
+WARNING: jet m = -1241.8 !!
+WARNING: jet m = -487.3 !!
+WARNING: jet m = -487.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -7804.0 !!
+WARNING: jet m = -7804.0 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3138.6 !!
+WARNING: jet m = -3138.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -270.7 !!
+WARNING: jet m = -270.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3027.0 !!
+WARNING: jet m = -3027.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -64.8 !!
+WARNING: jet m = -64.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -28.6 !!
+WARNING: jet m = -28.6 !!
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -338.7 !!
+WARNING: jet m = -338.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1256.7 !!
+WARNING: jet m = -1256.7 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -21.3 !!
+WARNING: jet m = -21.3 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -5592.1 !!
+WARNING: jet m = -5592.1 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -945.5 !!
+WARNING: jet m = -945.5 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -65.5 !!
+WARNING: jet m = -65.5 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -4161.3 !!
+WARNING: jet m = -4161.3 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1162.6 !!
+WARNING: jet m = -1162.6 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -161.8 !!
+WARNING: jet m = -161.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -35.5 !!
+WARNING: jet m = -35.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -6.1 !!
+WARNING: jet m = -6.1 !!
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -4173.9 !!
+WARNING: jet m = -4173.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -2931.1 !!
+WARNING: jet m = -2931.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -2587.7 !!
+WARNING: jet m = -2587.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -577.4 !!
+WARNING: jet m = -577.4 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -1720.5 !!
+WARNING: jet m = -1720.5 !!
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -15.5 !!
+WARNING: jet m = -15.5 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Processed    50000/   74000 entries, 67.57% (elapsed time   862.3s, curr speed    0.060 kHz, avg speed    0.058 kHz), accepted    32071/   50001 events (64.14%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -4345.9 !!
+WARNING: jet m = -4345.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1321.9 !!
+WARNING: jet m = -1321.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1088.9 !!
+WARNING: jet m = -1088.9 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -3638.2 !!
+WARNING: jet m = -3638.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -127.0 !!
+WARNING: jet m = -127.0 !!
+Bad event
+WARNING: jet m = -229.6 !!
+WARNING: jet m = -229.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -95.0 !!
+WARNING: jet m = -95.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -590.7 !!
+WARNING: jet m = -590.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoEE trigger inconsistency
+WARNING: jet m = -1944.0 !!
+WARNING: jet m = -1944.0 !!
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3335.4 !!
+WARNING: jet m = -3335.4 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -102.2 !!
+WARNING: jet m = -102.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -265.7 !!
+WARNING: jet m = -265.7 !!
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -192.6 !!
+WARNING: jet m = -192.6 !!
+WARNING: jet m = -3322.7 !!
+WARNING: jet m = -3322.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -9117.2 !!
+WARNING: jet m = -9117.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -18.4 !!
+WARNING: jet m = -18.4 !!
+Bad event
+WARNING: jet m = -90.3 !!
+WARNING: jet m = -90.3 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -3768.2 !!
+WARNING: jet m = -3768.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -138.3 !!
+WARNING: jet m = -138.3 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -199.5 !!
+WARNING: jet m = -199.5 !!
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -8147.2 !!
+WARNING: jet m = -8147.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -321.8 !!
+WARNING: jet m = -321.8 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -285.8 !!
+WARNING: jet m = -285.8 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -7145.6 !!
+WARNING: jet m = -7145.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -30.6 !!
+WARNING: jet m = -30.6 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -4.8 !!
+WARNING: jet m = -4.8 !!
+WARNING: jet m = -590.2 !!
+WARNING: jet m = -590.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3399.4 !!
+WARNING: jet m = -3399.4 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -8550.8 !!
+WARNING: jet m = -8550.8 !!
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -5624.6 !!
+WARNING: jet m = -5624.6 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -227.7 !!
+WARNING: jet m = -227.7 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4131.9 !!
+WARNING: jet m = -4131.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -99.7 !!
+WARNING: jet m = -99.7 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -5734.9 !!
+WARNING: jet m = -5734.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -139.1 !!
+WARNING: jet m = -139.1 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Processed    60000/   74000 entries, 81.08% (elapsed time  1025.4s, curr speed    0.061 kHz, avg speed    0.059 kHz), accepted    38443/   60001 events (64.07%)
+WARNING: jet m = -8743.5 !!
+WARNING: jet m = -8743.5 !!
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3018.2 !!
+WARNING: jet m = -3018.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -56.9 !!
+WARNING: jet m = -56.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -2721.2 !!
+WARNING: jet m = -2721.2 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -8968.2 !!
+WARNING: jet m = -8968.2 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -3.2 !!
+WARNING: jet m = -3.2 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -6336.9 !!
+WARNING: jet m = -6336.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -2189.4 !!
+WARNING: jet m = -2189.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -126.8 !!
+WARNING: jet m = -126.8 !!
+TtoEM trigger inconsistency
+WARNING: jet m = -755.5 !!
+WARNING: jet m = -755.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3082.3 !!
+WARNING: jet m = -3082.3 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -52.8 !!
+WARNING: jet m = -52.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -40.4 !!
+WARNING: jet m = -40.4 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4421.7 !!
+WARNING: jet m = -4421.7 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -338.9 !!
+WARNING: jet m = -338.9 !!
+WARNING: jet m = -535.2 !!
+WARNING: jet m = -535.2 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -8955.6 !!
+WARNING: jet m = -8955.6 !!
+WARNING: jet m = -226.0 !!
+WARNING: jet m = -226.0 !!
+WARNING: jet m = -4886.9 !!
+WARNING: jet m = -4886.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -688.5 !!
+WARNING: jet m = -688.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -129.1 !!
+WARNING: jet m = -129.1 !!
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -259.3 !!
+WARNING: jet m = -259.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -7949.1 !!
+WARNING: jet m = -7949.1 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -334.5 !!
+WARNING: jet m = -334.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -3184.1 !!
+WARNING: jet m = -3184.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -168.0 !!
+WARNING: jet m = -168.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -8965.8 !!
+WARNING: jet m = -8965.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -972.5 !!
+WARNING: jet m = -972.5 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -355.9 !!
+WARNING: jet m = -355.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1253.9 !!
+WARNING: jet m = -1253.9 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -231.5 !!
+WARNING: jet m = -231.5 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -240.0 !!
+WARNING: jet m = -240.0 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -7224.9 !!
+WARNING: jet m = -7224.9 !!
+WARNING: jet m = -4289.1 !!
+WARNING: jet m = -4289.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+WARNING: jet m = -1.9 !!
+WARNING: jet m = -1.9 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -989.9 !!
+WARNING: jet m = -989.9 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -523.3 !!
+WARNING: jet m = -523.3 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -141.0 !!
+WARNING: jet m = -141.0 !!
+ZtoMM trigger inconsistency
+Processed    70000/   74000 entries, 94.59% (elapsed time  1188.6s, curr speed    0.061 kHz, avg speed    0.059 kHz), accepted    44957/   70001 events (64.22%)
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -50.0 !!
+WARNING: jet m = -50.0 !!
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -9.3 !!
+WARNING: jet m = -9.3 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -49.9 !!
+WARNING: jet m = -49.9 !!
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -352.0 !!
+WARNING: jet m = -352.0 !!
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3924.6 !!
+WARNING: jet m = -3924.6 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3386.4 !!
+WARNING: jet m = -3386.4 !!
+Bad event
+Bad event
+WARNING: jet m = -290.8 !!
+WARNING: jet m = -290.8 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -1001.3 !!
+WARNING: jet m = -1001.3 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -1.9 !!
+WARNING: jet m = -1.9 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -4735.2 !!
+WARNING: jet m = -4735.2 !!
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -3591.3 !!
+WARNING: jet m = -3591.3 !!
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -0.0 !!
+WARNING: jet m = -0.0 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed 74000 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/8ABA30F6-1338-E346-B530-45907573436F.root (74000 entries). Finally selected 47496 entries
+Done /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/8ABA30F6-1338-E346-B530-45907573436F.root
+53.6663548216 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-7000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/8ABA30F6-1338-E346-B530-45907573436F.root
+DONE
+Complete at
+Thu Jan 30 18:30:17 CET 2020

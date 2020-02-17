@@ -1,0 +1,2 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/70000/CA83BFA9-5241-7348-8157-B6B9423B883A.root
+root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/280000/437DBB1F-0A01-4440-95A9-6661D6977421.root

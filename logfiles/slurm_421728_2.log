@@ -1,0 +1,1452 @@
+job start at
+Tue Jan 28 20:30:53 CET 2020
+SLURM_JOB_ID: 421728
+HOSTNAME: t3wn47
+JOBLIST:joblist/joblist_ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/70000/6EE105FA-BFAB-3B43-8E3D-7A1A7FDD5A61.root -o /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -N ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 1 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/70000/6EE105FA-BFAB-3B43-8E3D-7A1A7FDD5A61.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_1_ll.root
+chunck       = 1
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_1_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpYao662/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpJMRMUP/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpJMRMUP/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpM39pDC/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp8yCdh6/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp8yCdh6/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 60000 entries out of 60000 (100.00%)
+nanoAODv5? True
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoEE trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Processed    10000/   60000 entries, 16.67% (elapsed time   478.4s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted     7082/   10001 events (70.81%)
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Processed    20000/   60000 entries, 33.33% (elapsed time   961.7s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted    14176/   20001 events (70.88%)
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -18.5 !!
+WARNING: jet m = -18.5 !!
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Processed    30000/   60000 entries, 50.00% (elapsed time  1439.1s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted    21206/   30001 events (70.68%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -159.0 !!
+WARNING: jet m = -159.0 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -56.7 !!
+WARNING: jet m = -56.7 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoEE trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Processed    40000/   60000 entries, 66.67% (elapsed time  1917.6s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted    28326/   40001 events (70.81%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoEE trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    50000/   60000 entries, 83.33% (elapsed time  2358.2s, curr speed    0.023 kHz, avg speed    0.021 kHz), accepted    35437/   50001 events (70.87%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Processed 60000 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/70000/6EE105FA-BFAB-3B43-8E3D-7A1A7FDD5A61.root (60000 entries). Finally selected 42560 entries
+Done /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/6EE105FA-BFAB-3B43-8E3D-7A1A7FDD5A61.root
+19.7273677773 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-5000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/6EE105FA-BFAB-3B43-8E3D-7A1A7FDD5A61.root
+DONE
+Complete at
+Tue Jan 28 21:40:18 CET 2020

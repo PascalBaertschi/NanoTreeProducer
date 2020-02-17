@@ -1,0 +1,1076 @@
+job start at
+Tue Jan 28 20:30:56 CET 2020
+SLURM_JOB_ID: 421746
+HOSTNAME: t3wn47
+JOBLIST:joblist/joblist_ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/280000/1CAEE11A-0E38-D64C-A0D7-E00CC92DD0FD.root -o /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -N ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 0 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/280000/1CAEE11A-0E38-D64C-A0D7-E00CC92DD0FD.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpg96Z99/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpuP0Ax5/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpuP0Ax5/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmp1oLwXh/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpzcGXFG/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpzcGXFG/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 5000 entries out of 5000 (100.00%)
+nanoAODv5? True
+WARNING: jet m = -64.6 !!
+WARNING: jet m = -64.6 !!
+WARNING: jet m = -148.8 !!
+WARNING: jet m = -148.8 !!
+WARNING: jet m = -132.8 !!
+WARNING: jet m = -132.8 !!
+WARNING: jet m = -119.2 !!
+WARNING: jet m = -119.2 !!
+WARNING: jet m = -33.6 !!
+WARNING: jet m = -33.6 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -131.9 !!
+WARNING: jet m = -131.9 !!
+WARNING: jet m = -114.3 !!
+WARNING: jet m = -114.3 !!
+WARNING: jet m = -10326.2 !!
+WARNING: jet m = -10326.2 !!
+WARNING: jet m = -3603.7 !!
+WARNING: jet m = -3603.7 !!
+WARNING: jet m = -137.8 !!
+WARNING: jet m = -137.8 !!
+WARNING: jet m = -88.9 !!
+WARNING: jet m = -88.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -324.5 !!
+WARNING: jet m = -324.5 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -107.7 !!
+WARNING: jet m = -107.7 !!
+WARNING: jet m = -169.1 !!
+WARNING: jet m = -169.1 !!
+WARNING: jet m = -140.4 !!
+WARNING: jet m = -140.4 !!
+WARNING: jet m = -150.7 !!
+WARNING: jet m = -150.7 !!
+WARNING: jet m = -15.1 !!
+WARNING: jet m = -15.1 !!
+WARNING: jet m = -3559.3 !!
+WARNING: jet m = -3559.3 !!
+WARNING: jet m = -4616.9 !!
+WARNING: jet m = -4616.9 !!
+WARNING: jet m = -74.1 !!
+WARNING: jet m = -74.1 !!
+WARNING: jet m = -195.7 !!
+WARNING: jet m = -195.7 !!
+WARNING: jet m = -48.8 !!
+WARNING: jet m = -48.8 !!
+WARNING: jet m = -88.9 !!
+WARNING: jet m = -88.9 !!
+WARNING: jet m = -136.5 !!
+WARNING: jet m = -136.5 !!
+WARNING: jet m = -106.1 !!
+WARNING: jet m = -106.1 !!
+WARNING: jet m = -190.0 !!
+WARNING: jet m = -190.0 !!
+Bad event
+Bad event
+WARNING: jet m = -52.1 !!
+WARNING: jet m = -52.1 !!
+WARNING: jet m = -133.6 !!
+WARNING: jet m = -133.6 !!
+WARNING: jet m = -37.2 !!
+WARNING: jet m = -37.2 !!
+WARNING: jet m = -54.0 !!
+WARNING: jet m = -54.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -254.9 !!
+WARNING: jet m = -254.9 !!
+WARNING: jet m = -14.0 !!
+WARNING: jet m = -14.0 !!
+WARNING: jet m = -275.0 !!
+WARNING: jet m = -275.0 !!
+WARNING: jet m = -10.4 !!
+WARNING: jet m = -10.4 !!
+Bad event
+WARNING: jet m = -148.7 !!
+WARNING: jet m = -148.7 !!
+WARNING: jet m = -31.0 !!
+WARNING: jet m = -31.0 !!
+WARNING: jet m = -103.8 !!
+WARNING: jet m = -103.8 !!
+WARNING: jet m = -49.9 !!
+WARNING: jet m = -49.9 !!
+WARNING: jet m = -21.5 !!
+WARNING: jet m = -21.5 !!
+WARNING: jet m = -9344.5 !!
+WARNING: jet m = -9344.5 !!
+WARNING: jet m = -22.7 !!
+WARNING: jet m = -22.7 !!
+WARNING: jet m = -205.8 !!
+WARNING: jet m = -205.8 !!
+Bad event
+WARNING: jet m = -226.5 !!
+WARNING: jet m = -226.5 !!
+WARNING: jet m = -92.1 !!
+WARNING: jet m = -92.1 !!
+Bad event
+WARNING: jet m = -1.7 !!
+WARNING: jet m = -1.7 !!
+WARNING: jet m = -101.0 !!
+WARNING: jet m = -101.0 !!
+WARNING: jet m = -263.7 !!
+WARNING: jet m = -263.7 !!
+WARNING: jet m = -46.3 !!
+WARNING: jet m = -46.3 !!
+WARNING: jet m = -41.8 !!
+WARNING: jet m = -41.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -215.1 !!
+WARNING: jet m = -215.1 !!
+WARNING: jet m = -66.4 !!
+WARNING: jet m = -66.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -2611.3 !!
+WARNING: jet m = -2611.3 !!
+Bad event
+WARNING: jet m = -51.2 !!
+WARNING: jet m = -51.2 !!
+Bad event
+WARNING: jet m = -94.3 !!
+WARNING: jet m = -94.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -49.0 !!
+WARNING: jet m = -49.0 !!
+WARNING: jet m = -38.0 !!
+WARNING: jet m = -38.0 !!
+WARNING: jet m = -18.2 !!
+WARNING: jet m = -18.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -29.0 !!
+WARNING: jet m = -29.0 !!
+WARNING: jet m = -60.9 !!
+WARNING: jet m = -60.9 !!
+Bad event
+Bad event
+WARNING: jet m = -95.8 !!
+WARNING: jet m = -95.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -11.3 !!
+WARNING: jet m = -11.3 !!
+WARNING: jet m = -2.9 !!
+WARNING: jet m = -2.9 !!
+Bad event
+Bad event
+WARNING: jet m = -86.7 !!
+WARNING: jet m = -86.7 !!
+WARNING: jet m = -1452.8 !!
+WARNING: jet m = -1452.8 !!
+WARNING: jet m = -15.4 !!
+WARNING: jet m = -15.4 !!
+WARNING: jet m = -14.8 !!
+WARNING: jet m = -14.8 !!
+Bad event
+WARNING: jet m = -137.3 !!
+WARNING: jet m = -137.3 !!
+WARNING: jet m = -88.7 !!
+WARNING: jet m = -88.7 !!
+WARNING: jet m = -110.2 !!
+WARNING: jet m = -110.2 !!
+WARNING: jet m = -3553.0 !!
+WARNING: jet m = -3553.0 !!
+WARNING: jet m = -205.3 !!
+WARNING: jet m = -205.3 !!
+WARNING: jet m = -65.7 !!
+WARNING: jet m = -65.7 !!
+Bad event
+WARNING: jet m = -42.5 !!
+WARNING: jet m = -42.5 !!
+WARNING: jet m = -52.3 !!
+WARNING: jet m = -52.3 !!
+WARNING: jet m = -77.6 !!
+WARNING: jet m = -77.6 !!
+WARNING: jet m = -25.3 !!
+WARNING: jet m = -25.3 !!
+WARNING: jet m = -30.5 !!
+WARNING: jet m = -30.5 !!
+Bad event
+WARNING: jet m = -10633.3 !!
+WARNING: jet m = -10633.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -113.8 !!
+WARNING: jet m = -113.8 !!
+WARNING: jet m = -74.8 !!
+WARNING: jet m = -74.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -1469.8 !!
+WARNING: jet m = -1469.8 !!
+WARNING: jet m = -108.3 !!
+WARNING: jet m = -108.3 !!
+WARNING: jet m = -29.7 !!
+WARNING: jet m = -29.7 !!
+WARNING: jet m = -3770.8 !!
+WARNING: jet m = -3770.8 !!
+WARNING: jet m = -92.3 !!
+WARNING: jet m = -92.3 !!
+WARNING: jet m = -193.4 !!
+WARNING: jet m = -193.4 !!
+WARNING: jet m = -255.9 !!
+WARNING: jet m = -255.9 !!
+WARNING: jet m = -208.1 !!
+WARNING: jet m = -208.1 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -48.1 !!
+WARNING: jet m = -48.1 !!
+Bad event
+WARNING: jet m = -164.4 !!
+WARNING: jet m = -164.4 !!
+WARNING: jet m = -43.8 !!
+WARNING: jet m = -43.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -110.2 !!
+WARNING: jet m = -110.2 !!
+Bad event
+WARNING: jet m = -134.4 !!
+WARNING: jet m = -134.4 !!
+WARNING: jet m = -0.4 !!
+WARNING: jet m = -0.4 !!
+WARNING: jet m = -839.6 !!
+WARNING: jet m = -839.6 !!
+WARNING: jet m = -23.2 !!
+WARNING: jet m = -23.2 !!
+WARNING: jet m = -78.4 !!
+WARNING: jet m = -78.4 !!
+Bad event
+WARNING: jet m = -140.2 !!
+WARNING: jet m = -140.2 !!
+WARNING: jet m = -18.6 !!
+WARNING: jet m = -18.6 !!
+WARNING: jet m = -4477.6 !!
+WARNING: jet m = -4477.6 !!
+WARNING: jet m = -115.8 !!
+WARNING: jet m = -115.8 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -62.7 !!
+WARNING: jet m = -62.7 !!
+Bad event
+WARNING: jet m = -200.1 !!
+WARNING: jet m = -200.1 !!
+WARNING: jet m = -49.5 !!
+WARNING: jet m = -49.5 !!
+WARNING: jet m = -70.7 !!
+WARNING: jet m = -70.7 !!
+WARNING: jet m = -135.4 !!
+WARNING: jet m = -135.4 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -29.5 !!
+WARNING: jet m = -29.5 !!
+WARNING: jet m = -7847.8 !!
+WARNING: jet m = -7847.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -31.6 !!
+WARNING: jet m = -31.6 !!
+Bad event
+WARNING: jet m = -1140.7 !!
+WARNING: jet m = -1140.7 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -12.3 !!
+WARNING: jet m = -12.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -73.7 !!
+WARNING: jet m = -73.7 !!
+WARNING: jet m = -71.1 !!
+WARNING: jet m = -71.1 !!
+TtoEM trigger inconsistency
+WARNING: jet m = -153.7 !!
+WARNING: jet m = -153.7 !!
+WARNING: jet m = -8.2 !!
+WARNING: jet m = -8.2 !!
+WARNING: jet m = -8811.1 !!
+WARNING: jet m = -8811.1 !!
+WARNING: jet m = -42.0 !!
+WARNING: jet m = -42.0 !!
+Bad event
+WARNING: jet m = -29.2 !!
+WARNING: jet m = -29.2 !!
+Bad event
+WARNING: jet m = -20.1 !!
+WARNING: jet m = -20.1 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -103.8 !!
+WARNING: jet m = -103.8 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -357.7 !!
+WARNING: jet m = -357.7 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -13.0 !!
+WARNING: jet m = -13.0 !!
+WARNING: jet m = -190.1 !!
+WARNING: jet m = -190.1 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -34.2 !!
+WARNING: jet m = -34.2 !!
+WARNING: jet m = -3634.2 !!
+WARNING: jet m = -3634.2 !!
+WARNING: jet m = -58.6 !!
+WARNING: jet m = -58.6 !!
+WARNING: jet m = -54.7 !!
+WARNING: jet m = -54.7 !!
+Bad event
+WARNING: jet m = -63.3 !!
+WARNING: jet m = -63.3 !!
+WARNING: jet m = -71.3 !!
+WARNING: jet m = -71.3 !!
+WARNING: jet m = -153.0 !!
+WARNING: jet m = -153.0 !!
+WARNING: jet m = -87.0 !!
+WARNING: jet m = -87.0 !!
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -138.3 !!
+WARNING: jet m = -138.3 !!
+WARNING: jet m = -85.3 !!
+WARNING: jet m = -85.3 !!
+WARNING: jet m = -42.9 !!
+WARNING: jet m = -42.9 !!
+WARNING: jet m = -67.8 !!
+WARNING: jet m = -67.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -85.8 !!
+WARNING: jet m = -85.8 !!
+WARNING: jet m = -63.6 !!
+WARNING: jet m = -63.6 !!
+WARNING: jet m = -45.8 !!
+WARNING: jet m = -45.8 !!
+WARNING: jet m = -2.7 !!
+WARNING: jet m = -2.7 !!
+WARNING: jet m = -88.4 !!
+WARNING: jet m = -88.4 !!
+WARNING: jet m = -28.7 !!
+WARNING: jet m = -28.7 !!
+WARNING: jet m = -74.7 !!
+WARNING: jet m = -74.7 !!
+Bad event
+WARNING: jet m = -5.8 !!
+WARNING: jet m = -5.8 !!
+WARNING: jet m = -138.5 !!
+WARNING: jet m = -138.5 !!
+WARNING: jet m = -31.4 !!
+WARNING: jet m = -31.4 !!
+WARNING: jet m = -108.0 !!
+WARNING: jet m = -108.0 !!
+WARNING: jet m = -81.5 !!
+WARNING: jet m = -81.5 !!
+WARNING: jet m = -279.5 !!
+WARNING: jet m = -279.5 !!
+WARNING: jet m = -60.1 !!
+WARNING: jet m = -60.1 !!
+WARNING: jet m = -84.1 !!
+WARNING: jet m = -84.1 !!
+WARNING: jet m = -37.8 !!
+WARNING: jet m = -37.8 !!
+WARNING: jet m = -58.4 !!
+WARNING: jet m = -58.4 !!
+WARNING: jet m = -84.9 !!
+WARNING: jet m = -84.9 !!
+WARNING: jet m = -126.7 !!
+WARNING: jet m = -126.7 !!
+WARNING: jet m = -65.5 !!
+WARNING: jet m = -65.5 !!
+WARNING: jet m = -78.0 !!
+WARNING: jet m = -78.0 !!
+WARNING: jet m = -42.7 !!
+WARNING: jet m = -42.7 !!
+Bad event
+WARNING: jet m = -138.6 !!
+WARNING: jet m = -138.6 !!
+WARNING: jet m = -22.0 !!
+WARNING: jet m = -22.0 !!
+WARNING: jet m = -32.5 !!
+WARNING: jet m = -32.5 !!
+WARNING: jet m = -20.7 !!
+WARNING: jet m = -20.7 !!
+WARNING: jet m = -193.2 !!
+WARNING: jet m = -193.2 !!
+WARNING: jet m = -13.8 !!
+WARNING: jet m = -13.8 !!
+Bad event
+WARNING: jet m = -13.0 !!
+WARNING: jet m = -13.0 !!
+WARNING: jet m = -2568.6 !!
+WARNING: jet m = -2568.6 !!
+WARNING: jet m = -111.3 !!
+WARNING: jet m = -111.3 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -62.5 !!
+WARNING: jet m = -62.5 !!
+WARNING: jet m = -8855.6 !!
+WARNING: jet m = -8855.6 !!
+WARNING: jet m = -40.5 !!
+WARNING: jet m = -40.5 !!
+Bad event
+WARNING: jet m = -87.8 !!
+WARNING: jet m = -87.8 !!
+WARNING: jet m = -657.3 !!
+WARNING: jet m = -657.3 !!
+WARNING: jet m = -12.6 !!
+WARNING: jet m = -12.6 !!
+WARNING: jet m = -110.2 !!
+WARNING: jet m = -110.2 !!
+WARNING: jet m = -701.4 !!
+WARNING: jet m = -701.4 !!
+Bad event
+Bad event
+WARNING: jet m = -205.1 !!
+WARNING: jet m = -205.1 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -117.2 !!
+WARNING: jet m = -117.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -50.1 !!
+WARNING: jet m = -50.1 !!
+WARNING: jet m = -886.3 !!
+WARNING: jet m = -886.3 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -4.4 !!
+WARNING: jet m = -4.4 !!
+WARNING: jet m = -2655.2 !!
+WARNING: jet m = -2655.2 !!
+WARNING: jet m = -64.4 !!
+WARNING: jet m = -64.4 !!
+WARNING: jet m = -9230.5 !!
+WARNING: jet m = -9230.5 !!
+WARNING: jet m = -1923.0 !!
+WARNING: jet m = -1923.0 !!
+WARNING: jet m = -188.8 !!
+WARNING: jet m = -188.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -139.1 !!
+WARNING: jet m = -139.1 !!
+WARNING: jet m = -44.5 !!
+WARNING: jet m = -44.5 !!
+WARNING: jet m = -159.0 !!
+WARNING: jet m = -159.0 !!
+WARNING: jet m = -8538.5 !!
+WARNING: jet m = -8538.5 !!
+WARNING: jet m = -116.0 !!
+WARNING: jet m = -116.0 !!
+WARNING: jet m = -1491.7 !!
+WARNING: jet m = -1491.7 !!
+WARNING: jet m = -47.4 !!
+WARNING: jet m = -47.4 !!
+WARNING: jet m = -81.1 !!
+WARNING: jet m = -81.1 !!
+WARNING: jet m = -102.8 !!
+WARNING: jet m = -102.8 !!
+WARNING: jet m = -207.5 !!
+WARNING: jet m = -207.5 !!
+Bad event
+WARNING: jet m = -57.6 !!
+WARNING: jet m = -57.6 !!
+WARNING: jet m = -202.8 !!
+WARNING: jet m = -202.8 !!
+WARNING: jet m = -87.8 !!
+WARNING: jet m = -87.8 !!
+Bad event
+WARNING: jet m = -79.8 !!
+WARNING: jet m = -79.8 !!
+WARNING: jet m = -21.5 !!
+WARNING: jet m = -21.5 !!
+WARNING: jet m = -11.4 !!
+WARNING: jet m = -11.4 !!
+WARNING: jet m = -43.9 !!
+WARNING: jet m = -43.9 !!
+WARNING: jet m = -1215.8 !!
+WARNING: jet m = -1215.8 !!
+Bad event
+WARNING: jet m = -116.3 !!
+WARNING: jet m = -116.3 !!
+WARNING: jet m = -28.3 !!
+WARNING: jet m = -28.3 !!
+WARNING: jet m = -12.7 !!
+WARNING: jet m = -12.7 !!
+WARNING: jet m = -173.2 !!
+WARNING: jet m = -173.2 !!
+Bad event
+WARNING: jet m = -35.0 !!
+WARNING: jet m = -35.0 !!
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -6.6 !!
+WARNING: jet m = -6.6 !!
+Bad event
+WARNING: jet m = -110.7 !!
+WARNING: jet m = -110.7 !!
+WARNING: jet m = -98.3 !!
+WARNING: jet m = -98.3 !!
+Bad event
+WARNING: jet m = -73.2 !!
+WARNING: jet m = -73.2 !!
+WARNING: jet m = -138.7 !!
+WARNING: jet m = -138.7 !!
+WARNING: jet m = -7474.8 !!
+WARNING: jet m = -7474.8 !!
+WARNING: jet m = -86.0 !!
+WARNING: jet m = -86.0 !!
+WARNING: jet m = -23.5 !!
+WARNING: jet m = -23.5 !!
+Bad event
+WARNING: jet m = -65.0 !!
+WARNING: jet m = -65.0 !!
+WARNING: jet m = -71.7 !!
+WARNING: jet m = -71.7 !!
+WARNING: jet m = -7.9 !!
+WARNING: jet m = -7.9 !!
+WARNING: jet m = -158.7 !!
+WARNING: jet m = -158.7 !!
+WARNING: jet m = -80.9 !!
+WARNING: jet m = -80.9 !!
+WARNING: jet m = -38.7 !!
+WARNING: jet m = -38.7 !!
+WARNING: jet m = -24.4 !!
+WARNING: jet m = -24.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -207.1 !!
+WARNING: jet m = -207.1 !!
+WARNING: jet m = -126.7 !!
+WARNING: jet m = -126.7 !!
+TtoEM trigger inconsistency
+WARNING: jet m = -64.2 !!
+WARNING: jet m = -64.2 !!
+WARNING: jet m = -217.0 !!
+WARNING: jet m = -217.0 !!
+WARNING: jet m = -219.9 !!
+WARNING: jet m = -219.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -43.4 !!
+WARNING: jet m = -43.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -112.0 !!
+WARNING: jet m = -112.0 !!
+WARNING: jet m = -69.1 !!
+WARNING: jet m = -69.1 !!
+WARNING: jet m = -64.9 !!
+WARNING: jet m = -64.9 !!
+WARNING: jet m = -3685.0 !!
+WARNING: jet m = -3685.0 !!
+WARNING: jet m = -67.4 !!
+WARNING: jet m = -67.4 !!
+Bad event
+WARNING: jet m = -90.4 !!
+WARNING: jet m = -90.4 !!
+WARNING: jet m = -8.9 !!
+WARNING: jet m = -8.9 !!
+Bad event
+WARNING: jet m = -149.5 !!
+WARNING: jet m = -149.5 !!
+Bad event
+WARNING: jet m = -9220.0 !!
+WARNING: jet m = -9220.0 !!
+TtoEM trigger inconsistency
+WARNING: jet m = -100.8 !!
+WARNING: jet m = -100.8 !!
+WARNING: jet m = -9063.8 !!
+WARNING: jet m = -9063.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -30.0 !!
+WARNING: jet m = -30.0 !!
+WARNING: jet m = -200.6 !!
+WARNING: jet m = -200.6 !!
+WARNING: jet m = -106.9 !!
+WARNING: jet m = -106.9 !!
+WARNING: jet m = -61.1 !!
+WARNING: jet m = -61.1 !!
+WARNING: jet m = -128.1 !!
+WARNING: jet m = -128.1 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -44.4 !!
+WARNING: jet m = -44.4 !!
+WARNING: jet m = -53.1 !!
+WARNING: jet m = -53.1 !!
+WARNING: jet m = -8.4 !!
+WARNING: jet m = -8.4 !!
+WARNING: jet m = -80.0 !!
+WARNING: jet m = -80.0 !!
+WARNING: jet m = -70.4 !!
+WARNING: jet m = -70.4 !!
+WARNING: jet m = -76.8 !!
+WARNING: jet m = -76.8 !!
+WARNING: jet m = -27.2 !!
+WARNING: jet m = -27.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -108.5 !!
+WARNING: jet m = -108.5 !!
+Bad event
+Bad event
+WARNING: jet m = -6554.0 !!
+WARNING: jet m = -6554.0 !!
+WARNING: jet m = -8.6 !!
+WARNING: jet m = -8.6 !!
+WARNING: jet m = -80.7 !!
+WARNING: jet m = -80.7 !!
+WARNING: jet m = -151.9 !!
+WARNING: jet m = -151.9 !!
+Bad event
+WARNING: jet m = -0.6 !!
+WARNING: jet m = -0.6 !!
+WARNING: jet m = -65.4 !!
+WARNING: jet m = -65.4 !!
+Bad event
+WARNING: jet m = -123.6 !!
+WARNING: jet m = -123.6 !!
+WARNING: jet m = -35.3 !!
+WARNING: jet m = -35.3 !!
+WARNING: jet m = -50.7 !!
+WARNING: jet m = -50.7 !!
+WARNING: jet m = -193.0 !!
+WARNING: jet m = -193.0 !!
+WARNING: jet m = -80.3 !!
+WARNING: jet m = -80.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -120.6 !!
+WARNING: jet m = -120.6 !!
+WARNING: jet m = -27.6 !!
+WARNING: jet m = -27.6 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -54.6 !!
+WARNING: jet m = -54.6 !!
+WARNING: jet m = -32.6 !!
+WARNING: jet m = -32.6 !!
+WARNING: jet m = -25.9 !!
+WARNING: jet m = -25.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -7.1 !!
+WARNING: jet m = -7.1 !!
+WARNING: jet m = -60.4 !!
+WARNING: jet m = -60.4 !!
+WARNING: jet m = -104.4 !!
+WARNING: jet m = -104.4 !!
+ZtoMM trigger inconsistency
+Bad event
+WARNING: jet m = -181.7 !!
+WARNING: jet m = -181.7 !!
+WARNING: jet m = -13.4 !!
+WARNING: jet m = -13.4 !!
+WARNING: jet m = -32.1 !!
+WARNING: jet m = -32.1 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -94.0 !!
+WARNING: jet m = -94.0 !!
+WARNING: jet m = -36.3 !!
+WARNING: jet m = -36.3 !!
+WARNING: jet m = -24.0 !!
+WARNING: jet m = -24.0 !!
+WARNING: jet m = -3884.7 !!
+WARNING: jet m = -3884.7 !!
+WARNING: jet m = -31.1 !!
+WARNING: jet m = -31.1 !!
+WARNING: jet m = -4.0 !!
+WARNING: jet m = -4.0 !!
+WARNING: jet m = -211.0 !!
+WARNING: jet m = -211.0 !!
+WARNING: jet m = -307.2 !!
+WARNING: jet m = -307.2 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -3941.1 !!
+WARNING: jet m = -3941.1 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -8990.9 !!
+WARNING: jet m = -8990.9 !!
+WARNING: jet m = -1.8 !!
+WARNING: jet m = -1.8 !!
+WARNING: jet m = -69.7 !!
+WARNING: jet m = -69.7 !!
+WARNING: jet m = -109.8 !!
+WARNING: jet m = -109.8 !!
+WARNING: jet m = -38.5 !!
+WARNING: jet m = -38.5 !!
+WARNING: jet m = -147.7 !!
+WARNING: jet m = -147.7 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -8224.0 !!
+WARNING: jet m = -8224.0 !!
+WARNING: jet m = -360.8 !!
+WARNING: jet m = -360.8 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -12.1 !!
+WARNING: jet m = -12.1 !!
+WARNING: jet m = -127.4 !!
+WARNING: jet m = -127.4 !!
+WARNING: jet m = -8.6 !!
+WARNING: jet m = -8.6 !!
+WARNING: jet m = -2097.9 !!
+WARNING: jet m = -2097.9 !!
+WARNING: jet m = -46.6 !!
+WARNING: jet m = -46.6 !!
+WARNING: jet m = -26.1 !!
+WARNING: jet m = -26.1 !!
+WARNING: jet m = -13.3 !!
+WARNING: jet m = -13.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -68.4 !!
+WARNING: jet m = -68.4 !!
+WARNING: jet m = -234.3 !!
+WARNING: jet m = -234.3 !!
+WARNING: jet m = -5091.8 !!
+WARNING: jet m = -5091.8 !!
+WARNING: jet m = -152.1 !!
+WARNING: jet m = -152.1 !!
+WARNING: jet m = -29.4 !!
+WARNING: jet m = -29.4 !!
+Bad event
+WARNING: jet m = -105.4 !!
+WARNING: jet m = -105.4 !!
+WARNING: jet m = -0.7 !!
+WARNING: jet m = -0.7 !!
+WARNING: jet m = -61.7 !!
+WARNING: jet m = -61.7 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -5021.3 !!
+WARNING: jet m = -5021.3 !!
+WARNING: jet m = -48.2 !!
+WARNING: jet m = -48.2 !!
+WARNING: jet m = -24.3 !!
+WARNING: jet m = -24.3 !!
+WARNING: jet m = -9.0 !!
+WARNING: jet m = -9.0 !!
+WARNING: jet m = -121.9 !!
+WARNING: jet m = -121.9 !!
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -145.9 !!
+WARNING: jet m = -145.9 !!
+WARNING: jet m = -102.3 !!
+WARNING: jet m = -102.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -123.9 !!
+WARNING: jet m = -123.9 !!
+WARNING: jet m = -55.0 !!
+WARNING: jet m = -55.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -81.9 !!
+WARNING: jet m = -81.9 !!
+WARNING: jet m = -164.3 !!
+WARNING: jet m = -164.3 !!
+WARNING: jet m = -11.7 !!
+WARNING: jet m = -11.7 !!
+WARNING: jet m = -1996.3 !!
+WARNING: jet m = -1996.3 !!
+WARNING: jet m = -31.6 !!
+WARNING: jet m = -31.6 !!
+WARNING: jet m = -115.2 !!
+WARNING: jet m = -115.2 !!
+WARNING: jet m = -34.8 !!
+WARNING: jet m = -34.8 !!
+WARNING: jet m = -51.0 !!
+WARNING: jet m = -51.0 !!
+WARNING: jet m = -2342.4 !!
+WARNING: jet m = -2342.4 !!
+Bad event
+WARNING: jet m = -277.4 !!
+WARNING: jet m = -277.4 !!
+WARNING: jet m = -74.6 !!
+WARNING: jet m = -74.6 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -2957.2 !!
+WARNING: jet m = -2957.2 !!
+WARNING: jet m = -3.0 !!
+WARNING: jet m = -3.0 !!
+WARNING: jet m = -111.6 !!
+WARNING: jet m = -111.6 !!
+Bad event
+WARNING: jet m = -15.6 !!
+WARNING: jet m = -15.6 !!
+Bad event
+WARNING: jet m = -179.3 !!
+WARNING: jet m = -179.3 !!
+Bad event
+WARNING: jet m = -85.1 !!
+WARNING: jet m = -85.1 !!
+WARNING: jet m = -6.3 !!
+WARNING: jet m = -6.3 !!
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = -112.5 !!
+WARNING: jet m = -112.5 !!
+WARNING: jet m = -91.2 !!
+WARNING: jet m = -91.2 !!
+WARNING: jet m = -7957.5 !!
+WARNING: jet m = -7957.5 !!
+WARNING: jet m = -76.4 !!
+WARNING: jet m = -76.4 !!
+WARNING: jet m = -27.7 !!
+WARNING: jet m = -27.7 !!
+WARNING: jet m = -77.0 !!
+WARNING: jet m = -77.0 !!
+WARNING: jet m = -94.3 !!
+WARNING: jet m = -94.3 !!
+WARNING: jet m = -195.2 !!
+WARNING: jet m = -195.2 !!
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -96.9 !!
+WARNING: jet m = -96.9 !!
+WARNING: jet m = -29.4 !!
+WARNING: jet m = -29.4 !!
+WARNING: jet m = -53.6 !!
+WARNING: jet m = -53.6 !!
+WARNING: jet m = -87.1 !!
+WARNING: jet m = -87.1 !!
+WARNING: jet m = -42.8 !!
+WARNING: jet m = -42.8 !!
+WARNING: jet m = -11.1 !!
+WARNING: jet m = -11.1 !!
+WARNING: jet m = -188.4 !!
+WARNING: jet m = -188.4 !!
+WARNING: jet m = -140.2 !!
+WARNING: jet m = -140.2 !!
+WARNING: jet m = -4.7 !!
+WARNING: jet m = -4.7 !!
+WARNING: jet m = -211.9 !!
+WARNING: jet m = -211.9 !!
+Bad event
+WARNING: jet m = -36.7 !!
+WARNING: jet m = -36.7 !!
+WARNING: jet m = -217.0 !!
+WARNING: jet m = -217.0 !!
+WARNING: jet m = -66.5 !!
+WARNING: jet m = -66.5 !!
+WARNING: jet m = -108.9 !!
+WARNING: jet m = -108.9 !!
+Bad event
+WARNING: jet m = -139.9 !!
+WARNING: jet m = -139.9 !!
+Bad event
+WARNING: jet m = -6174.0 !!
+WARNING: jet m = -6174.0 !!
+WARNING: jet m = -7.8 !!
+WARNING: jet m = -7.8 !!
+WARNING: jet m = -35.0 !!
+WARNING: jet m = -35.0 !!
+WARNING: jet m = -203.6 !!
+WARNING: jet m = -203.6 !!
+Bad event
+WARNING: jet m = -37.7 !!
+WARNING: jet m = -37.7 !!
+WARNING: jet m = -131.8 !!
+WARNING: jet m = -131.8 !!
+WARNING: jet m = -142.4 !!
+WARNING: jet m = -142.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -5161.5 !!
+WARNING: jet m = -5161.5 !!
+WARNING: jet m = -15.0 !!
+WARNING: jet m = -15.0 !!
+WARNING: jet m = -157.4 !!
+WARNING: jet m = -157.4 !!
+WARNING: jet m = -342.1 !!
+WARNING: jet m = -342.1 !!
+WARNING: jet m = -68.4 !!
+WARNING: jet m = -68.4 !!
+WARNING: jet m = -59.3 !!
+WARNING: jet m = -59.3 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -42.7 !!
+WARNING: jet m = -42.7 !!
+WARNING: jet m = -61.0 !!
+WARNING: jet m = -61.0 !!
+WARNING: jet m = -3010.9 !!
+WARNING: jet m = -3010.9 !!
+WARNING: jet m = -147.7 !!
+WARNING: jet m = -147.7 !!
+WARNING: jet m = -79.3 !!
+WARNING: jet m = -79.3 !!
+WARNING: jet m = -19.8 !!
+WARNING: jet m = -19.8 !!
+WARNING: jet m = -110.8 !!
+WARNING: jet m = -110.8 !!
+WARNING: jet m = -1.7 !!
+WARNING: jet m = -1.7 !!
+WARNING: jet m = -8104.9 !!
+WARNING: jet m = -8104.9 !!
+Bad event
+WARNING: jet m = -8903.9 !!
+WARNING: jet m = -8903.9 !!
+TtoEM trigger inconsistency
+Bad event
+Bad event
+WARNING: jet m = -71.0 !!
+WARNING: jet m = -71.0 !!
+WARNING: jet m = -153.4 !!
+WARNING: jet m = -153.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -53.6 !!
+WARNING: jet m = -53.6 !!
+WARNING: jet m = -35.1 !!
+WARNING: jet m = -35.1 !!
+WARNING: jet m = -103.4 !!
+WARNING: jet m = -103.4 !!
+WARNING: jet m = -64.7 !!
+WARNING: jet m = -64.7 !!
+WARNING: jet m = -88.1 !!
+WARNING: jet m = -88.1 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -18.2 !!
+WARNING: jet m = -18.2 !!
+WARNING: jet m = -5.2 !!
+WARNING: jet m = -5.2 !!
+WARNING: jet m = -31.8 !!
+WARNING: jet m = -31.8 !!
+WARNING: jet m = -1185.6 !!
+WARNING: jet m = -1185.6 !!
+WARNING: jet m = -8.9 !!
+WARNING: jet m = -8.9 !!
+WARNING: jet m = -176.2 !!
+WARNING: jet m = -176.2 !!
+WARNING: jet m = -101.9 !!
+WARNING: jet m = -101.9 !!
+WARNING: jet m = -76.5 !!
+WARNING: jet m = -76.5 !!
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -75.4 !!
+WARNING: jet m = -75.4 !!
+WARNING: jet m = -7.0 !!
+WARNING: jet m = -7.0 !!
+WARNING: jet m = -27.3 !!
+WARNING: jet m = -27.3 !!
+Bad event
+WARNING: jet m = -28.2 !!
+WARNING: jet m = -28.2 !!
+WARNING: jet m = -146.4 !!
+WARNING: jet m = -146.4 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -7.3 !!
+WARNING: jet m = -7.3 !!
+WARNING: jet m = -77.3 !!
+WARNING: jet m = -77.3 !!
+WARNING: jet m = -116.6 !!
+WARNING: jet m = -116.6 !!
+WARNING: jet m = -190.5 !!
+WARNING: jet m = -190.5 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -150.0 !!
+WARNING: jet m = -150.0 !!
+WARNING: jet m = -17.2 !!
+WARNING: jet m = -17.2 !!
+WARNING: jet m = -14.3 !!
+WARNING: jet m = -14.3 !!
+WARNING: jet m = -64.6 !!
+WARNING: jet m = -64.6 !!
+WARNING: jet m = -138.5 !!
+WARNING: jet m = -138.5 !!
+WARNING: jet m = -129.8 !!
+WARNING: jet m = -129.8 !!
+Bad event
+WARNING: jet m = -128.5 !!
+WARNING: jet m = -128.5 !!
+WARNING: jet m = -36.4 !!
+WARNING: jet m = -36.4 !!
+WARNING: jet m = -73.9 !!
+WARNING: jet m = -73.9 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -17.1 !!
+WARNING: jet m = -17.1 !!
+WARNING: jet m = -145.9 !!
+WARNING: jet m = -145.9 !!
+Bad event
+WARNING: jet m = -646.2 !!
+WARNING: jet m = -646.2 !!
+WARNING: jet m = -37.0 !!
+WARNING: jet m = -37.0 !!
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -39.6 !!
+WARNING: jet m = -39.6 !!
+WARNING: jet m = -131.4 !!
+WARNING: jet m = -131.4 !!
+Bad event
+Bad event
+WARNING: jet m = -14.5 !!
+WARNING: jet m = -14.5 !!
+WARNING: jet m = -208.1 !!
+WARNING: jet m = -208.1 !!
+WARNING: jet m = -5658.2 !!
+WARNING: jet m = -5658.2 !!
+WARNING: jet m = -112.0 !!
+WARNING: jet m = -112.0 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -23.8 !!
+WARNING: jet m = -23.8 !!
+WARNING: jet m = -53.5 !!
+WARNING: jet m = -53.5 !!
+WARNING: jet m = -140.9 !!
+WARNING: jet m = -140.9 !!
+WARNING: jet m = -44.1 !!
+WARNING: jet m = -44.1 !!
+WARNING: jet m = -19.4 !!
+WARNING: jet m = -19.4 !!
+WARNING: jet m = -25.0 !!
+WARNING: jet m = -25.0 !!
+WARNING: jet m = -119.6 !!
+WARNING: jet m = -119.6 !!
+ZtoMM trigger inconsistency
+WARNING: jet m = -236.0 !!
+WARNING: jet m = -236.0 !!
+WARNING: jet m = -117.1 !!
+WARNING: jet m = -117.1 !!
+Bad event
+ZtoMM trigger inconsistency
+WARNING: jet m = -68.8 !!
+WARNING: jet m = -68.8 !!
+WARNING: jet m = -2.7 !!
+WARNING: jet m = -2.7 !!
+WARNING: jet m = -10.1 !!
+WARNING: jet m = -10.1 !!
+Processed 5000 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/280000/1CAEE11A-0E38-D64C-A0D7-E00CC92DD0FD.root (5000 entries). Finally selected 3317 entries
+Done /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/1CAEE11A-0E38-D64C-A0D7-E00CC92DD0FD.root
+21.3337884542 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2017/ZprimeToZHToZlepHinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/1CAEE11A-0E38-D64C-A0D7-E00CC92DD0FD.root
+DONE
+Complete at
+Tue Jan 28 20:50:26 CET 2020

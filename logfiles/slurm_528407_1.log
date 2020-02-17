@@ -1,0 +1,643 @@
+job start at
+Sat Feb  1 14:49:12 CET 2020
+SLURM_JOB_ID: 528407
+HOSTNAME: t3wn43
+JOBLIST:joblist/joblist_ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/B1862192-210C-7A4B-A478-08D38D72291C.root -o /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -N ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -n 0 -c ll -y 2018
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/B1862192-210C-7A4B-A478-08D38D72291C.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+output file  = ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2018
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpQjL5NV/Autumn18_V19_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpI3enYL/Autumn18_V7_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpI3enYL/Autumn18_V7_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmp5jWXGl/Autumn18_V19_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp1PfvWJ/Autumn18_V7_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp1PfvWJ/Autumn18_V7_MC_SF_AK8PFPuppi.txt'
+Pre-select 100000 entries out of 100000 (100.00%)
+nanoAODv5? True
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Processed    10000/  100000 entries, 10.00% (elapsed time   484.2s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted     9294/   10001 events (92.93%)
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Processed    20000/  100000 entries, 20.00% (elapsed time   969.5s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted    18577/   20001 events (92.88%)
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    30000/  100000 entries, 30.00% (elapsed time  1451.5s, curr speed    0.021 kHz, avg speed    0.021 kHz), accepted    27852/   30001 events (92.84%)
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -0.0 !!
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Processed    40000/  100000 entries, 40.00% (elapsed time  1864.0s, curr speed    0.024 kHz, avg speed    0.021 kHz), accepted    37112/   40001 events (92.78%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+WARNING: jet m = -0.0 !!
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Processed    50000/  100000 entries, 50.00% (elapsed time  2208.5s, curr speed    0.029 kHz, avg speed    0.023 kHz), accepted    46341/   50001 events (92.68%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    60000/  100000 entries, 60.00% (elapsed time  2548.9s, curr speed    0.029 kHz, avg speed    0.024 kHz), accepted    55565/   60001 events (92.61%)
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Processed    70000/  100000 entries, 70.00% (elapsed time  2881.5s, curr speed    0.030 kHz, avg speed    0.024 kHz), accepted    64822/   70001 events (92.60%)
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Processed    80000/  100000 entries, 80.00% (elapsed time  3206.5s, curr speed    0.031 kHz, avg speed    0.025 kHz), accepted    74100/   80001 events (92.62%)
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -0.0 !!
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Processed    90000/  100000 entries, 90.00% (elapsed time  3506.3s, curr speed    0.033 kHz, avg speed    0.026 kHz), accepted    83352/   90001 events (92.61%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed 100000 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/B1862192-210C-7A4B-A478-08D38D72291C.root (100000 entries). Finally selected 92601 entries
+Done /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/B1862192-210C-7A4B-A478-08D38D72291C.root
+24.4453950987 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2018/ZprimeToZHToZinvHall_narrow_M-2000_TuneCP5_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/B1862192-210C-7A4B-A478-08D38D72291C.root
+DONE
+Complete at
+Sat Feb  1 16:32:40 CET 2020

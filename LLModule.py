@@ -49,6 +49,11 @@ class LLProducer(Module):
                 self.DYCorr = DYCorrection('ZJetsToNuNu')
             elif 'WJetsToLNu' in self.sample[0]:
                 self.DYCorr = DYCorrection('WJetsToLNu')
+            self.runJEC = False
+            JEC_samples = ['Zprime','WWTo','WZTo','ZZTo','GluGluHToBB','ZH_HToBB','Wplus','Wminus']
+            for JEC_sample in JEC_samples:
+                if self.sample[0].find(JEC_sample)>0:
+                    self.runJEC = True  
     def beginJob(self):
         pass
 
@@ -131,12 +136,14 @@ class LLProducer(Module):
         self.out.Mu1_mass[0]                = self.Mu1_mass
         self.out.Mu1_pfIsoId[0]             = self.Mu1_pfIsoId
         self.out.Mu1_relIso[0]              = self.Mu1_relIso
+        self.out.Mu1_highPtId[0]            = self.Mu1_highPtId
         self.out.Mu2_pt[0]                  = self.Mu2_pt
         self.out.Mu2_eta[0]                 = self.Mu2_eta
         self.out.Mu2_phi[0]                 = self.Mu2_phi
         self.out.Mu2_mass[0]                = self.Mu2_mass
         self.out.Mu2_pfIsoId[0]             = self.Mu2_pfIsoId
         self.out.Mu2_relIso[0]              = self.Mu2_relIso
+        self.out.Mu2_highPtId[0]            = self.Mu2_highPtId
         self.out.Ele1_pt[0]                 = self.Ele1_pt
         self.out.Ele1_eta[0]                = self.Ele1_eta
         self.out.Ele1_phi[0]                = self.Ele1_phi
@@ -184,7 +191,6 @@ class LLProducer(Module):
         self.out.H_deepcsv1[0]              = self.H_deepcsv1
         self.out.H_deepcsv2[0]              = self.H_deepcsv2
         self.out.H_dbt[0]                   = self.H_dbt
-        self.out.H_ntag[0]                  = self.H_ntag
         self.out.H_hadronflavour[0]         = self.H_hadronflavour
         self.out.H_partonflavour[0]         = self.H_partonflavour
         self.out.H_chf[0]                   = self.H_chf
@@ -199,14 +205,17 @@ class LLProducer(Module):
         self.out.X_phi[0]                   = self.X_phi
         self.out.X_mass[0]                  = self.X_mass
         self.out.X_mass_chs[0]              = self.X_mass_chs
+        self.out.X_mass_nom[0]              = self.X_mass_nom
         self.out.X_mass_jesUp[0]            = self.X_mass_jesUp
         self.out.X_mass_jesDown[0]          = self.X_mass_jesDown
         self.out.X_mass_jerUp[0]            = self.X_mass_jerUp
         self.out.X_mass_jerDown[0]          = self.X_mass_jerDown
+        self.out.X_mass_MET_nom[0]          = self.X_mass_MET_nom
         self.out.X_mass_MET_jesUp[0]        = self.X_mass_MET_jesUp
         self.out.X_mass_MET_jesDown[0]      = self.X_mass_MET_jesDown
         self.out.X_mass_MET_jerUp[0]        = self.X_mass_MET_jerUp
         self.out.X_mass_MET_jerDown[0]      = self.X_mass_MET_jerDown
+        self.out.H_mass_nom[0]              = self.H_mass_nom
         self.out.H_mass_jmsUp[0]            = self.H_mass_jmsUp
         self.out.H_mass_jmsDown[0]          = self.H_mass_jmsDown
         self.out.H_mass_jmrUp[0]            = self.H_mass_jmrUp
@@ -277,12 +286,14 @@ class LLProducer(Module):
         self.Mu1_mass              = -1.
         self.Mu1_pfIsoId           = -1.
         self.Mu1_relIso            = -1.
+        self.Mu1_highPtId          = -1.
         self.Mu2_pt                = -1.
         self.Mu2_eta               = -1.
         self.Mu2_phi               = -1.
         self.Mu2_mass              = -1.
         self.Mu2_pfIsoId           = -1.
         self.Mu2_relIso            = -1.
+        self.Mu2_highPtId          = -1.
         self.Ele1_pt               = -1.
         self.Ele1_eta              = -1.
         self.Ele1_phi              = -1.
@@ -331,7 +342,6 @@ class LLProducer(Module):
         self.H_deepcsv1            = -1.
         self.H_deepcsv2            = -1.
         self.H_dbt                 = -1.
-        self.H_ntag                = -1
         self.H_chf                 = -1.
         self.H_nhf                 = -1.
         self.V_pt                  = -1.
@@ -344,14 +354,17 @@ class LLProducer(Module):
         self.X_phi                 = -1.
         self.X_mass                = -1.
         self.X_mass_chs            = -1.
+        self.X_mass_nom            = -1.
         self.X_mass_jesUp          = -1.
         self.X_mass_jesDown        = -1.
         self.X_mass_jerUp          = -1.
         self.X_mass_jerDown        = -1.
+        self.X_mass_MET_nom        = -1.
         self.X_mass_MET_jesUp      = -1.
         self.X_mass_MET_jesDown    = -1.
         self.X_mass_MET_jerUp      = -1.
         self.X_mass_MET_jerDown    = -1.
+        self.H_mass_nom            = -1.
         self.H_mass_jmsUp          = -1.
         self.H_mass_jmsDown        = -1.
         self.H_mass_jmrUp          = -1.
@@ -383,7 +396,6 @@ class LLProducer(Module):
         fatjet_tau42_list = []
         fatjet_tau31_list = []
         fatjet_tau32_list = []
-        fatjet_nbtag_list = []
 
         V = ROOT.TLorentzVector()
         H = ROOT.TLorentzVector()
@@ -431,8 +443,11 @@ class LLProducer(Module):
         
         #########     triggers     #########
         if self.year == 2016:
-            trigger_SingleMu      = any([event.HLT_Mu50,
-                                         event.HLT_TkMu50])
+            try:
+                trigger_SingleMu      = any([event.HLT_Mu50,
+                                             event.HLT_TkMu50])
+            except:
+                trigger_SingleMu   = event.HLT_Mu50
             trigger_SingleEle     = event.HLT_Ele115_CaloIdVT_GsfTrkIdT
             trigger_SingleIsoEle  = event.HLT_Ele27_WPTight_Gsf
             trigger_SinglePhoton  = event.HLT_Photon175
@@ -444,9 +459,12 @@ class LLProducer(Module):
             trigger_MET           = any([event.HLT_PFMET170_NotCleaned,
                                          event.HLT_PFMET170_HBHECleaned])
         elif self.year == 2017:
-            trigger_SingleMu          = any([event.HLT_Mu50,
-                                             event.HLT_TkMu100,
-                                             event.HLT_OldMu100])
+            try:
+                trigger_SingleMu          = any([event.HLT_Mu50,
+                                                 event.HLT_TkMu100,
+                                                 event.HLT_OldMu100])
+            except:
+                trigger_SingleMu          = event.HLT_Mu50
             try:
                 trigger_SingleEle     = event.HLT_Ele115_CaloIdVT_GsfTrkIdT
             except:
@@ -509,6 +527,10 @@ class LLProducer(Module):
             self.PUWeight = self.puTool.getWeight(event.Pileup_nTrueInt)
             self.EventWeight *= self.GenWeight
             self.EventWeight *= self.PUWeight
+            for i,weight in enumerate(event.LHEScaleWeight):
+                self.out.LHEScaleWeight_hist.Fill(i,weight)
+            for j,weight in enumerate(event.LHEPdfWeight):
+                self.out.LHEPdfWeight_hist.Fill(j,weight)
             self.LHEScaleWeight        = event.LHEScaleWeight
             self.LHEPdfWeight          = event.LHEPdfWeight
             self.LHEWeight_originalXWGTUP = event.LHEWeight_originalXWGTUP
@@ -525,7 +547,36 @@ class LLProducer(Module):
             self.out.pileup.Fill(event.Pileup_nTrueInt)
             if event.Pileup_nTrueInt == 0:
                 return False
-                
+        ###########    FatJet        #########
+        for ifatjet in range(event.nFatJet):
+            fatjet_pt = event.FatJet_pt[ifatjet]
+            fatjet_eta = event.FatJet_eta[ifatjet]
+            fatjet_phi = event.FatJet_phi[ifatjet]
+            fatjet_mass = event.FatJet_mass[ifatjet]
+            fatjet_jetid = event.FatJet_jetId[ifatjet]
+            fatjet_tlv = ROOT.TLorentzVector()
+            fatjet_tlv.SetPtEtaPhiM(fatjet_pt, fatjet_eta, fatjet_phi, fatjet_mass)
+            if fatjet_pt > fatjet_pt_cut and abs(fatjet_eta) < fatjet_eta_cut:
+                fatjet_tlv_list.append(fatjet_tlv)
+                idx_fatjet.append(ifatjet)
+                if event.FatJet_tau1[ifatjet]==0:
+                    fatjet_tau21_list.append(0)
+                    fatjet_tau41_list.append(0)
+                    fatjet_tau31_list.append(0)
+                else:
+                    fatjet_tau21_list.append(event.FatJet_tau2[ifatjet]/event.FatJet_tau1[ifatjet])
+                    fatjet_tau41_list.append(event.FatJet_tau4[ifatjet]/event.FatJet_tau1[ifatjet])
+                    fatjet_tau31_list.append(event.FatJet_tau3[ifatjet]/event.FatJet_tau1[ifatjet])
+                if event.FatJet_tau2[ifatjet]==0:
+                    fatjet_tau42_list.append(0)
+                    fatjet_tau32_list.append(0)
+                else:
+                    fatjet_tau42_list.append(event.FatJet_tau4[ifatjet]/event.FatJet_tau2[ifatjet])
+                    fatjet_tau32_list.append(event.FatJet_tau3[ifatjet]/event.FatJet_tau2[ifatjet])
+        self.nFatJets = len(fatjet_tlv_list)
+        #stop if no suitable Fatjet
+        if len(fatjet_tlv_list) == 0:
+            return False             
         ###########     electrons ##########
         for ielectron in range(event.nElectron):
             electron_pt = event.Electron_pt[ielectron]
@@ -582,47 +633,6 @@ class LLProducer(Module):
                 if cleanTau:
                     self.nTaus += 1
 
-        ###########    FatJet        #########
-        for ifatjet in range(event.nFatJet):
-            fatjet_pt = event.FatJet_pt[ifatjet]
-            fatjet_eta = event.FatJet_eta[ifatjet]
-            fatjet_phi = event.FatJet_phi[ifatjet]
-            fatjet_mass = event.FatJet_mass[ifatjet]
-            fatjet_jetid = event.FatJet_jetId[ifatjet]
-            fatjet_tlv = ROOT.TLorentzVector()
-            fatjet_tlv.SetPtEtaPhiM(fatjet_pt, fatjet_eta, fatjet_phi, fatjet_mass)
-            if fatjet_pt > fatjet_pt_cut and abs(fatjet_eta) < fatjet_eta_cut:
-                cleanJet = True
-                #for loose_electrons_tlv in loose_electrons_tlv_list:
-                #    if loose_electrons_tlv.DeltaR(fatjet_tlv) < 0.8:
-                #        cleanJet = False
-                #for loose_muons_tlv in loose_muons_tlv_list:
-                #    if loose_muons_tlv.DeltaR(fatjet_tlv) < 0.8:
-                #        cleanJet = False        
-                if cleanJet:
-                    if event.FatJet_tau1[ifatjet]==0:
-                        fatjet_tau21_list.append(0)
-                        fatjet_tau41_list.append(0)
-                        fatjet_tau31_list.append(0)
-                    else:
-                        fatjet_tau21_list.append(event.FatJet_tau2[ifatjet]/event.FatJet_tau1[ifatjet])
-                        fatjet_tau41_list.append(event.FatJet_tau4[ifatjet]/event.FatJet_tau1[ifatjet])
-                        fatjet_tau31_list.append(event.FatJet_tau3[ifatjet]/event.FatJet_tau1[ifatjet])
-                    if event.FatJet_tau2[ifatjet]==0:
-                        fatjet_tau42_list.append(0)
-                        fatjet_tau32_list.append(0)
-                    else:
-                        fatjet_tau42_list.append(event.FatJet_tau4[ifatjet]/event.FatJet_tau2[ifatjet])
-                        fatjet_tau32_list.append(event.FatJet_tau3[ifatjet]/event.FatJet_tau2[ifatjet])
-                    fatjet_tlv_list.append(fatjet_tlv)
-                    idx_fatjet.append(ifatjet)
-                    fatjet_nbtag = 0
-                    for isubjet in [event.FatJet_subJetIdx1[ifatjet], event.FatJet_subJetIdx2[ifatjet]]:
-                        if isubjet >= 0 and event.SubJet_btagCSVV2[isubjet] > 0.5426: 
-                            fatjet_nbtag += 1
-                    fatjet_nbtag_list.append(fatjet_nbtag)
-        self.nFatJets = len(fatjet_tlv_list)
-    
         ############     MET       ##########
         METx = 0.
         METy = 0.
@@ -869,11 +879,13 @@ class LLProducer(Module):
                         self.Mu1_phi  = mu1_tlv.Phi()
                         self.Mu1_mass = mu1_tlv.M()
                         self.Mu1_pfIsoId = struct.unpack('B',event.Muon_pfIsoId[mu1])[0]
+                        self.Mu1_highPtId = struct.unpack('B',event.Muon_highPtId[mu1])[0]
                         self.Mu2_pt   = mu2_tlv.Pt()
                         self.Mu2_eta  = mu2_tlv.Eta()
                         self.Mu2_phi  = mu2_tlv.Phi()
                         self.Mu2_mass = mu2_tlv.M()
                         self.Mu2_pfIsoId = struct.unpack('B',event.Muon_pfIsoId[mu2])[0]
+                        self.Mu2_highPtId = struct.unpack('B',event.Muon_highPtId[mu2])[0]
                         self.isZtoMM = True
 
         
@@ -950,9 +962,10 @@ class LLProducer(Module):
                             self.EventWeight *= self.QCDNLO_Corr * self.QCDNNLO_Corr * self.EWKNLO_Corr
                         self.TriggerWeight = 1.
                     self.isZtoNN = True
+        #stop if no semileptonic decays
+        if self.isZtoEE==False and self.isZtoMM==False and self.isZtoNN==False and self.isTtoEM==False:
+            return False
         ##########  setting the Higgs and V index     #######
-        if len(fatjet_tlv_list) == 0:
-            return False            
         fatjet_idx_H = 0
         valid_Higgs = False
         if self.isZtoMM:
@@ -1069,40 +1082,46 @@ class LLProducer(Module):
         ##########   Higgs      ########  
         H = fatjet_tlv_list[fatjet_idx_H]
 
-        if self.isMC:
-            self.H_mass_jmsUp =  event.FatJet_mass_jmsUp[fatjet_idx_H]
-            self.H_mass_jmsDown = event.FatJet_mass_jmsDown[fatjet_idx_H]
-            self.H_mass_jmrUp = event.FatJet_mass_jmrUp[fatjet_idx_H]
-            self.H_mass_jmrDown = event.FatJet_mass_jmrDown[fatjet_idx_H]
+        if self.runJEC:
+            self.H_mass_nom = event.FatJet_msoftdrop_nom[fatjet_idx_H]
+            self.H_mass_jmsUp =  event.FatJet_msoftdrop_jmsUp[fatjet_idx_H]
+            self.H_mass_jmsDown = event.FatJet_msoftdrop_jmsDown[fatjet_idx_H]
+            self.H_mass_jmrUp = event.FatJet_msoftdrop_jmrUp[fatjet_idx_H]
+            self.H_mass_jmrDown = event.FatJet_msoftdrop_jmrDown[fatjet_idx_H]
+            self.H_pt_nom = event.FatJet_pt_nom[fatjet_idx_H]
             self.H_pt_jesUp = event.FatJet_pt_jesTotalUp[fatjet_idx_H]
             self.H_pt_jesDown = event.FatJet_pt_jesTotalDown[fatjet_idx_H]
             self.H_pt_jerUp = event.FatJet_pt_jerUp[fatjet_idx_H]
             self.H_pt_jerDown = event.FatJet_pt_jerDown[fatjet_idx_H]
-            self.MET_pt_jesUp = event.MET_pt_jesTotalUp
-            self.MET_pt_jesDown = event.MET_pt_jesTotalDown
-            self.MET_pt_jerUp = event.MET_pt_jerUp
-            self.MET_pt_jerDown = event.MET_pt_jerDown
+            self.PuppiMET_pt_nom = event.PuppiMET_pt_nom
+            self.PuppiMET_pt_jesUp = event.PuppiMET_pt_jesTotalUp
+            self.PuppiMET_pt_jesDown = event.PuppiMET_pt_jesTotalDown
+            self.PuppiMET_pt_jerUp = event.PuppiMET_pt_jerUp
+            self.PuppiMET_pt_jerDown = event.PuppiMET_pt_jerDown
             
-    
             H_Eta = H.Eta()
             H_Phi = H.Phi()
             H_M = H.M()
-            H_jesUp = fatjet_tlv_list[fatjet_idx_H]
-            H_jesDown = fatjet_tlv_list[fatjet_idx_H]
-            H_jerUp = fatjet_tlv_list[fatjet_idx_H]
-            H_jerDown = fatjet_tlv_list[fatjet_idx_H]
+            H_nom = ROOT.TLorentzVector()
+            H_jesUp = ROOT.TLorentzVector()
+            H_jesDown = ROOT.TLorentzVector()
+            H_jerUp = ROOT.TLorentzVector()
+            H_jerDown = ROOT.TLorentzVector()
+            H_nom.SetPtEtaPhiM(self.H_pt_nom,H_Eta,H_Phi,H_M)
             H_jesUp.SetPtEtaPhiM(self.H_pt_jesUp,H_Eta,H_Phi,H_M)
             H_jesDown.SetPtEtaPhiM(self.H_pt_jesDown,H_Eta,H_Phi,H_M)
             H_jerUp.SetPtEtaPhiM(self.H_pt_jerUp,H_Eta,H_Phi,H_M)
             H_jerDown.SetPtEtaPhiM(self.H_pt_jerDown,H_Eta,H_Phi,H_M)
+            MET_nom = ROOT.TLorentzVector()
             MET_jesUp = ROOT.TLorentzVector()
             MET_jesDown = ROOT.TLorentzVector()
             MET_jerUp = ROOT.TLorentzVector()
             MET_jerDown = ROOT.TLorentzVector()
-            MET_jesUp.SetPtEtaPhiM(self.MET_pt_jesUp,0.,event.MET_phi,self.MET_pt_jesUp)
-            MET_jesDown.SetPtEtaPhiM(self.MET_pt_jesDown,0.,event.MET_phi,self.MET_pt_jesDown)
-            MET_jerUp.SetPtEtaPhiM(self.MET_pt_jerUp,0.,event.MET_phi,self.MET_pt_jerUp)
-            MET_jerDown.SetPtEtaPhiM(self.MET_pt_jerDown,0.,event.MET_phi,self.MET_pt_jerDown)
+            MET_nom.SetPtEtaPhiM(self.PuppiMET_pt_nom,0.,event.PuppiMET_phi,self.PuppiMET_pt_nom)
+            MET_jesUp.SetPtEtaPhiM(self.PuppiMET_pt_jesUp,0.,event.PuppiMET_phi,self.PuppiMET_pt_jesUp)
+            MET_jesDown.SetPtEtaPhiM(self.PuppiMET_pt_jesDown,0.,event.PuppiMET_phi,self.PuppiMET_pt_jesDown)
+            MET_jerUp.SetPtEtaPhiM(self.PuppiMET_pt_jerUp,0.,event.PuppiMET_phi,self.PuppiMET_pt_jerUp)
+            MET_jerDown.SetPtEtaPhiM(self.PuppiMET_pt_jerDown,0.,event.PuppiMET_phi,self.PuppiMET_pt_jerDown)
 
         for ifatjet in idx_fatjet:
             if event.FatJet_btagHbb[ifatjet] > 0.3:
@@ -1207,19 +1226,23 @@ class LLProducer(Module):
             X_chs = V_chs + H
             self.X_mass_chs = X_chs.M()
 
-        if self.isMC:
+        if self.runJEC:
+            X_nom = V + H_nom
             X_jesUp = V + H_jesUp
             X_jesDown = V + H_jesDown
             X_jerUp = V + H_jerUp
             X_jerDown = V + H_jerDown
+            X_MET_nom = MET_nom + H_nom
             X_MET_jesUp = MET_jesUp + H_jesUp
             X_MET_jesDown = MET_jesDown + H_jesDown
             X_MET_jerUp = MET_jerUp + H_jerUp
             X_MET_jerDown = MET_jerDown + H_jerDown
+            self.X_mass_nom = X_nom.M()
             self.X_mass_jesUp = X_jesUp.M()
             self.X_mass_jesDown = X_jesDown.M()
             self.X_mass_jerUp = X_jerUp.M()
             self.X_mass_jerDown = X_jerDown.M()
+            self.X_mass_MET_nom = X_MET_nom.M()
             self.X_mass_MET_jesUp = X_MET_jesUp.M()
             self.X_mass_MET_jesDown = X_MET_jesDown.M()
             self.X_mass_MET_jerUp = X_MET_jerUp.M()
@@ -1306,7 +1329,6 @@ class LLProducer(Module):
         if self.MaxJetNoFatJetBTag > wp_tight:
             self.isMaxBTag_tight = True
 
-        self.H_ntag = fatjet_nbtag_list[fatjet_idx_H]
         
         if self.H_mass != 0.:
             self.H_ddt = self.H_tau21 + 0.082 *np.log(self.H_mass*self.H_mass/self.H_pt)
@@ -1327,7 +1349,7 @@ class LLProducer(Module):
                     self.out.eecutflow_inc.Fill(i,weight)
                 for i,weight in enumerate(mmcutflow_list):
                     self.out.mmcutflow_inc.Fill(i,weight)
-
+            
         if self.isZtoEE or self.isZtoMM or self.isZtoNN or self.isTtoEM:
             self.fillBranches(event)
             return True

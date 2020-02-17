@@ -1,0 +1,390 @@
+job start at
+Tue Jan 28 22:26:05 CET 2020
+SLURM_JOB_ID: 422453
+HOSTNAME: t3wn48
+JOBLIST:joblist/joblist_ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZZTo4L_13TeV_powheg_pythia8_ext1/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/70000/03E60402-B59C-E34E-8333-9FE28C473D60.root -o /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM -N ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM -n 44 -c ll -y 2016
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Summer16_07Aug2017_V11_MC 	 JER= Summer16_25nsV1_MC
+MET branch= PuppiMET
+JEC= Summer16_07Aug2017_V11_MC 	 JER= Summer16_25nsV1_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZZTo4L_13TeV_powheg_pythia8_ext1/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/70000/03E60402-B59C-E34E-8333-9FE28C473D60.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM
+output file  = ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM_44_ll.root
+chunck       = 44
+channel      = ll
+dataType     = mc
+year         = 2016
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM_44_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpTfgy3P/Summer16_07Aug2017_V11_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpSFpAgu/Summer16_25nsV1_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpSFpAgu/Summer16_25nsV1_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpeF1nVL/Summer16_07Aug2017_V11_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpIs79Ei/Summer16_25nsV1_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpIs79Ei/Summer16_25nsV1_MC_SF_AK8PFPuppi.txt'
+Pre-select 2014489 entries out of 2014489 (100.00%)
+nanoAODv5? True
+TtoEM trigger inconsistency
+Processed    10000/ 2014489 entries,  0.50% (elapsed time   239.2s, curr speed    0.042 kHz, avg speed    0.042 kHz), accepted       13/   10001 events ( 0.13%)
+ZtoMM trigger inconsistency
+Processed    20000/ 2014489 entries,  0.99% (elapsed time   466.9s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted       31/   20001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed    30000/ 2014489 entries,  1.49% (elapsed time   699.1s, curr speed    0.043 kHz, avg speed    0.043 kHz), accepted       53/   30001 events ( 0.18%)
+Processed    40000/ 2014489 entries,  1.99% (elapsed time   926.5s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted       63/   40001 events ( 0.16%)
+Processed    50000/ 2014489 entries,  2.48% (elapsed time  1154.0s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted       80/   50001 events ( 0.16%)
+Processed    60000/ 2014489 entries,  2.98% (elapsed time  1387.5s, curr speed    0.043 kHz, avg speed    0.043 kHz), accepted       99/   60001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed    70000/ 2014489 entries,  3.47% (elapsed time  1613.9s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted      114/   70001 events ( 0.16%)
+Processed    80000/ 2014489 entries,  3.97% (elapsed time  1840.9s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted      133/   80001 events ( 0.17%)
+Processed    90000/ 2014489 entries,  4.47% (elapsed time  2073.6s, curr speed    0.043 kHz, avg speed    0.043 kHz), accepted      144/   90001 events ( 0.16%)
+Processed   100000/ 2014489 entries,  4.96% (elapsed time  2301.9s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted      161/  100001 events ( 0.16%)
+Processed   110000/ 2014489 entries,  5.46% (elapsed time  2531.6s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted      180/  110001 events ( 0.16%)
+Processed   120000/ 2014489 entries,  5.96% (elapsed time  2760.2s, curr speed    0.044 kHz, avg speed    0.043 kHz), accepted      192/  120001 events ( 0.16%)
+ZtoMM trigger inconsistency
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+Processed   130000/ 2014489 entries,  6.45% (elapsed time  2987.5s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      207/  130001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed   140000/ 2014489 entries,  6.95% (elapsed time  3217.1s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      226/  140001 events ( 0.16%)
+Processed   150000/ 2014489 entries,  7.45% (elapsed time  3445.1s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      236/  150001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed   160000/ 2014489 entries,  7.94% (elapsed time  3674.2s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      254/  160001 events ( 0.16%)
+ZtoEE trigger inconsistency
+Processed   170000/ 2014489 entries,  8.44% (elapsed time  3901.0s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      265/  170001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed   180000/ 2014489 entries,  8.94% (elapsed time  4128.5s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      277/  180001 events ( 0.15%)
+Processed   190000/ 2014489 entries,  9.43% (elapsed time  4356.9s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      289/  190001 events ( 0.15%)
+Processed   200000/ 2014489 entries,  9.93% (elapsed time  4581.3s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      306/  200001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   210000/ 2014489 entries, 10.42% (elapsed time  4811.7s, curr speed    0.043 kHz, avg speed    0.044 kHz), accepted      321/  210001 events ( 0.15%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed   220000/ 2014489 entries, 10.92% (elapsed time  5037.1s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      334/  220001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   230000/ 2014489 entries, 11.42% (elapsed time  5261.8s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      343/  230001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   240000/ 2014489 entries, 11.91% (elapsed time  5489.5s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      355/  240001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   250000/ 2014489 entries, 12.41% (elapsed time  5717.4s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      369/  250001 events ( 0.15%)
+Processed   260000/ 2014489 entries, 12.91% (elapsed time  5942.7s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      387/  260001 events ( 0.15%)
+Processed   270000/ 2014489 entries, 13.40% (elapsed time  6170.5s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      403/  270001 events ( 0.15%)
+TtoEM trigger inconsistency
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+Processed   280000/ 2014489 entries, 13.90% (elapsed time  6395.2s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      415/  280001 events ( 0.15%)
+Processed   290000/ 2014489 entries, 14.40% (elapsed time  6620.4s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      431/  290001 events ( 0.15%)
+Processed   300000/ 2014489 entries, 14.89% (elapsed time  6843.8s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      450/  300001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   310000/ 2014489 entries, 15.39% (elapsed time  7064.7s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      466/  310001 events ( 0.15%)
+Processed   320000/ 2014489 entries, 15.88% (elapsed time  7290.9s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      484/  320001 events ( 0.15%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   330000/ 2014489 entries, 16.38% (elapsed time  7515.7s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      502/  330001 events ( 0.15%)
+Processed   340000/ 2014489 entries, 16.88% (elapsed time  7741.1s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      510/  340001 events ( 0.15%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed   350000/ 2014489 entries, 17.37% (elapsed time  7962.4s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      527/  350001 events ( 0.15%)
+Processed   360000/ 2014489 entries, 17.87% (elapsed time  8186.0s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      543/  360001 events ( 0.15%)
+Processed   370000/ 2014489 entries, 18.37% (elapsed time  8409.4s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      557/  370001 events ( 0.15%)
+Processed   380000/ 2014489 entries, 18.86% (elapsed time  8631.8s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      573/  380001 events ( 0.15%)
+Processed   390000/ 2014489 entries, 19.36% (elapsed time  8855.0s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      585/  390001 events ( 0.15%)
+Processed   400000/ 2014489 entries, 19.86% (elapsed time  9078.1s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      606/  400001 events ( 0.15%)
+Processed   410000/ 2014489 entries, 20.35% (elapsed time  9301.0s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      623/  410001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   420000/ 2014489 entries, 20.85% (elapsed time  9528.4s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      635/  420001 events ( 0.15%)
+Processed   430000/ 2014489 entries, 21.35% (elapsed time  9751.9s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      651/  430001 events ( 0.15%)
+Processed   440000/ 2014489 entries, 21.84% (elapsed time  9973.6s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      663/  440001 events ( 0.15%)
+Processed   450000/ 2014489 entries, 22.34% (elapsed time 10206.6s, curr speed    0.043 kHz, avg speed    0.044 kHz), accepted      684/  450001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   460000/ 2014489 entries, 22.83% (elapsed time 10428.8s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      697/  460001 events ( 0.15%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   470000/ 2014489 entries, 23.33% (elapsed time 10653.1s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      715/  470001 events ( 0.15%)
+Processed   480000/ 2014489 entries, 23.83% (elapsed time 10875.0s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      736/  480001 events ( 0.15%)
+Processed   490000/ 2014489 entries, 24.32% (elapsed time 11107.8s, curr speed    0.043 kHz, avg speed    0.044 kHz), accepted      752/  490001 events ( 0.15%)
+Processed   500000/ 2014489 entries, 24.82% (elapsed time 11340.7s, curr speed    0.043 kHz, avg speed    0.044 kHz), accepted      763/  500001 events ( 0.15%)
+Processed   510000/ 2014489 entries, 25.32% (elapsed time 11569.0s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      782/  510001 events ( 0.15%)
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   520000/ 2014489 entries, 25.81% (elapsed time 11798.1s, curr speed    0.044 kHz, avg speed    0.044 kHz), accepted      797/  520001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   530000/ 2014489 entries, 26.31% (elapsed time 12020.0s, curr speed    0.045 kHz, avg speed    0.044 kHz), accepted      809/  530001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   540000/ 2014489 entries, 26.81% (elapsed time 12232.6s, curr speed    0.047 kHz, avg speed    0.044 kHz), accepted      831/  540001 events ( 0.15%)
+Processed   550000/ 2014489 entries, 27.30% (elapsed time 12451.8s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      844/  550001 events ( 0.15%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed   560000/ 2014489 entries, 27.80% (elapsed time 12668.2s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      861/  560001 events ( 0.15%)
+Processed   570000/ 2014489 entries, 28.30% (elapsed time 12884.7s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      884/  570001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed   580000/ 2014489 entries, 28.79% (elapsed time 13100.8s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      895/  580001 events ( 0.15%)
+Processed   590000/ 2014489 entries, 29.29% (elapsed time 13317.4s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      918/  590001 events ( 0.16%)
+Processed   600000/ 2014489 entries, 29.78% (elapsed time 13532.9s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      931/  600001 events ( 0.16%)
+Processed   610000/ 2014489 entries, 30.28% (elapsed time 13749.5s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      942/  610001 events ( 0.15%)
+Processed   620000/ 2014489 entries, 30.78% (elapsed time 13963.6s, curr speed    0.047 kHz, avg speed    0.044 kHz), accepted      958/  620001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   630000/ 2014489 entries, 31.27% (elapsed time 14182.4s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted      977/  630001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed   640000/ 2014489 entries, 31.77% (elapsed time 14392.3s, curr speed    0.048 kHz, avg speed    0.044 kHz), accepted      989/  640001 events ( 0.15%)
+Processed   650000/ 2014489 entries, 32.27% (elapsed time 14608.0s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted     1011/  650001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed   660000/ 2014489 entries, 32.76% (elapsed time 14824.2s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1025/  660001 events ( 0.16%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   670000/ 2014489 entries, 33.26% (elapsed time 15036.6s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1045/  670001 events ( 0.16%)
+Processed   680000/ 2014489 entries, 33.76% (elapsed time 15252.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1058/  680001 events ( 0.16%)
+Processed   690000/ 2014489 entries, 34.25% (elapsed time 15466.6s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1073/  690001 events ( 0.16%)
+Processed   700000/ 2014489 entries, 34.75% (elapsed time 15683.7s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1091/  700001 events ( 0.16%)
+ZtoEE trigger inconsistency
+Processed   710000/ 2014489 entries, 35.24% (elapsed time 15900.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1108/  710001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed   720000/ 2014489 entries, 35.74% (elapsed time 16116.0s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1119/  720001 events ( 0.16%)
+Processed   730000/ 2014489 entries, 36.24% (elapsed time 16334.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1135/  730001 events ( 0.16%)
+Processed   740000/ 2014489 entries, 36.73% (elapsed time 16550.5s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1149/  740001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed   750000/ 2014489 entries, 37.23% (elapsed time 16764.9s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1170/  750001 events ( 0.16%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   760000/ 2014489 entries, 37.73% (elapsed time 16983.5s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1181/  760001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed   770000/ 2014489 entries, 38.22% (elapsed time 17197.5s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1191/  770001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   780000/ 2014489 entries, 38.72% (elapsed time 17413.9s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1211/  780001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed   790000/ 2014489 entries, 39.22% (elapsed time 17627.2s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1224/  790001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   800000/ 2014489 entries, 39.71% (elapsed time 17843.3s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1237/  800001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   810000/ 2014489 entries, 40.21% (elapsed time 18060.3s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1248/  810001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   820000/ 2014489 entries, 40.71% (elapsed time 18274.2s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1256/  820001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   830000/ 2014489 entries, 41.20% (elapsed time 18492.4s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1270/  830001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   840000/ 2014489 entries, 41.70% (elapsed time 18709.5s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1278/  840001 events ( 0.15%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   850000/ 2014489 entries, 42.19% (elapsed time 18927.7s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1290/  850001 events ( 0.15%)
+Processed   860000/ 2014489 entries, 42.69% (elapsed time 19146.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1310/  860001 events ( 0.15%)
+Processed   870000/ 2014489 entries, 43.19% (elapsed time 19359.1s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1328/  870001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   880000/ 2014489 entries, 43.68% (elapsed time 19575.5s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1341/  880001 events ( 0.15%)
+Processed   890000/ 2014489 entries, 44.18% (elapsed time 19791.7s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1355/  890001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   900000/ 2014489 entries, 44.68% (elapsed time 20005.8s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1373/  900001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   910000/ 2014489 entries, 45.17% (elapsed time 20222.6s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1389/  910001 events ( 0.15%)
+Processed   920000/ 2014489 entries, 45.67% (elapsed time 20437.6s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1404/  920001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   930000/ 2014489 entries, 46.17% (elapsed time 20655.4s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1419/  930001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed   940000/ 2014489 entries, 46.66% (elapsed time 20867.6s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1442/  940001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   950000/ 2014489 entries, 47.16% (elapsed time 21084.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1457/  950001 events ( 0.15%)
+Processed   960000/ 2014489 entries, 47.65% (elapsed time 21300.1s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1471/  960001 events ( 0.15%)
+Processed   970000/ 2014489 entries, 48.15% (elapsed time 21512.2s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1488/  970001 events ( 0.15%)
+Processed   980000/ 2014489 entries, 48.65% (elapsed time 21721.7s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1503/  980001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed   990000/ 2014489 entries, 49.14% (elapsed time 21936.5s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1521/  990001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1000000/ 2014489 entries, 49.64% (elapsed time 22146.0s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1537/ 1000001 events ( 0.15%)
+Processed  1010000/ 2014489 entries, 50.14% (elapsed time 22360.7s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1555/ 1010001 events ( 0.15%)
+Processed  1020000/ 2014489 entries, 50.63% (elapsed time 22570.7s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1571/ 1020001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1030000/ 2014489 entries, 51.13% (elapsed time 22781.3s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1593/ 1030001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1040000/ 2014489 entries, 51.63% (elapsed time 22996.4s, curr speed    0.046 kHz, avg speed    0.045 kHz), accepted     1604/ 1040001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1050000/ 2014489 entries, 52.12% (elapsed time 23202.4s, curr speed    0.049 kHz, avg speed    0.045 kHz), accepted     1624/ 1050001 events ( 0.15%)
+Processed  1060000/ 2014489 entries, 52.62% (elapsed time 23412.9s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1637/ 1060001 events ( 0.15%)
+Processed  1070000/ 2014489 entries, 53.12% (elapsed time 23624.9s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1655/ 1070001 events ( 0.15%)
+Processed  1080000/ 2014489 entries, 53.61% (elapsed time 23835.3s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1670/ 1080001 events ( 0.15%)
+Processed  1090000/ 2014489 entries, 54.11% (elapsed time 24046.7s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1683/ 1090001 events ( 0.15%)
+Processed  1100000/ 2014489 entries, 54.60% (elapsed time 24256.7s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1694/ 1100001 events ( 0.15%)
+Processed  1110000/ 2014489 entries, 55.10% (elapsed time 24464.0s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1707/ 1110001 events ( 0.15%)
+Processed  1120000/ 2014489 entries, 55.60% (elapsed time 24673.2s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1727/ 1120001 events ( 0.15%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1130000/ 2014489 entries, 56.09% (elapsed time 24879.3s, curr speed    0.049 kHz, avg speed    0.045 kHz), accepted     1742/ 1130001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1140000/ 2014489 entries, 56.59% (elapsed time 25090.7s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1760/ 1140001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1150000/ 2014489 entries, 57.09% (elapsed time 25301.4s, curr speed    0.047 kHz, avg speed    0.045 kHz), accepted     1772/ 1150001 events ( 0.15%)
+Processed  1160000/ 2014489 entries, 57.58% (elapsed time 25507.8s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1781/ 1160001 events ( 0.15%)
+Processed  1170000/ 2014489 entries, 58.08% (elapsed time 25718.2s, curr speed    0.048 kHz, avg speed    0.045 kHz), accepted     1799/ 1170001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1180000/ 2014489 entries, 58.58% (elapsed time 25927.1s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     1824/ 1180001 events ( 0.15%)
+Processed  1190000/ 2014489 entries, 59.07% (elapsed time 26139.2s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1838/ 1190001 events ( 0.15%)
+Processed  1200000/ 2014489 entries, 59.57% (elapsed time 26352.8s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1861/ 1200001 events ( 0.16%)
+Processed  1210000/ 2014489 entries, 60.06% (elapsed time 26563.5s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1878/ 1210001 events ( 0.16%)
+Processed  1220000/ 2014489 entries, 60.56% (elapsed time 26774.2s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1893/ 1220001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed  1230000/ 2014489 entries, 61.06% (elapsed time 26983.8s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     1900/ 1230001 events ( 0.15%)
+Processed  1240000/ 2014489 entries, 61.55% (elapsed time 27194.6s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1921/ 1240001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1250000/ 2014489 entries, 62.05% (elapsed time 27406.8s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1942/ 1250001 events ( 0.16%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1260000/ 2014489 entries, 62.55% (elapsed time 27613.2s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     1956/ 1260001 events ( 0.16%)
+Processed  1270000/ 2014489 entries, 63.04% (elapsed time 27823.9s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     1969/ 1270001 events ( 0.16%)
+Processed  1280000/ 2014489 entries, 63.54% (elapsed time 28032.9s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     1981/ 1280001 events ( 0.15%)
+Processed  1290000/ 2014489 entries, 64.04% (elapsed time 28239.5s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     1999/ 1290001 events ( 0.15%)
+ZtoEE trigger inconsistency
+Processed  1300000/ 2014489 entries, 64.53% (elapsed time 28452.6s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2018/ 1300001 events ( 0.16%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1310000/ 2014489 entries, 65.03% (elapsed time 28661.9s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2037/ 1310001 events ( 0.16%)
+Processed  1320000/ 2014489 entries, 65.53% (elapsed time 28873.1s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2048/ 1320001 events ( 0.16%)
+Processed  1330000/ 2014489 entries, 66.02% (elapsed time 29082.2s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2067/ 1330001 events ( 0.16%)
+ZtoMM trigger inconsistency
+Processed  1340000/ 2014489 entries, 66.52% (elapsed time 29289.9s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2083/ 1340001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed  1350000/ 2014489 entries, 67.01% (elapsed time 29502.0s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2095/ 1350001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed  1360000/ 2014489 entries, 67.51% (elapsed time 29710.3s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2109/ 1360001 events ( 0.16%)
+TtoEM trigger inconsistency
+Processed  1370000/ 2014489 entries, 68.01% (elapsed time 29919.3s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2112/ 1370001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1380000/ 2014489 entries, 68.50% (elapsed time 30133.1s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2138/ 1380001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1390000/ 2014489 entries, 69.00% (elapsed time 30339.8s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2151/ 1390001 events ( 0.15%)
+Processed  1400000/ 2014489 entries, 69.50% (elapsed time 30548.6s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2168/ 1400001 events ( 0.15%)
+Processed  1410000/ 2014489 entries, 69.99% (elapsed time 30760.4s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2184/ 1410001 events ( 0.15%)
+Processed  1420000/ 2014489 entries, 70.49% (elapsed time 30966.3s, curr speed    0.049 kHz, avg speed    0.046 kHz), accepted     2199/ 1420001 events ( 0.15%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed  1430000/ 2014489 entries, 70.99% (elapsed time 31177.2s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2210/ 1430001 events ( 0.15%)
+Processed  1440000/ 2014489 entries, 71.48% (elapsed time 31388.5s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2222/ 1440001 events ( 0.15%)
+Processed  1450000/ 2014489 entries, 71.98% (elapsed time 31595.0s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2234/ 1450001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1460000/ 2014489 entries, 72.47% (elapsed time 31807.4s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2247/ 1460001 events ( 0.15%)
+Processed  1470000/ 2014489 entries, 72.97% (elapsed time 32010.7s, curr speed    0.049 kHz, avg speed    0.046 kHz), accepted     2264/ 1470001 events ( 0.15%)
+Processed  1480000/ 2014489 entries, 73.47% (elapsed time 32219.4s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2281/ 1480001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1490000/ 2014489 entries, 73.96% (elapsed time 32431.4s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2296/ 1490001 events ( 0.15%)
+Processed  1500000/ 2014489 entries, 74.46% (elapsed time 32639.0s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2314/ 1500001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1510000/ 2014489 entries, 74.96% (elapsed time 32851.6s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2330/ 1510001 events ( 0.15%)
+Processed  1520000/ 2014489 entries, 75.45% (elapsed time 33061.2s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2350/ 1520001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1530000/ 2014489 entries, 75.95% (elapsed time 33271.4s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2366/ 1530001 events ( 0.15%)
+Processed  1540000/ 2014489 entries, 76.45% (elapsed time 33482.1s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2388/ 1540001 events ( 0.16%)
+Processed  1550000/ 2014489 entries, 76.94% (elapsed time 33691.0s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2397/ 1550001 events ( 0.15%)
+Processed  1560000/ 2014489 entries, 77.44% (elapsed time 33904.3s, curr speed    0.047 kHz, avg speed    0.046 kHz), accepted     2408/ 1560001 events ( 0.15%)
+Processed  1570000/ 2014489 entries, 77.94% (elapsed time 34111.7s, curr speed    0.048 kHz, avg speed    0.046 kHz), accepted     2416/ 1570001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1580000/ 2014489 entries, 78.43% (elapsed time 34285.8s, curr speed    0.057 kHz, avg speed    0.046 kHz), accepted     2434/ 1580001 events ( 0.15%)
+Processed  1590000/ 2014489 entries, 78.93% (elapsed time 34448.6s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2447/ 1590001 events ( 0.15%)
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1600000/ 2014489 entries, 79.42% (elapsed time 34613.1s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2461/ 1600001 events ( 0.15%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed  1610000/ 2014489 entries, 79.92% (elapsed time 34776.8s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2473/ 1610001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1620000/ 2014489 entries, 80.42% (elapsed time 34939.7s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2490/ 1620001 events ( 0.15%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1630000/ 2014489 entries, 80.91% (elapsed time 35104.1s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2502/ 1630001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1640000/ 2014489 entries, 81.41% (elapsed time 35269.2s, curr speed    0.061 kHz, avg speed    0.046 kHz), accepted     2517/ 1640001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1650000/ 2014489 entries, 81.91% (elapsed time 35431.8s, curr speed    0.062 kHz, avg speed    0.047 kHz), accepted     2534/ 1650001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1660000/ 2014489 entries, 82.40% (elapsed time 35644.0s, curr speed    0.047 kHz, avg speed    0.047 kHz), accepted     2550/ 1660001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1670000/ 2014489 entries, 82.90% (elapsed time 35817.9s, curr speed    0.058 kHz, avg speed    0.047 kHz), accepted     2566/ 1670001 events ( 0.15%)
+Processed  1680000/ 2014489 entries, 83.40% (elapsed time 35980.1s, curr speed    0.062 kHz, avg speed    0.047 kHz), accepted     2588/ 1680001 events ( 0.15%)
+Processed  1690000/ 2014489 entries, 83.89% (elapsed time 36144.0s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2604/ 1690001 events ( 0.15%)
+Processed  1700000/ 2014489 entries, 84.39% (elapsed time 36311.1s, curr speed    0.060 kHz, avg speed    0.047 kHz), accepted     2616/ 1700001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1710000/ 2014489 entries, 84.89% (elapsed time 36480.4s, curr speed    0.059 kHz, avg speed    0.047 kHz), accepted     2636/ 1710001 events ( 0.15%)
+Processed  1720000/ 2014489 entries, 85.38% (elapsed time 36651.6s, curr speed    0.058 kHz, avg speed    0.047 kHz), accepted     2651/ 1720001 events ( 0.15%)
+Processed  1730000/ 2014489 entries, 85.88% (elapsed time 36822.9s, curr speed    0.058 kHz, avg speed    0.047 kHz), accepted     2669/ 1730001 events ( 0.15%)
+Processed  1740000/ 2014489 entries, 86.37% (elapsed time 36993.4s, curr speed    0.059 kHz, avg speed    0.047 kHz), accepted     2686/ 1740001 events ( 0.15%)
+Processed  1750000/ 2014489 entries, 86.87% (elapsed time 37164.9s, curr speed    0.058 kHz, avg speed    0.047 kHz), accepted     2697/ 1750001 events ( 0.15%)
+Processed  1760000/ 2014489 entries, 87.37% (elapsed time 37342.1s, curr speed    0.056 kHz, avg speed    0.047 kHz), accepted     2709/ 1760001 events ( 0.15%)
+ZtoEE trigger inconsistency
+Processed  1770000/ 2014489 entries, 87.86% (elapsed time 37509.0s, curr speed    0.060 kHz, avg speed    0.047 kHz), accepted     2727/ 1770001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1780000/ 2014489 entries, 88.36% (elapsed time 37672.1s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2746/ 1780001 events ( 0.15%)
+Processed  1790000/ 2014489 entries, 88.86% (elapsed time 37837.0s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2763/ 1790001 events ( 0.15%)
+TtoEM trigger inconsistency
+Processed  1800000/ 2014489 entries, 89.35% (elapsed time 38000.0s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2774/ 1800001 events ( 0.15%)
+Processed  1810000/ 2014489 entries, 89.85% (elapsed time 38163.6s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2786/ 1810001 events ( 0.15%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1820000/ 2014489 entries, 90.35% (elapsed time 38327.7s, curr speed    0.061 kHz, avg speed    0.047 kHz), accepted     2796/ 1820001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1830000/ 2014489 entries, 90.84% (elapsed time 38492.0s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2816/ 1830001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1840000/ 2014489 entries, 91.34% (elapsed time 38667.9s, curr speed    0.057 kHz, avg speed    0.048 kHz), accepted     2830/ 1840001 events ( 0.15%)
+Processed  1850000/ 2014489 entries, 91.83% (elapsed time 38833.1s, curr speed    0.060 kHz, avg speed    0.048 kHz), accepted     2842/ 1850001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1860000/ 2014489 entries, 92.33% (elapsed time 38995.9s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2854/ 1860001 events ( 0.15%)
+Processed  1870000/ 2014489 entries, 92.83% (elapsed time 39160.1s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2869/ 1870001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1880000/ 2014489 entries, 93.32% (elapsed time 39324.1s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2878/ 1880001 events ( 0.15%)
+Processed  1890000/ 2014489 entries, 93.82% (elapsed time 39488.8s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2890/ 1890001 events ( 0.15%)
+Processed  1900000/ 2014489 entries, 94.32% (elapsed time 39652.2s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2908/ 1900001 events ( 0.15%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed  1910000/ 2014489 entries, 94.81% (elapsed time 39817.7s, curr speed    0.060 kHz, avg speed    0.048 kHz), accepted     2925/ 1910001 events ( 0.15%)
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+Processed  1920000/ 2014489 entries, 95.31% (elapsed time 39982.7s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2942/ 1920001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1930000/ 2014489 entries, 95.81% (elapsed time 40145.0s, curr speed    0.062 kHz, avg speed    0.048 kHz), accepted     2958/ 1930001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1940000/ 2014489 entries, 96.30% (elapsed time 40309.1s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2974/ 1940001 events ( 0.15%)
+Processed  1950000/ 2014489 entries, 96.80% (elapsed time 40472.6s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     2992/ 1950001 events ( 0.15%)
+Processed  1960000/ 2014489 entries, 97.30% (elapsed time 40636.1s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     3003/ 1960001 events ( 0.15%)
+Processed  1970000/ 2014489 entries, 97.79% (elapsed time 40800.1s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     3018/ 1970001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1980000/ 2014489 entries, 98.29% (elapsed time 40964.9s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     3035/ 1980001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  1990000/ 2014489 entries, 98.78% (elapsed time 41127.0s, curr speed    0.062 kHz, avg speed    0.048 kHz), accepted     3056/ 1990001 events ( 0.15%)
+Processed  2000000/ 2014489 entries, 99.28% (elapsed time 41291.2s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     3074/ 2000001 events ( 0.15%)
+ZtoMM trigger inconsistency
+Processed  2010000/ 2014489 entries, 99.78% (elapsed time 41455.9s, curr speed    0.061 kHz, avg speed    0.048 kHz), accepted     3093/ 2010001 events ( 0.15%)
+Processed 2014489 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZZTo4L_13TeV_powheg_pythia8_ext1/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/70000/03E60402-B59C-E34E-8333-9FE28C473D60.root (2014489 entries). Finally selected 3097 entries
+Done /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM/03E60402-B59C-E34E-8333-9FE28C473D60.root
+48.4876208466 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2016/ZZTo4L_13TeV_powheg_pythia8_ext1__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1__NANOAODSIM/03E60402-B59C-E34E-8333-9FE28C473D60.root
+DONE
+Complete at
+Wed Jan 29 11:33:55 CET 2020

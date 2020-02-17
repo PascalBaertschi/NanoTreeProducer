@@ -47,7 +47,7 @@ class MuonSFs:
     def getIdSF(self, pt, eta, highptid):
         """Get SF for muon identification."""
         if self.year == 2016:
-            return (self.sftool_id_bcdef.getSF(pt,abs(eta))*lumi_2016_bcdef+self.sftool_id_gh.getSF(pt,abs(eta))*lumi_2016_gh)/(lumi_2016_bcdef+lumi_2016_gh)
+            return (self.sftool_id_bcdef.getSF(pt,abs(eta))*self.lumi_2016_bcdef+self.sftool_id_gh.getSF(pt,abs(eta))*self.lumi_2016_gh)/(self.lumi_2016_bcdef+self.lumi_2016_gh)
         else:
             if highptid==1:
                 return self.sftool_trkid.getSF(pt,abs(eta))
@@ -59,7 +59,7 @@ class MuonSFs:
     def getIdSFerror(self, pt, eta, highptid):
         """Get SF for muon identification."""
         if self.year == 2016:
-            idsferror = (self.sftool_id_bcdef.getSFerror(pt,abs(eta))*lumi_2016_bcdef+self.sftool_id_gh.getSFerror(pt,abs(eta))*lumi_2016_gh)/(lumi_2016_bcdef+lumi_2016_gh)
+            idsferror = (self.sftool_id_bcdef.getSFerror(pt,abs(eta))*self.lumi_2016_bcdef+self.sftool_id_gh.getSFerror(pt,abs(eta))*self.lumi_2016_gh)/(self.lumi_2016_bcdef+self.lumi_2016_gh)
             if highptid==1:
                 return idsferror*2
             else:
@@ -76,7 +76,7 @@ class MuonSFs:
     def getIsoSF(self, pt, eta, highptid):
         """Get SF for muon isolation."""
         if self.year == 2016:
-            return (self.sftool_iso_id_bcdef.getSF(pt,abs(eta))*lumi_2016_bcdef+self.sftool_iso_id_gh.getSF(pt,abs(eta))*lumi_2016_gh)/(lumi_2016_bcdef+lumi_2016_gh)
+            return (self.sftool_iso_id_bcdef.getSF(pt,abs(eta))*self.lumi_2016_bcdef+self.sftool_iso_id_gh.getSF(pt,abs(eta))*self.lumi_2016_gh)/(self.lumi_2016_bcdef+self.lumi_2016_gh)
         else:
             if highptid==1:
                 return self.sftool_iso_trkid.getSF(pt,abs(eta))
@@ -88,7 +88,7 @@ class MuonSFs:
     def getIsoSFerror(self, pt, eta, highptid):
         """Get SF for muon isolation."""
         if self.year == 2016:
-            isosferror = (self.sftool_iso_id_bcdef.getSFerror(pt,abs(eta))*lumi_2016_bcdef+self.sftool_iso_id_gh.getSFerror(pt,abs(eta))*lumi_2016_gh)/(lumi_2016_bcdef+lumi_2016_gh)
+            isosferror = (self.sftool_iso_id_bcdef.getSFerror(pt,abs(eta))*self.lumi_2016_bcdef+self.sftool_iso_id_gh.getSFerror(pt,abs(eta))*self.lumi_2016_gh)/(self.lumi_2016_bcdef+self.lumi_2016_gh)
             if highptid==1:
                 return isosferror*2
             else:

@@ -1,0 +1,2 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-1600_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/100000/5BDA8F30-1B49-904D-AFB4-94F3A1D77F8A.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-1600_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/100000/46E8B1C4-4AB2-724D-A636-DF9D7495F658.root

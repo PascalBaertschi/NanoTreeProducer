@@ -1,0 +1,4 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/30952A1C-B8F2-BD4E-8DFF-E5ECEDC7F96B.root
+root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/260000/AB440400-5A99-2B45-8B74-5CFD3927526B.root
+root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/260000/10740696-B1A7-CD4B-8CCB-3C11B57BC618.root
+root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/D642479B-A573-044D-9FFD-71E2A35272FB.root

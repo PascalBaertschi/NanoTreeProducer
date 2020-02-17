@@ -191,8 +191,7 @@ def main(args):
               ('VV', "ZZTo4L",    ['ZZTo4L_main','ZZTo4L_ext1']),
               ('SingleMuon',      "SingleMuon_Run2016B",      ['SingleMuon_Run2016B_ver1-v1','SingleMuon_Run2016B_ver2-v1']),
               ('SingleElectron',  "SingleElectron_Run2016B",  ['SingleElectron_Run2016B_ver1-v1','SingleElectron_Run2016B_ver2-v1']),
-              ('MET',             "MET_Run2016B",             ['MET_Run2016B_ver1-v1','MET_Run2016B_ver2-v1']),
-              ('SinglePhoton',    "SinglePhoton_Run2016B",    ['SinglePhoton_Run2016B_ver1-v1','SinglePhoton_Run2016B_ver2-v1'])
+              ('MET',             "MET_Run2016B",             ['MET_Run2016B_ver1-v1','MET_Run2016B_ver2-v1'])
           ]
             
       elif year == 2017:
@@ -413,13 +412,13 @@ def getSampleShortName(dasname,year):
           ('VV', "WWTo4Q",                   "WWTo4Q_13TeV-powheg"),
           ('VV', "WZTo1L1Nu2Q",              "WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8"),
           ('VV', "WZTo2L2Q",                 "WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8"),
-          ('VV', "ZZTo2L2Q",                 "ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8"),
-          ('VV', "ZZTo2Q2Nu",                "ZZTo2Q2Nu_13TeV_amcatnloFXFX_madspin_pythia8"),
+          ('VV', "ZZTo2L2Q",                 "ZZTo2L2Q_13TeV_powheg_pythia8"),
+          ('VV', "ZZTo2Q2Nu",                "ZZTo2Q2Nu_13TeV_powheg_pythia8"),
           ('VV', "ZZTo2L2Nu_ext1",           "ZZTo2L2Nu_13TeV_powheg_pythia8_ext1"),
           ('VV', "ZZTo2L2Nu_main",           "ZZTo2L2Nu_13TeV_powheg_pythia8"),
           ('VV', "ZZTo4L_ext1",              "ZZTo4L_13TeV_powheg_pythia8_ext1"),
           ('VV', "ZZTo4L_main",              "ZZTo4L_13TeV_powheg_pythia8"),
-          ('VV', "GluGluHToBB",              "GluGluHToBB_M125_13TeV_amcatnloFXFX_pythia8"),
+          ('VV', "GluGluHToBB",              "GluGluHToBB_M125_13TeV_powheg_pythia8"),
           ('VV', "ZH_HToBB_ZToNuNu",         "ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8"),
           ('VV', "ZH_HToBB_ZToLL",           "ZH_HToBB_ZToLL_M125_13TeV_powheg_pythia8"),
           ('VV', "WplusH_HToBB_WToLNu",      "WplusH_HToBB_WToLNu_M125_13TeV_powheg_pythia8"),
@@ -519,15 +518,7 @@ def getSampleShortName(dasname,year):
           ('MET',     "MET_Run2016E",              "MET/Run2016E"),
           ('MET',     "MET_Run2016F",              "MET/Run2016F"),
           ('MET',     "MET_Run2016G",              "MET/Run2016G"),
-          ('MET',     "MET_Run2016H",              "MET/Run2016H"),
-          ('SinglePhoton',     "SinglePhoton_Run2016B_ver1-v1",         "SinglePhoton/Run2016B_ver1"),
-          ('SinglePhoton',     "SinglePhoton_Run2016B_ver2-v1",         "SinglePhoton/Run2016B_ver2"),
-          ('SinglePhoton',     "SinglePhoton_Run2016C",              "SinglePhoton/Run2016C"),
-          ('SinglePhoton',     "SinglePhoton_Run2016D",              "SinglePhoton/Run2016D"),
-          ('SinglePhoton',     "SinglePhoton_Run2016E",              "SinglePhoton/Run2016E"),
-          ('SinglePhoton',     "SinglePhoton_Run2016F",              "SinglePhoton/Run2016F"),
-          ('SinglePhoton',     "SinglePhoton_Run2016G",              "SinglePhoton/Run2016G"),
-          ('SinglePhoton',     "SinglePhoton_Run2016H",              "SinglePhoton/Run2016H")]                                       
+          ('MET',     "MET_Run2016H",              "MET/Run2016H")]                                       
 
   elif year==2017:
       subdirs = [ 'DY', 'ZJ', 'WJ', 'ST', 'TT', 'VV', 'XZH', 'XZHVBF', 'SingleMuon', 'SingleElectron', 'MET', 'SinglePhoton']
@@ -554,8 +545,8 @@ def getSampleShortName(dasname,year):
           ('WJ',             "WJetsToLNu_HT-1200to2500",     "WJetsToLNu_HT-1200To2500_TuneCP5_13TeV-madgraphMLM-pythia8"       ),
           ('WJ',             "WJetsToLNu_HT-2500toInf",      "WJetsToLNu_HT-2500ToInf_TuneCP5_13TeV-madgraphMLM-pythia8"        ),
           ('ST',             "ST_s-channel",                 "ST_s-channel_4f_leptonDecays"                                     ),
-          ('ST',             "ST_t-channel_antitop",         "ST_t-channel_antitop_4f_inclusiveDecays"                          ),
-          ('ST',             "ST_t-channel_top",             "ST_t-channel_top_4f_inclusiveDecays"                              ),
+          ('ST',             "ST_t-channel_antitop",         "ST_t-channel_antitop_4f_InclusiveDecays"                          ),
+          ('ST',             "ST_t-channel_top",             "ST_t-channel_top_4f_InclusiveDecays"                              ),
           ('ST',             "ST_tW_antitop",                "ST_tW_antitop_5f_inclusiveDecays"                                 ),
           ('ST',             "ST_tW_top",                    "ST_tW_top_5f_inclusiveDecays"                                     ),
           ('TT',             "TTTo2L2Nu",                    "TTTo2L2Nu"                                                        ),
@@ -650,8 +641,7 @@ def getSampleShortName(dasname,year):
           ('XZHVBF',        "Zprime_VBF_Zh_Zinvhinc_narrow_M-8000",  "Zprime_VBF_Zh_Zinvhinc_narrow_M-8000_TuneCP5_13TeV-madgraph-pythia8"),
           ('SingleMuon',     "SingleMuon_$RUN",              "SingleMuon/$RUN"                                                  ),
           ('SingleElectron', "SingleElectron_$RUN",          "SingleElectron/$RUN"                                              ),
-          ('MET',            "MET_$RUN",                     "MET/$RUN"                                                         ),
-          ('SinglePhoton',   "SinglePhoton_$RUN",            "SinglePhoton/$RUN"                                                )]
+          ('MET',            "MET_$RUN",                     "MET/$RUN"                                                         )]
 
 
   elif year==2018:

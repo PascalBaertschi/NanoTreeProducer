@@ -1,0 +1,57 @@
+job start at
+Tue Jan 28 20:38:34 CET 2020
+SLURM_JOB_ID: 422166
+HOSTNAME: t3wn51
+JOBLIST:joblist/joblist_WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1/280000/FF08D018-E95D-DA46-AD1F-C3FDA9CB06A7.root -o /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM -N WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 5 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1/280000/FF08D018-E95D-DA46-AD1F-C3FDA9CB06A7.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM_5_ll.root
+chunck       = 5
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM_5_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpzW2trd/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpE0Bypq/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpE0Bypq/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmplh5r8z/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpmIXuxT/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpmIXuxT/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 95245 entries out of 95245 (100.00%)
+nanoAODv5? True
+Bad event
+Processed    10000/   95245 entries, 10.50% (elapsed time   175.0s, curr speed    0.057 kHz, avg speed    0.057 kHz), accepted       12/   10001 events ( 0.12%)
+Processed    20000/   95245 entries, 21.00% (elapsed time   340.9s, curr speed    0.060 kHz, avg speed    0.059 kHz), accepted       30/   20001 events ( 0.15%)
+Bad event
+Processed    30000/   95245 entries, 31.50% (elapsed time   513.1s, curr speed    0.058 kHz, avg speed    0.058 kHz), accepted       38/   30001 events ( 0.13%)
+Processed    40000/   95245 entries, 42.00% (elapsed time   675.8s, curr speed    0.061 kHz, avg speed    0.059 kHz), accepted       62/   40001 events ( 0.15%)
+Processed    50000/   95245 entries, 52.50% (elapsed time   849.1s, curr speed    0.058 kHz, avg speed    0.059 kHz), accepted       79/   50001 events ( 0.16%)
+Processed    60000/   95245 entries, 63.00% (elapsed time  1018.7s, curr speed    0.059 kHz, avg speed    0.059 kHz), accepted      102/   60001 events ( 0.17%)
+Processed    70000/   95245 entries, 73.49% (elapsed time  1195.1s, curr speed    0.057 kHz, avg speed    0.059 kHz), accepted      122/   70001 events ( 0.17%)
+Processed    80000/   95245 entries, 83.99% (elapsed time  1351.4s, curr speed    0.064 kHz, avg speed    0.059 kHz), accepted      139/   80001 events ( 0.17%)
+Bad event
+Processed    90000/   95245 entries, 94.49% (elapsed time  1525.3s, curr speed    0.058 kHz, avg speed    0.059 kHz), accepted      157/   90001 events ( 0.17%)
+Processed 95245 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1/280000/FF08D018-E95D-DA46-AD1F-C3FDA9CB06A7.root (95245 entries). Finally selected 162 entries
+Done /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM/FF08D018-E95D-DA46-AD1F-C3FDA9CB06A7.root
+58.7507787586 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2017/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_new_pmx_102X_mc2017_realistic_v7-v1__NANOAODSIM/FF08D018-E95D-DA46-AD1F-C3FDA9CB06A7.root
+DONE
+Complete at
+Tue Jan 28 21:41:47 CET 2020

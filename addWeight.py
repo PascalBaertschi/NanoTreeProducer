@@ -151,9 +151,9 @@ def processFile(sample_name, verbose=False):
 
 jobs = []
 if year=='2016':
-    samples_subdir = ['DY','MET','ST','SingleElectron','SingleMuon','SinglePhoton','TT','VV','WJ','ZJ','XZH','XZHVBF']
+    samples_subdir = ['DY','MET','ST','SingleElectron','SingleMuon','TT','VV','WJ','ZJ','XZH','XZHVBF']
 elif year=='2017':
-    samples_subdir = ['DY','MET','ST','SingleElectron','SingleMuon','SinglePhoton','TT','VV','WJ','XZH','XZHVBF','ZJ']
+    samples_subdir = ['DY','MET','ST','SingleElectron','SingleMuon','TT','VV','WJ','XZH','XZHVBF','ZJ']
 elif year=='2018':
     samples_subdir = ['DY','MET','ST','EGamma','SingleMuon','TT','VV','WJ','XZH','XZHVBF','ZJ']
 for i in range(0,len(samples_subdir)):

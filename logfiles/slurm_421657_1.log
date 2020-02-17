@@ -1,0 +1,604 @@
+job start at
+Tue Jan 28 20:30:36 CET 2020
+SLURM_JOB_ID: 421657
+HOSTNAME: t3wn36
+JOBLIST:joblist/joblist_Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/6C64874F-E366-1F4F-8A96-1934B2EB889D.root -o /work/pbaertsc/heavy_resonance/output_2018/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -N Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -n 0 -c ll -y 2018
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/6C64874F-E366-1F4F-8A96-1934B2EB889D.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2018/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+output file  = Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2018
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2018/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2018/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpyEA8TD/Autumn18_V19_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp4WINSv/Autumn18_V7_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp4WINSv/Autumn18_V7_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpAlCf1f/Autumn18_V19_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpt27fXF/Autumn18_V7_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpt27fXF/Autumn18_V7_MC_SF_AK8PFPuppi.txt'
+Pre-select 100000 entries out of 100000 (100.00%)
+nanoAODv5? True
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    10000/  100000 entries, 10.00% (elapsed time   246.0s, curr speed    0.041 kHz, avg speed    0.041 kHz), accepted     4088/   10001 events (40.88%)
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    20000/  100000 entries, 20.00% (elapsed time   499.2s, curr speed    0.040 kHz, avg speed    0.040 kHz), accepted     8220/   20001 events (41.10%)
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+WARNING: jet m = 0.0 !!
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    30000/  100000 entries, 30.00% (elapsed time   749.8s, curr speed    0.040 kHz, avg speed    0.040 kHz), accepted    12336/   30001 events (41.12%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+TtoEM triggError in <TNetXNGFile::ReadBuffer>: [ERROR] Server responded with an error: [3011] No servers are available to read the file.
+
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/6C64874F-E366-1F4F-8A96-1934B2EB889D.root at byte:124192578, branch:CaloMET_sumEt, entry:54360, badread=4, nerrors=1, basketnumber=16
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/Zprime_VBF_Zh_Zlephinc_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph-pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/60000/6C64874F-E366-1F4F-8A96-1934B2EB889D.root at byte:124845768, branch:Electron_jetIdx, entry:54361, badread=4, nerrors=2, basketnumber=16
+er inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    40000/  100000 entries, 40.00% (elapsed time  1002.7s, curr speed    0.040 kHz, avg speed    0.040 kHz), accepted    16465/   40001 events (41.16%)
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+WARNING: jet m = -0.0 !!
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    50000/  100000 entries, 50.00% (elapsed time  1252.2s, curr speed    0.040 kHz, avg speed    0.040 kHz), accepted    20619/   50001 events (41.24%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoEE trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+
+Thread 7 (Thread 0x2b9d75216700 (LWP 220519)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x2b9d75015700 (LWP 220510)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b9d74e14700 (LWP 220495)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b9d74c13700 (LWP 220476)):
+#0  0x00002b9d579ece3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b9d74495753 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b9d746025f7 in XrdCl::TaskManager::RunTasks (this=0x172470e0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002b9d74602749 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b9d74a12700 (LWP 220457)):
+#0  0x00002b9d58401483 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b9d7449a804 in XrdSys::IOEvents::PollE::Begin (this=0x760f110, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002b9d74496e75 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffec5f50dc0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b9d74494f78 in XrdSysThread_Xeq (myargs=0xd2ef9a0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b9d663ac700 (LWP 219591)):
+#0  0x00002b9d579ebadb in do_futex_wait.constprop () from /lib64/libpthread.so.0
+#1  0x00002b9d579ebb6f in __new_sem_wait_slow.constprop.0 () from /lib64/libpthread.so.0
+#2  0x00002b9d579ebc0b in sem_wait
+
+GLIBC_2.2.5 () from /lib64/libpthread.so.0
+#3  0x00002b9d5791c118 in PyThread_acquire_lock (lock=lock
+entry=0x15f45e0, waitflag=waitflag
+entry=1) at Python/thread_pthread.h:324
+#4  0x00002b9d578d8f26 in PyEval_RestoreThread (tstate=tstate
+entry=0x232f930) at Python/ceval.c:359
+#5  0x00002b9d575dd0d8 in floatsleep (secs=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-fmblme/python-2.7.11/Modules/timemodule.c:959
+#6  time_sleep (self=<optimized out>, args=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-fmblme/python-2.7.11/Modules/timemodule.c:206
+#7  0x00002b9d578e2b96 in call_function (oparg=<optimized out>, pp_stack=0x2b9d663ab530) at Python/ceval.c:4350
+#8  PyEval_EvalFrameEx (f=f
+entry=0x2b9d65bc95f0, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#9  0x00002b9d578e39bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b9d65f50628, argcount=1, kws=kws
+entry=0x2b9d575e8068, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#10 0x00002b9d5785a3cd in function_call (func=0x2b9d64313938, arg=0x2b9d65f50610, kw=0x2b9d65f41e88) at Objects/funcobject.c:526
+#11 0x00002b9d57829953 in PyObject_Call (func=func
+entry=0x2b9d64313938, arg=arg
+entry=0x2b9d65f50610, kw=kw
+entry=0x2b9d65f41e88) at Objects/abstract.c:2546
+#12 0x00002b9d578ddf4c in ext_do_call (nk=<optimized out>, na=0, flags=<optimized out>, pp_stack=0x2b9d663ab7d8, func=0x2b9d64313938) at Python/ceval.c:4663
+#13 PyEval_EvalFrameEx (f=f
+entry=0x2b9d65d1eb00, throwflag=throwflag
+entry=0) at Python/ceval.c:3026
+#14 0x00002b9d578e0c72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b9d663ab910, func=<optimized out>) at Python/ceval.c:4436
+#15 call_function (oparg=<optimized out>, pp_stack=0x2b9d663ab910) at Python/ceval.c:4371
+#16 PyEval_EvalFrameEx (f=f
+entry=0x2b9d68000910, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#17 0x00002b9d578e0c72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b9d663aba50, func=<optimized out>) at Python/ceval.c:4436
+#18 call_function (oparg=<optimized out>, pp_stack=0x2b9d663aba50) at Python/ceval.c:4371
+#19 PyEval_EvalFrameEx (f=f
+entry=0x2b9d65f1c210, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#20 0x00002b9d578e39bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b9d65f4aae8, argcount=1, kws=kws
+entry=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#21 0x00002b9d5785a2fc in function_call (func=0x2b9d65c2b0c8, arg=0x2b9d65f4aad0, kw=0x0) at Objects/funcobject.c:526
+#22 0x00002b9d57829953 in PyObject_Call (func=func
+entry=0x2b9d65c2b0c8, arg=arg
+entry=0x2b9d65f4aad0, kw=kw
+entry=0x0) at Objects/abstract.c:2546
+#23 0x00002b9d5783ab8c in instancemethod_call (func=0x2b9d65c2b0c8, arg=0x2b9d65f4aad0, kw=0x0) at Objects/classobject.c:2602
+#24 0x00002b9d57829953 in PyObject_Call (func=func
+entry=0x2b9d57692e10, arg=arg
+entry=0x2b9d575e8050, kw=<optimized out>) at Objects/abstract.c:2546
+#25 0x00002b9d578d9607 in PyEval_CallObjectWithKeywords (func=0x2b9d57692e10, arg=0x2b9d575e8050, kw=<optimized out>) at Python/ceval.c:4219
+#26 0x00002b9d57922032 in t_bootstrap (boot_raw=0x38e41c0) at ./Modules/threadmodule.c:620
+#27 0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#28 0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b9d575e6380 (LWP 217517)):
+#0  0x00002b9d583c7a89 in waitpid () from /lib64/libc.so.6
+#1  0x00002b9d58345de2 in do_system () from /lib64/libc.so.6
+#2  0x00002b9d58346191 in system () from /lib64/libc.so.6
+#3  0x00002b9d5a671588 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002b9d5c0ab655 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCling.so
+#5  0x00002b9d5c0ab118 in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCling.so
+#6  0x00002b9d753160a9 in ?? ()
+#7  0x00007ffec5f51f18 in ?? ()
+#8  0x0000000000000055 in ?? ()
+#9  0x00007ffec5f51dc0 in ?? ()
+#10 0x00002b9d75316030 in ?? ()
+#11 0x00002b9d75316010 in ?? ()
+#12 0x00007ffec5f52340 in ?? ()
+#13 0x00007ffec5f51f00 in ?? ()
+#14 0x00002b9d59be3821 in FastCall(long, void*, void*, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+In file included from input_line_11:24:
+In file included from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/etc/../etc/dictpch/allHeaders.h:910:
+/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/include/TTreeReaderArray.h:130:32: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+   T& At(size_t idx) { return *(T*)UntypedAt(idx); }
+                               ^~~~~~~~~~~~~~~~~~
+Traceback (most recent call last):
+  File "job.py", line 116, in <module>
+    p.run()
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/postprocessor.py", line 188, in run
+    (nall, npass, timeLoop) = eventLoop(self.modules, inFile, outFile, inTree, outTree, eventRange=eventRange, maxEvents=self.maxEntries)
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/eventloop.py", line 62, in eventLoop
+    ret = m.analyze(e) 
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/modules/common/PrefireCorr.py", line 89, in analyze
+    phopf = self.EGvalue(event, jid)
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/modules/common/PrefireCorr.py", line 116, in EGvalue
+    if ele.jetIdx == jid and (ele.photonIdx not in PhotonInJet):
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/datamodel.py", line 61, in __getattr__
+    val = val[self._index]
+SystemError: NULL result without error in PyObject_Call
+Error in <TNetXNGFile::Close>: [ERROR] Server responded with an error: [3011] 
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b9d75216700 (LWP 220519)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b9d75015700 (LWP 220510)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b9d74e14700 (LWP 220495)):
+#0  0x00002b9d583fb1c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b9d7465d86f in XrdSys::LinuxSemaphore::Wait (this=0x76108f0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x4049a58) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x4049a40) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b9d7465da29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b9d74c13700 (LWP 220476)):
+#0  0x00002b9d579ece3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b9d74495753 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b9d746025f7 in XrdCl::TaskManager::RunTasks (this=0x172470e0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002b9d74602749 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b9d74a12700 (LWP 220457)):
+#0  0x00002b9d58401483 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b9d7449a804 in XrdSys::IOEvents::PollE::Begin (this=0x760f110, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002b9d74496e75 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffec5f50dc0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b9d74494f78 in XrdSysThread_Xeq (myargs=0xd2ef9a0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b9d579e5dd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b9d58400ead in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b9d575e6380 (LWP 217517)):
+#0  0x00002b9d583c7a89 in waitpid () from /lib64/libc.so.6
+#1  0x00002b9d58345de2 in do_system () from /lib64/libc.so.6
+#2  0x00002b9d58346191 in system () from /lib64/libc.so.6
+#3  0x00002b9d5a671588 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002b9d5a673a3c in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#5  <signal handler called>
+#6  0x00002b9d5a5f59df in TMap::GetValue(TObject const*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#7  0x00002b9d5a16a99f in TFile::GetCacheRead(TObject*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b9d59d2d288 in TTree::GetReadCache(TFile*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#9  0x00002b9d59d2da9d in TTree::MoveReadCache(TFile*, TDirectory*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#10 0x00002b9d59d2fd41 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b9d59d301a9 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b9d5a5f1351 in THashList::Delete(char const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#13 0x00002b9d5a15ffa6 in TDirectoryFile::~TDirectoryFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#14 0x00002b9d7445fb69 in TNetXNGFile::~TNetXNGFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libNetxNG.so
+#15 0x00002b9d5a6234c1 in TClass::Destructor(void*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#16 0x00002b9d59bef847 in PyROOT::op_dealloc_nofree(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#17 0x00002b9d59bef8b9 in PyROOT::(anonymous namespace)::op_dealloc(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#18 0x00002b9d57890382 in subtype_dealloc (self=0x2b9d6c537e30) at Objects/typeobject.c:1030
+#19 0x00002b9d578590b9 in frame_dealloc (f=0x17048370) at Objects/frameobject.c:460
+#20 0x00002b9d57911feb in tb_dealloc (tb=0x2b9d752e1cb0) at Python/traceback.c:28
+#21 0x00002b9d57911ffb in tb_dealloc (tb=0x2b9d752e17e8) at Python/traceback.c:27
+#22 0x00002b9d578705e7 in insertdict_by_entry (value=0x2b9d579a7e00 <_Py_NoneStruct>, ep=0x15f62a0, hash=5897959712516987849, key=0x2b9d576ed458, mp=0x2b9d57622280) at Objects/dictobject.c:519
+#23 insertdict (mp=0x2b9d57622280, key=0x2b9d576ed458, hash=5897959712516987849, value=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:556
+#24 0x00002b9d57871fc7 in dict_set_item_by_hash_or_entry (ep=0x0, value=0x2b9d579a7e00 <_Py_NoneStruct>, hash=<optimized out>, key=<optimized out>, op=0x2b9d57622280) at Objects/dictobject.c:765
+#25 PyDict_SetItem (op=0x2b9d57622280, key=<optimized out>, value=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:818
+#26 0x00002b9d57873658 in PyDict_SetItemString (v=v
+entry=0x2b9d57622280, key=<optimized out>, item=item
+entry=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:2439
+#27 0x00002b9d578f6eb7 in PyImport_Cleanup () at Python/import.c:460
+#28 0x00002b9d579096ce in Py_Finalize () at Python/pythonrun.c:458
+#29 0x00002b9d5791fb6c in Py_Main (argc=<optimized out>, argv=<optimized out>) at Modules/main.c:665
+#30 0x00002b9d583253d5 in __libc_start_main () from /lib64/libc.so.6
+#31 0x0000000000400651 in _start ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00002b9d5a5f59df in TMap::GetValue(TObject const*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#7  0x00002b9d5a16a99f in TFile::GetCacheRead(TObject*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b9d59d2d288 in TTree::GetReadCache(TFile*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#9  0x00002b9d59d2da9d in TTree::MoveReadCache(TFile*, TDirectory*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#10 0x00002b9d59d2fd41 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b9d59d301a9 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b9d5a5f1351 in THashList::Delete(char const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#13 0x00002b9d5a15ffa6 in TDirectoryFile::~TDirectoryFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#14 0x00002b9d7445fb69 in TNetXNGFile::~TNetXNGFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libNetxNG.so
+#15 0x00002b9d5a6234c1 in TClass::Destructor(void*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#16 0x00002b9d59bef847 in PyROOT::op_dealloc_nofree(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#17 0x00002b9d59bef8b9 in PyROOT::(anonymous namespace)::op_dealloc(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#18 0x00002b9d57890382 in subtype_dealloc (self=0x2b9d6c537e30) at Objects/typeobject.c:1030
+#19 0x00002b9d578590b9 in frame_dealloc (f=0x17048370) at Objects/frameobject.c:460
+#20 0x00002b9d57911feb in tb_dealloc (tb=0x2b9d752e1cb0) at Python/traceback.c:28
+#21 0x00002b9d57911ffb in tb_dealloc (tb=0x2b9d752e17e8) at Python/traceback.c:27
+#22 0x00002b9d578705e7 in insertdict_by_entry (value=0x2b9d579a7e00 <_Py_NoneStruct>, ep=0x15f62a0, hash=5897959712516987849, key=0x2b9d576ed458, mp=0x2b9d57622280) at Objects/dictobject.c:519
+#23 insertdict (mp=0x2b9d57622280, key=0x2b9d576ed458, hash=5897959712516987849, value=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:556
+#24 0x00002b9d57871fc7 in dict_set_item_by_hash_or_entry (ep=0x0, value=0x2b9d579a7e00 <_Py_NoneStruct>, hash=<optimized out>, key=<optimized out>, op=0x2b9d57622280) at Objects/dictobject.c:765
+#25 PyDict_SetItem (op=0x2b9d57622280, key=<optimized out>, value=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:818
+#26 0x00002b9d57873658 in PyDict_SetItemString (v=v
+entry=0x2b9d57622280, key=<optimized out>, item=item
+entry=0x2b9d579a7e00 <_Py_NoneStruct>) at Objects/dictobject.c:2439
+#27 0x00002b9d578f6eb7 in PyImport_Cleanup () at Python/import.c:460
+#28 0x00002b9d579096ce in Py_Finalize () at Python/pythonrun.c:458
+#29 0x00002b9d5791fb6c in Py_Main (argc=<optimized out>, argv=<optimized out>) at Modules/main.c:665
+#30 0x00002b9d583253d5 in __libc_start_main () from /lib64/libc.so.6
+#31 0x0000000000400651 in _start ()
+===========================================================
+
+
+Complete at
+Tue Jan 28 21:16:55 CET 2020

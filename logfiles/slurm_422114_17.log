@@ -1,0 +1,108 @@
+job start at
+Tue Jan 28 20:56:05 CET 2020
+SLURM_JOB_ID: 422232
+HOSTNAME: t3wn52
+JOBLIST:joblist/joblist_ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/100000/92D1DED9-97F9-C245-9A0C-8B02D64FF6AA.root -o /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -N ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 16 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/100000/92D1DED9-97F9-C245-9A0C-8B02D64FF6AA.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_16_ll.root
+chunck       = 16
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_16_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpkWVPhl/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpVLm4el/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpVLm4el/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpRVsQsh/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp72upa2/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp72upa2/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 191442 entries out of 191442 (100.00%)
+nanoAODv5? True
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    10000/  191442 entries,  5.22% (elapsed time   193.9s, curr speed    0.052 kHz, avg speed    0.052 kHz), accepted       50/   10001 events ( 0.50%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    20000/  191442 entries, 10.45% (elapsed time   374.6s, curr speed    0.055 kHz, avg speed    0.053 kHz), accepted      109/   20001 events ( 0.54%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    30000/  191442 entries, 15.67% (elapsed time   554.9s, curr speed    0.055 kHz, avg speed    0.054 kHz), accepted      173/   30001 events ( 0.58%)
+ZtoMM trigger inconsistency
+Processed    40000/  191442 entries, 20.89% (elapsed time   740.8s, curr speed    0.054 kHz, avg speed    0.054 kHz), accepted      230/   40001 events ( 0.57%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    50000/  191442 entries, 26.12% (elapsed time   919.8s, curr speed    0.056 kHz, avg speed    0.054 kHz), accepted      296/   50001 events ( 0.59%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+Processed    60000/  191442 entries, 31.34% (elapsed time  1097.4s, curr speed    0.056 kHz, avg speed    0.055 kHz), accepted      364/   60001 events ( 0.61%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    70000/  191442 entries, 36.56% (elapsed time  1271.5s, curr speed    0.057 kHz, avg speed    0.055 kHz), accepted      409/   70001 events ( 0.58%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    80000/  191442 entries, 41.79% (elapsed time  1460.1s, curr speed    0.053 kHz, avg speed    0.055 kHz), accepted      479/   80001 events ( 0.60%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed    90000/  191442 entries, 47.01% (elapsed time  1644.0s, curr speed    0.054 kHz, avg speed    0.055 kHz), accepted      542/   90001 events ( 0.60%)
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   100000/  191442 entries, 52.24% (elapsed time  1829.0s, curr speed    0.054 kHz, avg speed    0.055 kHz), accepted      604/  100001 events ( 0.60%)
+ZtoMM trigger inconsistency
+Processed   110000/  191442 entries, 57.46% (elapsed time  2018.6s, curr speed    0.053 kHz, avg speed    0.054 kHz), accepted      663/  110001 events ( 0.60%)
+ZtoMM trigger inconsistency
+Processed   120000/  191442 entries, 62.68% (elapsed time  2211.4s, curr speed    0.052 kHz, avg speed    0.054 kHz), accepted      730/  120001 events ( 0.61%)
+ZtoEE trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   130000/  191442 entries, 67.91% (elapsed time  2406.6s, curr speed    0.051 kHz, avg speed    0.054 kHz), accepted      789/  130001 events ( 0.61%)
+ZtoEE trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   140000/  191442 entries, 73.13% (elapsed time  2591.1s, curr speed    0.054 kHz, avg speed    0.054 kHz), accepted      847/  140001 events ( 0.60%)
+ZtoMM trigger inconsistency
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+ZtoMM trigger inconsistency
+Processed   150000/  191442 entries, 78.35% (elapsed time  2770.0s, curr speed    0.056 kHz, avg speed    0.054 kHz), accepted      904/  150001 events ( 0.60%)
+ZtoMM trigger inconsistency
+Processed   160000/  191442 entries, 83.58% (elapsed time  2952.4s, curr speed    0.055 kHz, avg speed    0.054 kHz), accepted      948/  160001 events ( 0.59%)
+Bad event
+Processed   170000/  191442 entries, 88.80% (elapsed time  3129.8s, curr speed    0.056 kHz, avg speed    0.054 kHz), accepted     1012/  170001 events ( 0.60%)
+ZtoMM trigger inconsistency
+Processed   180000/  191442 entries, 94.02% (elapsed time  3305.0s, curr speed    0.057 kHz, avg speed    0.054 kHz), accepted     1064/  180001 events ( 0.59%)
+TtoEM trigger inconsistency
+Processed   190000/  191442 entries, 99.25% (elapsed time  3479.3s, curr speed    0.057 kHz, avg speed    0.055 kHz), accepted     1118/  190001 events ( 0.59%)
+Processed 191442 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/100000/92D1DED9-97F9-C245-9A0C-8B02D64FF6AA.root (191442 entries). Finally selected 1124 entries
+Done /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/92D1DED9-97F9-C245-9A0C-8B02D64FF6AA.root
+54.466775159 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2017/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/92D1DED9-97F9-C245-9A0C-8B02D64FF6AA.root
+DONE
+Complete at
+Tue Jan 28 22:09:56 CET 2020

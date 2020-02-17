@@ -103,7 +103,7 @@ def main():
     
     for year in args.years:
         filename  = "MC_PileUp_%d.root"%(year)
-        indir     = "/work/pbaertsc/heavy_resonance/%d"%(year)
+        indir     = "/work/pbaertsc/heavy_resonance/%d_noweight"%(year)
         if year==2016:
             #JSON    = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/ReReco/Final/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt"
             JSON    = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/ReReco/Final/Cert_271036-284044_13TeV_ReReco_07Aug2017_Collisions16_JSON.txt"

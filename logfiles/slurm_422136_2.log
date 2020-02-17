@@ -1,0 +1,87 @@
+job start at
+Tue Jan 28 22:40:39 CET 2020
+SLURM_JOB_ID: 422476
+HOSTNAME: t3wn45
+JOBLIST:joblist/joblist_ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/270000/2E0E5A33-2BE2-AB4A-8BAA-3037983B7457.root -o /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM -N ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM -n 1 -c ll -y 2016
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Summer16_07Aug2017_V11_MC 	 JER= Summer16_25nsV1_MC
+MET branch= PuppiMET
+JEC= Summer16_07Aug2017_V11_MC 	 JER= Summer16_25nsV1_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/270000/2E0E5A33-2BE2-AB4A-8BAA-3037983B7457.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM
+output file  = ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM_1_ll.root
+chunck       = 1
+channel      = ll
+dataType     = mc
+year         = 2016
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM_1_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpPknWFE/Summer16_07Aug2017_V11_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpbuVtC3/Summer16_25nsV1_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpbuVtC3/Summer16_25nsV1_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpEPTidY/Summer16_07Aug2017_V11_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpKP2KTL/Summer16_25nsV1_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpKP2KTL/Summer16_25nsV1_MC_SF_AK8PFPuppi.txt'
+Pre-select 216680 entries out of 216680 (100.00%)
+nanoAODv5? True
+Processed    10000/  216680 entries,  4.62% (elapsed time   245.9s, curr speed    0.041 kHz, avg speed    0.041 kHz), accepted      227/   10001 events ( 2.27%)
+Processed    20000/  216680 entries,  9.23% (elapsed time   452.5s, curr speed    0.048 kHz, avg speed    0.044 kHz), accepted      448/   20001 events ( 2.24%)
+Processed    30000/  216680 entries, 13.85% (elapsed time   654.3s, curr speed    0.050 kHz, avg speed    0.046 kHz), accepted      688/   30001 events ( 2.29%)
+Processed    40000/  216680 entries, 18.46% (elapsed time   853.2s, curr speed    0.050 kHz, avg speed    0.047 kHz), accepted      909/   40001 events ( 2.27%)
+Bad event
+Bad event
+Bad event
+Processed    50000/  216680 entries, 23.08% (elapsed time  1087.7s, curr speed    0.043 kHz, avg speed    0.046 kHz), accepted     1120/   50001 events ( 2.24%)
+Processed    60000/  216680 entries, 27.69% (elapsed time  1329.4s, curr speed    0.041 kHz, avg speed    0.045 kHz), accepted     1325/   60001 events ( 2.21%)
+Processed    70000/  216680 entries, 32.31% (elapsed time  1560.7s, curr speed    0.043 kHz, avg speed    0.045 kHz), accepted     1553/   70001 events ( 2.22%)
+Bad event
+Processed    80000/  216680 entries, 36.92% (elapsed time  1786.7s, curr speed    0.044 kHz, avg speed    0.045 kHz), accepted     1757/   80001 events ( 2.20%)
+Bad event
+Processed    90000/  216680 entries, 41.54% (elapsed time  2010.5s, curr speed    0.045 kHz, avg speed    0.045 kHz), accepted     1953/   90001 events ( 2.17%)
+Processed   100000/  216680 entries, 46.15% (elapsed time  2234.6s, curr speed    0.045 kHz, avg speed    0.045 kHz), accepted     2156/  100001 events ( 2.16%)
+Processed   110000/  216680 entries, 50.77% (elapsed time  2488.9s, curr speed    0.039 kHz, avg speed    0.044 kHz), accepted     2384/  110001 events ( 2.17%)
+Processed   120000/  216680 entries, 55.38% (elapsed time  2723.3s, curr speed    0.043 kHz, avg speed    0.044 kHz), accepted     2587/  120001 events ( 2.16%)
+Bad event
+Processed   130000/  216680 entries, 60.00% (elapsed time  2940.9s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted     2827/  130001 events ( 2.17%)
+Processed   140000/  216680 entries, 64.61% (elapsed time  3183.8s, curr speed    0.041 kHz, avg speed    0.044 kHz), accepted     3054/  140001 events ( 2.18%)
+Bad event
+Processed   150000/  216680 entries, 69.23% (elapsed time  3401.8s, curr speed    0.046 kHz, avg speed    0.044 kHz), accepted     3312/  150001 events ( 2.21%)
+Bad event
+Processed   160000/  216680 entries, 73.84% (elapsed time  3601.9s, curr speed    0.050 kHz, avg speed    0.044 kHz), accepted     3551/  160001 events ( 2.22%)
+Processed   170000/  216680 entries, 78.46% (elapsed time  3802.9s, curr speed    0.050 kHz, avg speed    0.045 kHz), accepted     3777/  170001 events ( 2.22%)
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+Processed   180000/  216680 entries, 83.07% (elapsed time  4003.1s, curr speed    0.050 kHz, avg speed    0.045 kHz), accepted     3993/  180001 events ( 2.22%)
+Bad event
+Processed   190000/  216680 entries, 87.69% (elapsed time  4205.1s, curr speed    0.050 kHz, avg speed    0.045 kHz), accepted     4210/  190001 events ( 2.22%)
+Processed   200000/  216680 entries, 92.30% (elapsed time  4405.8s, curr speed    0.050 kHz, avg speed    0.045 kHz), accepted     4442/  200001 events ( 2.22%)
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+%MSG-e SimpleJetCorrectionUncertainty: 
+ bin variables out of range
+%MSG
+Processed   210000/  216680 entries, 96.92% (elapsed time  4603.6s, curr speed    0.051 kHz, avg speed    0.046 kHz), accepted     4673/  210001 events ( 2.23%)
+Processed 216680 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/270000/2E0E5A33-2BE2-AB4A-8BAA-3037983B7457.root (216680 entries). Finally selected 4828 entries
+Done /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM/2E0E5A33-2BE2-AB4A-8BAA-3037983B7457.root
+45.5416743732 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2016/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8__RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1__NANOAODSIM/2E0E5A33-2BE2-AB4A-8BAA-3037983B7457.root
+DONE
+Complete at
+Wed Jan 29 00:59:05 CET 2020

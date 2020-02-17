@@ -1,0 +1,1197 @@
+job start at
+Thu Jan 30 17:51:09 CET 2020
+SLURM_JOB_ID: 437186
+HOSTNAME: t3wn40
+JOBLIST:joblist/joblist_Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root -o /work/pbaertsc/heavy_resonance/output_2017/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -N Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM -n 0 -c ll -y 2017
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+JEC= Fall17_17Nov2017_V32_MC 	 JER= Fall17_V3_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2017/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+output file  = Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+chunck       = 0
+channel      = ll
+dataType     = mc
+year         = 2017
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2017/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM_0_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2017/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8__RunIIFall17NanoAODv6-PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpkcIbsy/Fall17_17Nov2017_V32_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpZb0Ilz/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpZb0Ilz/Fall17_V3_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpXwpPbh/Fall17_17Nov2017_V32_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp_hn9lp/Fall17_V3_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp_hn9lp/Fall17_V3_MC_SF_AK8PFPuppi.txt'
+Pre-select 100000 entries out of 100000 (100.00%)
+nanoAODv5? True
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+WARNING: jet m = -1.1 !!
+WARNING: jet m = -1.1 !!
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    10000/  100000 entries, 10.00% (elapsed time   181.1s, curr speed    0.055 kHz, avg speed    0.055 kHz), accepted     8804/   10001 events (88.03%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    20000/  100000 entries, 20.00% (elapsed time   358.5s, curr speed    0.056 kHz, avg speed    0.056 kHz), accepted    17619/   20001 events (88.09%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    30000/  100000 entries, 30.00% (elapsed time   537.9s, curr speed    0.056 kHz, avg speed    0.056 kHz), accepted    26476/   30001 events (88.25%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+WARNING: jet m = 0.0 !!
+WARNING: jet m = 0.0 !!
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Error in <TNetXNGFile::ReadBuffer>: [ERROR] Server responded with an error: [3011] No servers are available to read the file.
+
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:105660241, branch:LHE_HTIncoming, entry:61633, badread=4, nerrors=1, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61634, badread=4, nerrors=2, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61635, badread=4, nerrors=3, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61636, badread=4, nerrors=4, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61637, badread=4, nerrors=5, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61638, badread=4, nerrors=6, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61639, badread=4, nerrors=7, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61640, badread=4, nerrors=8, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61641, badread=4, nerrors=9, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TBranch::GetBasket>: File: root://cms-xrd-global.cern.ch//store/mc/RunIIFall17NanoAODv6/Zprime_VBF_Zh_Zinvhinc_narrow_M-4500_TuneCP5_13TeV-madgraph-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano25Oct2019_102X_mc2017_realistic_v7-v1/270000/7D9916D5-B8D0-FB4D-BC75-71B9835CAD7B.root at byte:0, branch:LHE_HTIncoming, entry:61642, badread=4, nerrors=10, basketnumber=14
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+Error in <TNetXNGFile::TNetXNGFile>: The remote file is not open
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+WARNING: jet m = 0.0 !!
+WARNING: jet m = 0.0 !!
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Processed    40000/  100000 entries, 40.00% (elapsed time   709.7s, curr speed    0.058 kHz, avg speed    0.056 kHz), accepted    35324/   40001 events (88.31%)
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Processed    50000/  100000 entries, 50.00% (elapsed time   881.6s, curr speed    0.058 kHz, avg speed    0.057 kHz), accepted    44157/   50001 events (88.31%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+TtoEM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ZtoMM trigger inconsistency
+Bad event
+Bad event
+Processed    60000/  100000 entries, 60.00% (elapsed time  1053.5s, curr speed    0.058 kHz, avg speed    0.057 kHz), accepted    53006/   60001 events (88.34%)
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+Bad event
+ file probably overwritten: stopping reporting error messages
+Bad event
+
+Thread 7 (Thread 0x2b17fbdc6700 (LWP 21606)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x2b17fbbc5700 (LWP 21605)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b17fb9c4700 (LWP 21604)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b17fb7c3700 (LWP 21603)):
+#0  0x00002b17d9ca3e3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b17f77bd753 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b17f792a5f7 in XrdCl::TaskManager::RunTasks (this=0x32e5440) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002b17f792a749 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b17fb5c2700 (LWP 21602)):
+#0  0x00002b17da6b8483 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b17f77c2804 in XrdSys::IOEvents::PollE::Begin (this=0x32fdea0, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002b17f77bee75 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffe61508610) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b17f77bcf78 in XrdSysThread_Xeq (myargs=0x1319d480) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b17e8663700 (LWP 20121)):
+#0  0x00002b17d9ca2adb in do_futex_wait.constprop () from /lib64/libpthread.so.0
+#1  0x00002b17d9ca2b6f in __new_sem_wait_slow.constprop.0 () from /lib64/libpthread.so.0
+#2  0x00002b17d9ca2c0b in sem_wait
+
+GLIBC_2.2.5 () from /lib64/libpthread.so.0
+#3  0x00002b17d9bd3118 in PyThread_acquire_lock (lock=lock
+entry=0x8895e0, waitflag=waitflag
+entry=1) at Python/thread_pthread.h:324
+#4  0x00002b17d9b8ff26 in PyEval_RestoreThread (tstate=tstate
+entry=0x2a20fc0) at Python/ceval.c:359
+#5  0x00002b17d98940d8 in floatsleep (secs=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-fmblme/python-2.7.11/Modules/timemodule.c:959
+#6  time_sleep (self=<optimized out>, args=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-fmblme/python-2.7.11/Modules/timemodule.c:206
+#7  0x00002b17d9b99b96 in call_function (oparg=<optimized out>, pp_stack=0x2b17e8662530) at Python/ceval.c:4350
+#8  PyEval_EvalFrameEx (f=f
+entry=0x2b17e7e805f0, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#9  0x00002b17d9b9a9bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b17e8207628, argcount=1, kws=kws
+entry=0x2b17d989f068, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#10 0x00002b17d9b113cd in function_call (func=0x2b17e65ca938, arg=0x2b17e8207610, kw=0x2b17e81f7e88) at Objects/funcobject.c:526
+#11 0x00002b17d9ae0953 in PyObject_Call (func=func
+entry=0x2b17e65ca938, arg=arg
+entry=0x2b17e8207610, kw=kw
+entry=0x2b17e81f7e88) at Objects/abstract.c:2546
+#12 0x00002b17d9b94f4c in ext_do_call (nk=<optimized out>, na=0, flags=<optimized out>, pp_stack=0x2b17e86627d8, func=0x2b17e65ca938) at Python/ceval.c:4663
+#13 PyEval_EvalFrameEx (f=f
+entry=0x2b17e7fd5b00, throwflag=throwflag
+entry=0) at Python/ceval.c:3026
+#14 0x00002b17d9b97c72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b17e8662910, func=<optimized out>) at Python/ceval.c:4436
+#15 call_function (oparg=<optimized out>, pp_stack=0x2b17e8662910) at Python/ceval.c:4371
+#16 PyEval_EvalFrameEx (f=f
+entry=0x2b17ec000910, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#17 0x00002b17d9b97c72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b17e8662a50, func=<optimized out>) at Python/ceval.c:4436
+#18 call_function (oparg=<optimized out>, pp_stack=0x2b17e8662a50) at Python/ceval.c:4371
+#19 PyEval_EvalFrameEx (f=f
+entry=0x2b17e81d2210, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#20 0x00002b17d9b9a9bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b17e8200ae8, argcount=1, kws=kws
+entry=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#21 0x00002b17d9b112fc in function_call (func=0x2b17e7ee00c8, arg=0x2b17e8200ad0, kw=0x0) at Objects/funcobject.c:526
+#22 0x00002b17d9ae0953 in PyObject_Call (func=func
+entry=0x2b17e7ee00c8, arg=arg
+entry=0x2b17e8200ad0, kw=kw
+entry=0x0) at Objects/abstract.c:2546
+#23 0x00002b17d9af1b8c in instancemethod_call (func=0x2b17e7ee00c8, arg=0x2b17e8200ad0, kw=0x0) at Objects/classobject.c:2602
+#24 0x00002b17d9ae0953 in PyObject_Call (func=func
+entry=0x2b17d9949e10, arg=arg
+entry=0x2b17d989f050, kw=<optimized out>) at Objects/abstract.c:2546
+#25 0x00002b17d9b90607 in PyEval_CallObjectWithKeywords (func=0x2b17d9949e10, arg=0x2b17d989f050, kw=<optimized out>) at Python/ceval.c:4219
+#26 0x00002b17d9bd9032 in t_bootstrap (boot_raw=0x15c7390) at ./Modules/threadmodule.c:620
+#27 0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#28 0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b17d989d380 (LWP 17841)):
+#0  0x00002b17da67ea89 in waitpid () from /lib64/libc.so.6
+#1  0x00002b17da5fcde2 in do_system () from /lib64/libc.so.6
+#2  0x00002b17da5fd191 in system () from /lib64/libc.so.6
+#3  0x00002b17dc928588 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002b17de362655 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCling.so
+#5  0x00002b17de362118 in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCling.so
+#6  0x00002b17f0f1d0a9 in ?? ()
+#7  0x00007ffe61509bb8 in ?? ()
+#8  0x0000000000000055 in ?? ()
+#9  0x00007ffe61509a60 in ?? ()
+#10 0x00002b17f0f1d030 in ?? ()
+#11 0x00002b17f0f1d010 in ?? ()
+#12 0x00007ffe61509fe0 in ?? ()
+#13 0x00007ffe61509ba0 in ?? ()
+#14 0x00002b17dbe9a821 in FastCall(long, void*, void*, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+In file included from input_line_11:24:
+In file included from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/etc/../etc/dictpch/allHeaders.h:910:
+/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/include/TTreeReaderArray.h:130:32: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+   T& At(size_t idx) { return *(T*)UntypedAt(idx); }
+                               ^~~~~~~~~~~~~~~~~~
+Traceback (most recent call last):
+  File "job.py", line 126, in <module>
+    p.run()
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/postprocessor.py", line 188, in run
+    (nall, npass, timeLoop) = eventLoop(self.modules, inFile, outFile, inTree, outTree, eventRange=eventRange, maxEvents=self.maxEntries)
+  File "/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/eventloop.py", line 62, in eventLoop
+    ret = m.analyze(e) 
+  File "/work/pbaertsc/heavy_resonance/NanoTreeProducer/LLModule.py", line 611, in analyze
+    if event.Muon_isPFcand[imuon] and struct.unpack('B',event.Muon_pfIsoId[imuon])[0]>=2 and (event.Muon_isGlobal[imuon] or event.Muon_isTracker[imuon]):
+SystemError: NULL result without error in PyObject_Call
+Error in <TNetXNGFile::Close>: [ERROR] Server responded with an error: [3011] 
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x2b17fbdc6700 (LWP 21606)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b17fbbc5700 (LWP 21605)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b17fb9c4700 (LWP 21604)):
+#0  0x00002b17da6b21c9 in syscall () from /lib64/libc.so.6
+#1  0x00002b17f798586f in XrdSys::LinuxSemaphore::Wait (this=0x22a306b0) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x229b8768) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x229b8750) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b17f7985a29 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b17fb7c3700 (LWP 21603)):
+#0  0x00002b17d9ca3e3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b17f77bd753 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b17f792a5f7 in XrdCl::TaskManager::RunTasks (this=0x32e5440) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002b17f792a749 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b17fb5c2700 (LWP 21602)):
+#0  0x00002b17da6b8483 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b17f77c2804 in XrdSys::IOEvents::PollE::Begin (this=0x32fdea0, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002b17f77bee75 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffe61508610) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b17f77bcf78 in XrdSysThread_Xeq (myargs=0x1319d480) at /build/cmsbld/auto-builds/CMSSW_9_4_0_pre1-slc6_amd64_gcc630/build/CMSSW_9_4_0_pre1-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.6.1-fmblme/xrootd-4.6.1/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b17d9c9cdd5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b17da6b7ead in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b17d989d380 (LWP 17841)):
+#0  0x00002b17da67ea89 in waitpid () from /lib64/libc.so.6
+#1  0x00002b17da5fcde2 in do_system () from /lib64/libc.so.6
+#2  0x00002b17da5fd191 in system () from /lib64/libc.so.6
+#3  0x00002b17dc928588 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002b17dc92aa3c in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#5  <signal handler called>
+#6  0x00002b17dc8ac9df in TMap::GetValue(TObject const*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#7  0x00002b17dc42199f in TFile::GetCacheRead(TObject*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b17dbfe4288 in TTree::GetReadCache(TFile*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#9  0x00002b17dbfe4a9d in TTree::MoveReadCache(TFile*, TDirectory*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#10 0x00002b17dbfe6d41 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b17dbfe71a9 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b17dc8a8351 in THashList::Delete(char const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#13 0x00002b17dc416fa6 in TDirectoryFile::~TDirectoryFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#14 0x00002b17f7787b69 in TNetXNGFile::~TNetXNGFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libNetxNG.so
+#15 0x00002b17dc8da4c1 in TClass::Destructor(void*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#16 0x00002b17dbea6847 in PyROOT::op_dealloc_nofree(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#17 0x00002b17dbea68b9 in PyROOT::(anonymous namespace)::op_dealloc(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#18 0x00002b17d9b47382 in subtype_dealloc (self=0x2b17f139bf50) at Objects/typeobject.c:1030
+#19 0x00002b17d9b100b9 in frame_dealloc (f=0x2287a090) at Objects/frameobject.c:460
+#20 0x00002b17d9bc8feb in tb_dealloc (tb=0x2b17fbe7f950) at Python/traceback.c:28
+#21 0x00002b17d9bc8ffb in tb_dealloc (tb=0x2b17fbe7f8c0) at Python/traceback.c:27
+#22 0x00002b17d9b275e7 in insertdict_by_entry (value=0x2b17d9c5ee00 <_Py_NoneStruct>, ep=0x88b2a0, hash=5897959712516987849, key=0x2b17d99a4458, mp=0x2b17d98d9280) at Objects/dictobject.c:519
+#23 insertdict (mp=0x2b17d98d9280, key=0x2b17d99a4458, hash=5897959712516987849, value=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:556
+#24 0x00002b17d9b28fc7 in dict_set_item_by_hash_or_entry (ep=0x0, value=0x2b17d9c5ee00 <_Py_NoneStruct>, hash=<optimized out>, key=<optimized out>, op=0x2b17d98d9280) at Objects/dictobject.c:765
+#25 PyDict_SetItem (op=0x2b17d98d9280, key=<optimized out>, value=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:818
+#26 0x00002b17d9b2a658 in PyDict_SetItemString (v=v
+entry=0x2b17d98d9280, key=<optimized out>, item=item
+entry=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:2439
+#27 0x00002b17d9badeb7 in PyImport_Cleanup () at Python/import.c:460
+#28 0x00002b17d9bc06ce in Py_Finalize () at Python/pythonrun.c:458
+#29 0x00002b17d9bd6b6c in Py_Main (argc=<optimized out>, argv=<optimized out>) at Modules/main.c:665
+#30 0x00002b17da5dc3d5 in __libc_start_main () from /lib64/libc.so.6
+#31 0x0000000000400651 in _start ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00002b17dc8ac9df in TMap::GetValue(TObject const*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#7  0x00002b17dc42199f in TFile::GetCacheRead(TObject*) const () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b17dbfe4288 in TTree::GetReadCache(TFile*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#9  0x00002b17dbfe4a9d in TTree::MoveReadCache(TFile*, TDirectory*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#10 0x00002b17dbfe6d41 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b17dbfe71a9 in TTree::~TTree() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b17dc8a8351 in THashList::Delete(char const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#13 0x00002b17dc416fa6 in TDirectoryFile::~TDirectoryFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libRIO.so
+#14 0x00002b17f7787b69 in TNetXNGFile::~TNetXNGFile() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libNetxNG.so
+#15 0x00002b17dc8da4c1 in TClass::Destructor(void*, bool) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_9_4_6/external/slc6_amd64_gcc630/lib/libCore.so
+#16 0x00002b17dbea6847 in PyROOT::op_dealloc_nofree(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#17 0x00002b17dbea68b9 in PyROOT::(anonymous namespace)::op_dealloc(PyROOT::ObjectProxy*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.08-elfike/lib/libPyROOT.so
+#18 0x00002b17d9b47382 in subtype_dealloc (self=0x2b17f139bf50) at Objects/typeobject.c:1030
+#19 0x00002b17d9b100b9 in frame_dealloc (f=0x2287a090) at Objects/frameobject.c:460
+#20 0x00002b17d9bc8feb in tb_dealloc (tb=0x2b17fbe7f950) at Python/traceback.c:28
+#21 0x00002b17d9bc8ffb in tb_dealloc (tb=0x2b17fbe7f8c0) at Python/traceback.c:27
+#22 0x00002b17d9b275e7 in insertdict_by_entry (value=0x2b17d9c5ee00 <_Py_NoneStruct>, ep=0x88b2a0, hash=5897959712516987849, key=0x2b17d99a4458, mp=0x2b17d98d9280) at Objects/dictobject.c:519
+#23 insertdict (mp=0x2b17d98d9280, key=0x2b17d99a4458, hash=5897959712516987849, value=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:556
+#24 0x00002b17d9b28fc7 in dict_set_item_by_hash_or_entry (ep=0x0, value=0x2b17d9c5ee00 <_Py_NoneStruct>, hash=<optimized out>, key=<optimized out>, op=0x2b17d98d9280) at Objects/dictobject.c:765
+#25 PyDict_SetItem (op=0x2b17d98d9280, key=<optimized out>, value=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:818
+#26 0x00002b17d9b2a658 in PyDict_SetItemString (v=v
+entry=0x2b17d98d9280, key=<optimized out>, item=item
+entry=0x2b17d9c5ee00 <_Py_NoneStruct>) at Objects/dictobject.c:2439
+#27 0x00002b17d9badeb7 in PyImport_Cleanup () at Python/import.c:460
+#28 0x00002b17d9bc06ce in Py_Finalize () at Python/pythonrun.c:458
+#29 0x00002b17d9bd6b6c in Py_Main (argc=<optimized out>, argv=<optimized out>) at Modules/main.c:665
+#30 0x00002b17da5dc3d5 in __libc_start_main () from /lib64/libc.so.6
+#31 0x0000000000400651 in _start ()
+===========================================================
+
+
+Complete at
+Thu Jan 30 18:42:02 CET 2020

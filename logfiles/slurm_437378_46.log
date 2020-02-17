@@ -1,0 +1,60 @@
+job start at
+Thu Jan 30 19:14:03 CET 2020
+SLURM_JOB_ID: 437378
+HOSTNAME: t3wn36
+JOBLIST:joblist/joblist_ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_ll.txt
+Going to execute
+python job.py -i root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/250000/EEC47177-3A70-7945-B222-86C66E0A616D.root -o /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -N ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM -n 45 -c ll -y 2018
+TClass::Init:0: RuntimeWarning: no dictionary for class ROOT::TIOFeatures is available
+/work/pbaertsc/heavy_resonance/CMSSW_9_4_6/python/PhysicsTools/NanoAODTools/postprocessing/framework/treeReaderArrayTools.py:69: RuntimeWarning: creating executor for unknown type "ULong64_t*"
+  ret = _vr.Get()[0]
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+JEC= Autumn18_V19_MC 	 JER= Autumn18_V7_MC
+MET branch= PuppiMET
+--------------------------------------------------------------------------------
+input files  = ['root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/250000/EEC47177-3A70-7945-B222-86C66E0A616D.root']
+output directory = /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+output file  = ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_45_ll.root
+chunck       = 45
+channel      = ll
+dataType     = mc
+year         = 2018
+tes          = 1.0
+ltf          = 1.0
+jtf          = 1.0
+--------------------------------------------------------------------------------
+job.py: creating PostProcessor...
+TreeProducer is called /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM_45_ll.root
+job.py: going to run PostProcessor...
+Will write selected trees to /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpnTGwFO/Autumn18_V19_MC_Uncertainty_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp71qwpV/Autumn18_V7_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp71qwpV/Autumn18_V7_MC_SF_AK4PFchs.txt'
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpRJw2Mn/Autumn18_V19_MC_Uncertainty_AK8PFPuppi.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmp_JXO1q/Autumn18_V7_MC_PtResolution_AK8PFPuppi.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmp_JXO1q/Autumn18_V7_MC_SF_AK8PFPuppi.txt'
+Pre-select 147550 entries out of 147550 (100.00%)
+nanoAODv5? True
+Processed    10000/  147550 entries,  6.78% (elapsed time   112.4s, curr speed    0.089 kHz, avg speed    0.089 kHz), accepted      134/   10001 events ( 1.34%)
+Processed    20000/  147550 entries, 13.55% (elapsed time   221.2s, curr speed    0.092 kHz, avg speed    0.090 kHz), accepted      257/   20001 events ( 1.28%)
+Processed    30000/  147550 entries, 20.33% (elapsed time   329.9s, curr speed    0.092 kHz, avg speed    0.091 kHz), accepted      376/   30001 events ( 1.25%)
+Processed    40000/  147550 entries, 27.11% (elapsed time   439.0s, curr speed    0.092 kHz, avg speed    0.091 kHz), accepted      528/   40001 events ( 1.32%)
+Processed    50000/  147550 entries, 33.89% (elapsed time   546.6s, curr speed    0.093 kHz, avg speed    0.091 kHz), accepted      660/   50001 events ( 1.32%)
+Bad event
+Processed    60000/  147550 entries, 40.66% (elapsed time   655.2s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted      778/   60001 events ( 1.30%)
+Processed    70000/  147550 entries, 47.44% (elapsed time   764.3s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted      913/   70001 events ( 1.30%)
+Processed    80000/  147550 entries, 54.22% (elapsed time   873.1s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted     1065/   80001 events ( 1.33%)
+Processed    90000/  147550 entries, 61.00% (elapsed time   981.6s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted     1190/   90001 events ( 1.32%)
+Processed   100000/  147550 entries, 67.77% (elapsed time  1090.1s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted     1316/  100001 events ( 1.32%)
+Processed   110000/  147550 entries, 74.55% (elapsed time  1198.1s, curr speed    0.093 kHz, avg speed    0.092 kHz), accepted     1434/  110001 events ( 1.30%)
+Processed   120000/  147550 entries, 81.33% (elapsed time  1308.8s, curr speed    0.090 kHz, avg speed    0.092 kHz), accepted     1559/  120001 events ( 1.30%)
+Processed   130000/  147550 entries, 88.11% (elapsed time  1418.2s, curr speed    0.091 kHz, avg speed    0.092 kHz), accepted     1700/  130001 events ( 1.31%)
+Processed   140000/  147550 entries, 94.88% (elapsed time  1526.4s, curr speed    0.092 kHz, avg speed    0.092 kHz), accepted     1833/  140001 events ( 1.31%)
+Processed 147550 preselected entries from root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18NanoAODv6/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8/NANOAODSIM/Nano25Oct2019_102X_upgrade2018_realistic_v20-v1/250000/EEC47177-3A70-7945-B222-86C66E0A616D.root (147550 entries). Finally selected 1953 entries
+Done /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/EEC47177-3A70-7945-B222-86C66E0A616D.root
+91.4749443587 Hz
+deleting root file with name: /work/pbaertsc/heavy_resonance/output_2018/ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8__RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1__NANOAODSIM/EEC47177-3A70-7945-B222-86C66E0A616D.root
+DONE
+Complete at
+Thu Jan 30 19:45:28 CET 2020

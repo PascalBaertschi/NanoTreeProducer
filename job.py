@@ -45,9 +45,14 @@ if isinstance(infiles,str):
 ensureDirectory(outdir)
 
 dataType = 'mc'
-if infiles[0].find("/SingleMuon/")>0 or infiles[0].find("/MET/")>0 or infiles[0].find("/EGamma/")>0 or infiles[0].find("/SingleElectron/")>0 or infiles[0].find("/SinglePhoton/")>0:
+runJEC = False
+if infiles[0].find("/SingleMuon/")>0 or infiles[0].find("/MET/")>0 or infiles[0].find("/EGamma/")>0 or infiles[0].find("/SingleElectron/")>0:
   dataType = 'data'
-
+runJEC = False
+JEC_samples = ['Zprime','WWTo','WZTo','ZZTo','GluGluHToBB','ZH_HToBB','Wplus','Wminus']
+for JEC_sample in JEC_samples:
+    if infiles[0].find(JEC_sample)>0:
+        runJEC = True              
 
 JSON = '/work/pbaertsc/heavy_resonance/NanoTreeProducer/json/'
 if year==2016:
@@ -62,55 +67,20 @@ else:
 
 
 ##Function parameters
-##(isMC=True, dataYear=2016, runPeriod="B", jesUncert="Total", redojec=False, jetType = "AK4PFchs", noGroom=False)
+##isMC=True, dataYear=2016, runPeriod="B", jesUncert="Total", redojec=False, jetType = "AK8PFPuppi", noGroom=False, metBranchName="PuppiMET", applySmearing=True, isFastSim=False)
 ##All other parameters will be set in the helper module
 
-if year==2016:
-  if dataType=='mc':      
-    jmeCorrections = createJMECorrector(True, "2016", "B", "Total", False, "AK8PFPuppi", False)
+#jmeCorrections only needed for MC
+if runJEC:
+  if year==2016:
+    jmeCorrections = createJMECorrector(True, "2016", "B", "Total", False, "AK8PFPuppi", False,'PuppiMET', True, False)
+    METCorrections = createJMECorrector(True, "2016", "B", "Total", False, "AK4PFchs", False,'PuppiMET', True, False)
+  elif year==2017:
+    jmeCorrections = createJMECorrector(True, "2017", "B", "Total", False, "AK8PFPuppi", False,'PuppiMET', True, False)
+    METCorrections = createJMECorrector(True, "2017", "B", "Total", False, "AK4PFchs", False,'PuppiMET', True, False)
   else:
-      if infiles[0].find("2016B")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "B", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016C")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "C", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016D")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "D", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016E")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "E", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016F")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "F", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016G")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "G", "Total", False, "AK8PFPuppi", False)
-      elif infiles[0].find("2016H")>0:
-        jmeCorrections = createJMECorrector(False, "2016", "H", "Total", False, "AK8PFPuppi", False)
-elif year==2017:
-  if dataType=='mc':
-    jmeCorrections = createJMECorrector(True, "2017", "B", "Total", False, "AK8PFPuppi", False)
-  else:
-    if infiles[0].find("2017B")>0:
-        jmeCorrections = createJMECorrector(False, "2017", "B", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2017C")>0:
-        jmeCorrections = createJMECorrector(False, "2017", "C", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2017D")>0:
-        jmeCorrections = createJMECorrector(False, "2017", "D", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2017E")>0:
-        jmeCorrections = createJMECorrector(False, "2017", "E", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2017F")>0:
-        jmeCorrections = createJMECorrector(False, "2017", "F", "Total", False, "AK8PFPuppi", False)
-else:
-  if dataType=='mc':
-    jmeCorrections = createJMECorrector(True, "2018", "B", "Total", False, "AK8PFPuppi", False)
-  else:
-    if infiles[0].find("2018A")>0:
-        jmeCorrections = createJMECorrector(False, "2018", "A", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2018B")>0:
-        jmeCorrections = createJMECorrector(False, "2018", "B", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2018C")>0:
-        jmeCorrections = createJMECorrector(False, "2018", "C", "Total", False, "AK8PFPuppi", False)
-    elif infiles[0].find("2018D")>0:
-        jmeCorrections = createJMECorrector(False, "2018", "D", "Total", False, "AK8PFPuppi", False)
-        
-
+    jmeCorrections = createJMECorrector(True, "2018", "B", "Total", False, "AK8PFPuppi", False,'PuppiMET', True, False)
+    METCorrections = createJMECorrector(True, "2018", "B", "Total", False, "AK4PFchs", False,'PuppiMET', True, False)
 tag = ""
 if tes!=1: tag +="_TES%.3f"%(tes)
 if ltf!=1: tag +="_LTF%.3f"%(ltf)
@@ -143,10 +113,14 @@ print "job.py: creating PostProcessor..."
 
 if dataType=='data':
     p = PostProcessor(outdir, infiles, None, branchsel, outputbranchsel=branchsel, noOut=False, 
-                      modules=[jmeCorrections(),module2run()], provenance=False, fwkJobReport=False, jsonInput=json, postfix=postfix)
+                      modules=[module2run()], provenance=False, fwkJobReport=False, jsonInput=json, postfix=postfix)
 else:
+  if runJEC:
     p = PostProcessor(outdir, infiles, None, branchsel, outputbranchsel=branchsel, noOut=False,
-                      modules=[prefirecorr(),jmeCorrections(),module2run()], provenance=False, fwkJobReport=False, postfix=postfix)
+                      modules=[prefirecorr(),METCorrections(),jmeCorrections(),module2run()], provenance=False, fwkJobReport=False, postfix=postfix)
+  else:
+    p = PostProcessor(outdir, infiles, None, branchsel, outputbranchsel=branchsel, noOut=False,
+                      modules=[prefirecorr(),module2run()], provenance=False, fwkJobReport=False, postfix=postfix)
 
 print "job.py: going to run PostProcessor..."
 p.run()

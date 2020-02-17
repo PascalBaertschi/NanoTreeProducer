@@ -1,7 +1,7 @@
 #!/bin/bash
 # 
 #SBATCH -p wn
-#SBATCH --time 30:00:00
+#SBATCH --time 40:00:00
 #SBATCH -o logfiles/slurm_%A_%a.log
 #SBATCH --get-user-env
 

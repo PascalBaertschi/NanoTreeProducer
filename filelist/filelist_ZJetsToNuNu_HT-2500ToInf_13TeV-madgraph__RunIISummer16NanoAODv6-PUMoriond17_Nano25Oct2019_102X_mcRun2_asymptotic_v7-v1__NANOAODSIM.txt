@@ -1,0 +1,2 @@
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/270000/77337E68-13FC-B84C-8882-49462247D17A.root
+root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAODv6/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/NANOAODSIM/PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/270000/F6F1AFF9-CBE5-9047-8ADE-BCDEC468F1C0.root

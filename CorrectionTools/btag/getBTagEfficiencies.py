@@ -13,7 +13,7 @@ description = '''This script extracts histograms to create b tag efficiencies.''
 parser = ArgumentParser(prog="pileup",description=description,epilog="Succes!")
 parser.add_argument('-y', '--year',    dest='years', choices=[2016,2017,2018], type=int, nargs='+', default=[2017], action='store',
                                        help="year to run" )
-parser.add_argument('-t', '--tagger',  dest='taggers', choices=['CSVv2','DeepCSV'], type=str, nargs='+', default=['CSVv2','DeepCSV'], action='store',
+parser.add_argument('-t', '--tagger',  dest='taggers', choices=['CSVv2','DeepCSV'], type=str, nargs='+', default=['DeepCSV'], action='store',
                                        help="tagger to run" )
 parser.add_argument('-w', '--wp',      dest='wps', choices=['loose','medium','tight'], type=str, nargs='+', default=['loose'], action='store',
                                        help="working point to run" )
@@ -546,13 +546,13 @@ def main():
                 for jettype in ['AK8','AK4']:
                     for wp in args.wps:
                         filename = "%s_%s_%d_eff.root"%(tagger,jettype,year)
-                        indir    = "/work/pbaertsc/heavy_resonance/Ntuples%d"%(year)
+                        indir    = "/work/pbaertsc/heavy_resonance/%d_noweight"%(year)
                         getBTagEfficiencies(tagger,wp,filename,indir,samples,jettype,plot=args.plot)
             else:
                 jettype = 'AK8'
                 for wp in args.wps:
                     filename = "%s_%s_%d_eff.root"%(tagger,jettype,year)
-                    indir    = "/work/pbaertsc/heavy_resonance/Ntuples%d"%(year)
+                    indir    = "/work/pbaertsc/heavy_resonance/%d_noweight"%(year)
                     getBTagEfficiencies(tagger,wp,filename,indir,samples,jettype,plot=args.plot)
     
 

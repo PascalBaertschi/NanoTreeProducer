@@ -1,3 +1,0 @@
-root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/MET/NANOAOD/Nano1June2019_ver1-v1/60000/6E802B9F-147A-964E-96DA-3E8B944D9DB8.root
-root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/MET/NANOAOD/Nano1June2019_ver1-v1/60000/49316444-218E-9444-9DFD-BB6A0AF224B4.root
-root://cms-xrd-global.cern.ch//store/data/Run2016B_ver1/MET/NANOAOD/Nano1June2019_ver1-v1/60000/538825E4-0615-6C48-BE0D-33507A68B0B2.root
